@@ -1,4 +1,3 @@
-// ---------- I18N DATABASE (EN / ZH) ----------
 const translations = {
   en: {
     subhead: "B.ASc. Mechanical Engineering | Queen's University",
@@ -10,10 +9,10 @@ const translations = {
     nav_awards: "Awards",
     nav_contact: "Contact",
     about_title: "About Me",
-    about_txt1: "Second-year Mechanical Engineering student at Queen's University with strong academic record (GPA 4.06) and A+ in APSC 221 Economic & Business Practice. Experienced in peer tutoring, rubric‑based assessment, spreadsheet verification, and clear written feedback. Known for careful grading, organized communication, and dependable turnaround on academic work.",
+    about_txt1: "Second-year Mechanical Engineering student at Queen's University with strong academic record (GPA 4.1). Experienced in peer tutoring, rubric‑based assessment, spreadsheet verification, and clear written feedback. Known for careful grading, organized communication, and dependable turnaround on academic work.",
     about_txt2: "Bilingual in English (IELTS 7.5) and Mandarin (native). Passionate about engineering education, mentorship, and applying analytical thinking to real-world problems. Looking for internship opportunities where I can blend technical knowledge with teaching & assessment skills.",
     edu_title: "Education",
-    edu_gpa: "Cumulative GPA: 4.06/4.3",
+    edu_gpa: "Cumulative GPA: 4.1/4.3",
     edu_dean: "Dean's Scholar 2024 – 2025",
     edu_award: "International Admission Award ($80,000)",
     edu_course: "APSC 221 Economic & Business Practice: A+ (Summer 2025)",
@@ -43,7 +42,7 @@ const translations = {
     address: "Kingston, Ontario, Canada",
     ref_note: "References available upon request (course instructors / internship supervisors).",
     inbox_msg: "Open to Summer 2026 internships in engineering, technical mentorship, or teaching assistant roles.",
-    footer_txt: "© 2026 Shenghan Gao — Designed for internship recruitment | Static portfolio"
+    footer_txt: "© 2026 Shenghan Gao — Designed for internship recruitment | Dark Orange Edition"
   },
   zh: {
     subhead: "机械工程学士（材料方向）| 女王大学",
@@ -55,10 +54,10 @@ const translations = {
     nav_awards: "荣誉奖项",
     nav_contact: "联系方式",
     about_title: "个人简介",
-    about_txt1: "女王大学机械工程大二学生，学业成绩优异（GPA 4.06），APSC 221 经济学与商业实践成绩 A+。拥有丰富的同伴辅导、基于量规的评估、电子表格验证和清晰书面反馈经验。以细致评分、清晰沟通和可靠的学术任务周转著称。",
+    about_txt1: "女王大学机械工程大二学生，学业成绩优异（GPA 4.1）。拥有丰富的同伴辅导、基于量规的评估、电子表格验证和清晰书面反馈经验。以细致评分、清晰沟通和可靠的学术任务周转著称。",
     about_txt2: "中英双语（雅思7.5，普通话母语）。对工程教育、导师指导以及将分析思维应用于实际问题充满热情。寻求工程、技术指导或助教方向的实习机会，结合技术知识与教学评估技能。",
     edu_title: "教育经历",
-    edu_gpa: "累计 GPA: 4.06/4.3",
+    edu_gpa: "累计 GPA: 4.1/4.3",
     edu_dean: "院长学者名单 2024 – 2025",
     edu_award: "国际入学奖学金 (80,000 加元)",
     edu_course: "APSC 221 经济学与商业实践: A+ (2025年夏季)",
@@ -88,11 +87,19 @@ const translations = {
     address: "加拿大，安大略省，金斯顿",
     ref_note: "可根据要求提供推荐人（课程讲师或实习主管）。",
     inbox_msg: "开放2026年夏季工程实习、技术指导或助教岗位机会。",
-    footer_txt: "© 2026 高圣涵 — 实习求职作品 | 静态个人网站"
+    footer_txt: "© 2026 高圣涵 — 实习求职作品 | 暗橙炫酷版"
   }
 };
 
 let currentLang = 'en';
+let headerCollapsed = false;
+let lastScroll = 0;
+const SCROLL_THRESHOLD = 60;
+
+const nameTitleDiv = document.getElementById('nameTitle');
+const miniNameSpan = document.getElementById('miniName');
+const mainNameH1 = document.getElementById('mainName');
+const subheadP = document.getElementById('subheadText');
 
 function updateLanguage(lang) {
   const elements = document.querySelectorAll('[data-i18n]');
@@ -106,18 +113,48 @@ function updateLanguage(lang) {
   if (btnSpan) btnSpan.textContent = (lang === 'en') ? '中文' : 'English';
   document.documentElement.lang = (lang === 'en') ? 'en' : 'zh';
   currentLang = lang;
+
+  // Update dynamic name fields
+  if (lang === 'en') {
+    mainNameH1.textContent = 'Shenghan Gao';
+    miniNameSpan.textContent = 'Shenghan Gao';
+    subheadP.textContent = translations.en.subhead;
+  } else {
+    mainNameH1.textContent = '高胜寒';
+    miniNameSpan.textContent = '高胜寒';
+    subheadP.textContent = translations.zh.subhead;
+  }
 }
 
-// 切换语言
-const toggleBtn = document.getElementById('langToggleBtn');
-if (toggleBtn) {
-  toggleBtn.addEventListener('click', () => {
-    const newLang = (currentLang === 'en') ? 'zh' : 'en';
-    updateLanguage(newLang);
-  });
+function handleScrollHeader() {
+  const scrollTop = window.scrollY;
+  if (scrollTop <= 10) {
+    // At top: show full title
+    if (headerCollapsed) {
+      nameTitleDiv.style.display = 'flex';
+      nameTitleDiv.style.opacity = '1';
+      nameTitleDiv.style.visibility = 'visible';
+      miniNameSpan.style.display = 'none';
+      headerCollapsed = false;
+    }
+  } else if (scrollTop > SCROLL_THRESHOLD && !headerCollapsed) {
+    // Collapse: hide big title, show mini name
+    nameTitleDiv.style.display = 'none';
+    miniNameSpan.style.display = 'inline-block';
+    headerCollapsed = true;
+  } else if (scrollTop <= SCROLL_THRESHOLD && headerCollapsed) {
+    // Expand again when scrolling up near top
+    nameTitleDiv.style.display = 'flex';
+    miniNameSpan.style.display = 'none';
+    headerCollapsed = false;
+  }
+
+  // Adjust container padding dynamically based on header height
+  const headerHeight = document.querySelector('.fixed-header').offsetHeight;
+  document.querySelector('.container').style.paddingTop = (headerHeight + 24) + 'px';
 }
 
-// 导航激活 + 平滑滚动
+// Active section highlight + smooth scroll
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-menu a');
 
@@ -138,21 +175,57 @@ function updateActiveSection() {
   });
 }
 
-navLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      const offsetTop = targetElement.offsetTop - 80;
-      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-      setTimeout(() => updateActiveSection(), 100);
-    }
+function initSmoothScroll() {
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        const headerOffset = document.querySelector('.fixed-header').offsetHeight;
+        const elementPos = target.offsetTop;
+        const offsetPos = elementPos - headerOffset - 8;
+        window.scrollTo({ top: offsetPos, behavior: 'smooth' });
+        setTimeout(() => updateActiveSection(), 150);
+      }
+    });
+  });
+}
+
+// Resize observer to keep container padding correct
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    const headerHeight = document.querySelector('.fixed-header').offsetHeight;
+    document.querySelector('.container').style.paddingTop = (headerHeight + 24) + 'px';
+  }, 100);
+});
+
+window.addEventListener('load', () => {
+  updateLanguage('en');
+  // Initial states
+  nameTitleDiv.style.display = 'flex';
+  miniNameSpan.style.display = 'none';
+  headerCollapsed = false;
+  const headerHeight = document.querySelector('.fixed-header').offsetHeight;
+  document.querySelector('.container').style.paddingTop = (headerHeight + 24) + 'px';
+  updateActiveSection();
+  initSmoothScroll();
+
+  window.addEventListener('scroll', () => {
+    handleScrollHeader();
+    updateActiveSection();
   });
 });
 
-window.addEventListener('scroll', updateActiveSection);
-window.addEventListener('load', () => {
+const toggleBtn = document.getElementById('langToggleBtn');
+if (toggleBtn) {
+  toggleBtn.addEventListener('click', () => {
+    const newLang = (currentLang === 'en') ? 'zh' : 'en';
+    updateLanguage(newLang);
+  });
+}
   updateLanguage('en');
   updateActiveSection();
 });
