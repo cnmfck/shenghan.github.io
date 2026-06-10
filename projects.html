@@ -2,102 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Projects | Shenghan Gao</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* additional small tweaks for projects page */
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 2rem;
-      color: #1e88e5;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.2s;
-    }
-    .back-link:hover {
-      gap: 12px;
-      color: #0d47a1;
-    }
-    .project-detail {
-      background: white;
-      border-radius: 28px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      border: 1px solid #e0e8f0;
-    }
-    .project-detail h2 {
-      color: #0a2540;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .project-meta {
-      color: #1e88e5;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      font-size: 0.9rem;
-    }
-    .project-detail p {
-      color: #2c3e50;
-      line-height: 1.6;
-    }
-    hr {
-      margin: 2rem 0;
-    }
-  </style>
+  <meta name="description" content="Selected projects from Shenghan Gao's mechanical engineering portfolio, including documentation, company website development, documentation, spreadsheet modeling, sustainability, and web development.">
+  <meta name="keywords" content="Shenghan Gao projects, mechanical engineering portfolio, engineering documentation, spreadsheet modeling, SolidWorks, MATLAB, web portfolio">
+  <meta name="author" content="Shenghan Gao">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shenghan.cc/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Shenghan Gao">
+  <meta property="og:description" content="Selected technical and portfolio projects.">
+  <meta property="og:url" content="https://shenghan.cc/projects.html">
+  <meta name="theme-color" content="#111827">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=20260610-v7">
 </head>
-<body>
-
-<div class="fixed-header" style="position: relative; margin-bottom: 2rem;">
-  <div class="top-bar">
-    <div class="name-title">
-      <h1>Shenghan Gao</h1>
-      <p>Projects Portfolio</p>
-    </div>
-    <a href="index.html" class="lang-switch" style="text-decoration: none;">
-      <i class="fas fa-home"></i> Back to Home
+<body data-page="projects">
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html" aria-label="Shenghan Gao home">
+      <span class="brand-mark">SG</span>
+      <span class="brand-text">
+        <strong id="brandName">Shenghan Gao</strong>
+        <small data-i18n="brand_role">Mechanical &amp; Materials Engineering</small>
+      </span>
     </a>
-  </div>
-</div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="timeline.html" data-i18n="nav_timeline">Timeline</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="tools.html" data-i18n="nav_tools">Tools</a>
+      <a href="contacts.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </header>
 
-<div class="container" style="padding-top: 2rem;">
-  <a href="index.html#projects" class="back-link">
-    <i class="fas fa-arrow-left"></i> Back to Projects section
-  </a>
+  <aside class="quick-rail" aria-label="Quick actions">
+    <button class="rail-action" id="langToggleBtn" type="button" aria-label="Switch language">
+      <i class="fa-solid fa-language"></i>
+      <span id="langBtnText">中文</span>
+    </button>
+    <a class="rail-action" href="contacts.html" aria-label="Contact Shenghan Gao">
+      <i class="fa-regular fa-paper-plane"></i>
+      <span data-i18n="rail_contact">Contact</span>
+    </a>
+  </aside>
 
-  <div class="project-detail">
-    <h2>📄 Technical Documentation & SOP Design</h2>
-    <div class="project-meta">Suzhou Gaoqing Sanju Precision Technology | Summer 2024</div>
-    <p>Developed standardized troubleshooting SOPs that reduced onboarding time for new interns by 30%. Translated technical jargon between R&D and production teams, improving cross‑department communication. Implemented criteria‑based quality checklists for precision parts.</p>
-  </div>
+  <main class="page-main">
+    <section class="page-hero reveal">
+      <p class="eyebrow" data-i18n="projects_eyebrow">Projects</p>
+      <h1 data-i18n="projects_title">Selected work that connects tools, communication, and engineering judgment.</h1>
+      <p data-i18n="projects_intro">Each project block is ready for future images, drawings, screenshots, or CAD renders.</p>
+    </section>
 
-  <div class="project-detail">
-    <h2>📊 Spreadsheet Modeling for Engineering Checks</h2>
-    <div class="project-meta">Queen's University Peer Tutoring | 2024–2025</div>
-    <p>Built Excel/Google Sheets models to sanity‑check student calculations in thermodynamics and mechanics courses. Trained 20+ classmates on using absolute/relative references, data tables, and conditional formatting to verify results.</p>
-  </div>
+    <section class="project-gallery reveal">
+      <article class="project-tile large-tile featured-web-project">
+        <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
+        <div>
+          <span class="project-type">Web · Company site</span>
+          <h2 data-i18n="project_gaoco_title">Gaoco.org Company Website</h2>
+          <p data-i18n="project_gaoco_text">Designed and built a company-facing website for Suzhou Gaoqing Sanju Precision Technology Co., Ltd., making company information easier to browse and present professionally.</p>
+          <a class="inline-link" href="https://gaoco.org/" target="_blank" rel="noopener">gaoco.org <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+      <article class="project-tile wide-tile">
+        <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
+        <div>
+          <span class="project-type">Documentation</span>
+          <h2 data-i18n="project1_title">Technical Documentation & SOP Design</h2>
+          <p data-i18n="project1_text">Converted troubleshooting and workflow knowledge into teachable, repeatable steps for internship onboarding and quality checking.</p>
+        </div>
+      </article>
+      <article class="project-tile">
+        <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
+        <div>
+          <span class="project-type">Spreadsheet</span>
+          <h2 data-i18n="project2_title">Engineering Check Models</h2>
+          <p data-i18n="project2_text">Used spreadsheets to verify calculations, structure peer feedback, and make quantitative work easier to audit.</p>
+        </div>
+      </article>
+      <article class="project-tile">
+        <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
+        <div>
+          <span class="project-type">Sustainability</span>
+          <h2 data-i18n="project3_title">Sustainable Development Framework</h2>
+          <p data-i18n="project3_text">Connected sustainability concepts with engineering decision-making and material choice awareness.</p>
+        </div>
+      </article>
+      <article class="project-tile wide-tile">
+        <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
+        <div>
+          <span class="project-type">Web</span>
+          <h2 data-i18n="project4_title">Personal Portfolio Website</h2>
+          <p data-i18n="project4_text">Designed and deployed a responsive, bilingual personal portfolio with separated HTML, CSS, and JavaScript files plus search-friendly metadata.</p>
+        </div>
+      </article>
+    </section>
+  </main>
 
-  <div class="project-detail">
-    <h2>🌱 Sustainable Development in Practice</h2>
-    <div class="project-meta">UNITAR Certificate Program | 2025</div>
-    <p>Completed a UN‑certified course on integrating UN SDGs into engineering projects. Developed a framework for assessing environmental impact of material choices in manufacturing.</p>
-  </div>
-
-  <div class="project-detail">
-    <h2>🖥️ Personal Portfolio Website</h2>
-    <div class="project-meta">HTML/CSS/JS | 2026</div>
-    <p>Designed and deployed a bilingual, responsive portfolio site with custom domain, dark/light theme toggle, and scroll‑aware header. Hosted on GitHub Pages with Cloudflare DNS.</p>
-  </div>
-
-  <footer>
-    <p>© 2026 Shenghan Gao — More projects available upon request</p>
+  <footer class="site-footer">
+    <p data-i18n="footer_text">© 2026 Shenghan Gao. Mechanical & Materials Engineering Portfolio.</p>
+    <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
-</div>
 
+  <script src="script.js?v=20260610-v7"></script>
 </body>
 </html>

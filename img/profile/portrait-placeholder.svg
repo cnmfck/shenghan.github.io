@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 640" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder</title>
+  <desc id="desc">A neutral professional portrait placeholder for Shenghan Gao's portfolio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.62" stop-color="#2f2b25"/>
+      <stop offset="1" stop-color="#c48a35"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="36%" cy="22%" r="70%">
+      <stop offset="0" stop-color="#f4d38a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f4d38a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="520" height="640" rx="48" fill="url(#bg)"/>
+  <rect width="520" height="640" rx="48" fill="url(#glow)"/>
+  <circle cx="260" cy="222" r="92" fill="#fffaf2" opacity="0.88"/>
+  <path d="M114 526c18-112 86-170 146-170s128 58 146 170" fill="#fffaf2" opacity="0.88"/>
+  <path d="M83 88h118M83 118h82M319 520h118M355 550h82" stroke="#fffaf2" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+  <text x="260" y="606" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#fffaf2" opacity="0.9">YOUR PHOTO HERE</text>
+</svg>

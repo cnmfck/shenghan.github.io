@@ -3,199 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Shenghan Gao | Mechanical Engineering Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Shenghan Gao | Mechanical & Materials Engineering Portfolio</title>
+  <meta name="description" content="Shenghan Gao is a Mechanical & Materials Engineering student at Queen's University, entering third year with a 4.1/4.3 cGPA. Explore engineering projects, tools, experience, awards, and contact information.">
+  <meta name="keywords" content="Shenghan Gao, Gao Shenghan, 高胜寒, Mechanical Engineering, Queen's University, engineering portfolio, materials option, SolidWorks, AutoCAD, MATLAB, Python, Shenghan.cc">
+  <meta name="author" content="Shenghan Gao">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shenghan.cc/">
+  <link rel="alternate" hreflang="en" href="https://shenghan.cc/">
+  <link rel="alternate" hreflang="zh" href="https://shenghan.cc/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shenghan Gao | Mechanical & Materials Engineering Portfolio">
+  <meta property="og:description" content="Mechanical & Materials Engineering student at Queen's University. Engineering tools, projects, experience, awards, and contact information.">
+  <meta property="og:url" content="https://shenghan.cc/">
+  <meta property="og:site_name" content="Shenghan Gao Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#111827">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=20260610-v7">
 </head>
-<body>
-
-<div class="fixed-header" id="fixedHeader">
-  <div class="top-bar">
-    <div class="name-title" id="nameTitle">
-      <h1 id="mainName">Shenghan Gao</h1>
-      <p data-i18n="subhead" id="subheadText">B.ASc. Mechanical Engineering | Queen's University</p>
-    </div>
-    <button class="lang-switch" id="langToggleBtn">
-      <i class="fas fa-language"></i> <span id="langBtnText">中文</span>
+<body data-page="home">
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html" aria-label="Shenghan Gao home">
+      <span class="brand-mark">SG</span>
+      <span class="brand-text">
+        <strong id="brandName">Shenghan Gao</strong>
+        <small data-i18n="brand_role">Mechanical &amp; Materials Engineering</small>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
     </button>
-  </div>
-  <div class="nav-menu" id="navbar">
-    <span class="mini-name" id="miniName">Shenghan Gao</span>
-    <a href="#about" data-i18n="nav_about">About</a>
-    <a href="#education" data-i18n="nav_education">Education</a>
-    <a href="#experience" data-i18n="nav_experience">Experience</a>
-    <a href="#projects" data-i18n="nav_projects">Projects</a>
-    <a href="#skills" data-i18n="nav_skills">Skills</a>
-    <a href="#awards" data-i18n="nav_awards">Awards</a>
-    <a href="#contact" data-i18n="nav_contact">Contact</a>
-  </div>
-</div>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="timeline.html" data-i18n="nav_timeline">Timeline</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="tools.html" data-i18n="nav_tools">Tools</a>
+      <a href="contacts.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </header>
 
-<div class="container">
-  <!-- ABOUT (蓝色背景) -->
-  <section id="about" class="hero-card">
-    <h2 class="section-title hero-title" data-i18n="about_title">About Me</h2>
-    <p data-i18n="about_txt1">Second-year Mechanical Engineering student at Queen's University with strong academic record (GPA 4.06) and A+ in APSC 221 Economic & Business Practice. Experienced in peer tutoring, rubric‑based assessment, spreadsheet verification, and clear written feedback. Known for careful grading, organized communication, and dependable turnaround on academic work.</p>
-    <br>
-    <p data-i18n="about_txt2">Bilingual in English (IELTS 7.5) and Mandarin (native). Passionate about engineering education, mentorship, and applying analytical thinking to real-world problems. Looking for internship opportunities where I can blend technical knowledge with teaching & assessment skills.</p>
-  </section>
+  <aside class="quick-rail" aria-label="Quick actions">
+    <button class="rail-action" id="langToggleBtn" type="button" aria-label="Switch language">
+      <i class="fa-solid fa-language"></i>
+      <span id="langBtnText">中文</span>
+    </button>
+    <a class="rail-action" href="contacts.html" aria-label="Contact Shenghan Gao">
+      <i class="fa-regular fa-paper-plane"></i>
+      <span data-i18n="rail_contact">Contact</span>
+    </a>
+  </aside>
 
-  <!-- EDUCATION -->
-  <section id="education" class="card">
-    <h2 class="section-title" data-i18n="edu_title">Education</h2>
-    <div class="edu-item">
-      <div class="item-header">
-        <span class="item-title">Queen's University, Kingston, ON</span>
-        <span class="item-date">2023 – 2027</span>
+  <main>
+    <section class="hero-shell">
+      <div class="hero-orbit" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="home_eyebrow">Queen's University · Smith Engineering · MME</p>
+        <div class="university-lockup" aria-label="Queen's University affiliation">
+          <span class="university-lockup-mark">Q</span>
+          <span>
+            <strong>Queen's University</strong>
+            <small data-i18n="home_university_sub">Smith Engineering · Mechanical &amp; Materials Engineering</small>
+          </span>
+        </div>
+        <h1>
+          <span data-i18n="home_title_line1">Engineering mind.</span>
+          <span data-i18n="home_title_line2">Human clarity.</span>
+        </h1>
+        <p class="hero-lead" data-i18n="home_lead">Completed second year and entering third year after the break, with a 4.1/4.3 cGPA and a practical focus on mechanical design, materials, technical communication, and engineering tools.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="timeline.html">
+            <span data-i18n="home_cta_timeline">View timeline</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a class="secondary-link" href="tools.html" data-i18n="home_cta_tools">Tool stack</a>
+        </div>
       </div>
-      <div class="item-sub">B.ASc., Mechanical Engineering (Materials Option)</div>
-      <ul class="desc-list">
-        <li data-i18n="edu_gpa">Cumulative GPA: 4.06/4.3</li>
-        <li data-i18n="edu_dean">Dean's Scholar 2024 – 2025</li>
-        <li data-i18n="edu_award">International Admission Award ($80,000)</li>
-        <li data-i18n="edu_course">APSC 221 Economic & Business Practice: A+ (Summer 2025)</li>
-      </ul>
-    </div>
-    <div class="edu-item">
-      <div class="item-header">
-        <span class="item-title">SuOn Academy, Toronto, ON</span>
-        <span class="item-date">2023 Graduate</span>
+      <div class="hero-panel reveal">
+        <figure class="portrait-card">
+          <div class="portrait-frame">
+            <img src="img/profile/portrait-placeholder.svg" alt="Professional portrait placeholder for Shenghan Gao">
+          </div>
+        </figure>
+        <div class="profile-plate">
+          <span class="plate-label" data-i18n="profile_label">Portfolio snapshot</span>
+          <h2 id="heroName">Shenghan Gao</h2>
+          <p data-i18n="profile_title">B.ASc. Mechanical & Materials Engineering · Materials Option</p>
+        </div>
+        <dl class="signal-list">
+          <div>
+            <dt data-i18n="signal_year_label">Status</dt>
+            <dd data-i18n="signal_year_value">Entering 3rd year</dd>
+          </div>
+          <div>
+            <dt data-i18n="signal_gpa_label">cGPA</dt>
+            <dd>4.1 / 4.3</dd>
+          </div>
+          <div>
+            <dt data-i18n="signal_focus_label">Focus</dt>
+            <dd data-i18n="signal_focus_value">Design · Materials · Communication</dd>
+          </div>
+        </dl>
       </div>
-      <ul class="desc-list">
-        <li data-i18n="hs_principal">Principal's Award 2024 | Student of the Month (Sep 2023, Mar 2024)</li>
-        <li data-i18n="hs_grade">Grade 12 average: 97%</li>
-        <li data-i18n="cs_contest">Certificate of Distinction, Canadian Senior Mathematics Contest 2023</li>
-      </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE (原 Teaching) -->
-  <section id="experience" class="card">
-    <h2 class="section-title" data-i18n="experience_title">Experience</h2>
-    <div class="job">
-      <div class="item-header">
-        <span class="item-title">Peer / Volunteer Tutor</span>
-        <span class="item-date">Nov 2024 – present</span>
-      </div>
-      <div class="item-sub">Queen's University</div>
-      <ul class="desc-list">
-        <li data-i18n="teach_q1">Lead small‑group and 1‑on‑1 review sessions for engineering and quantitative courses.</li>
-        <li data-i18n="teach_q2">Explain problems step‑by‑step and verify answers against solution methods.</li>
-        <li data-i18n="teach_q3">Build mini‑rubrics and marking checklists to grade practice sets consistently.</li>
-        <li data-i18n="teach_q4">Coach classmates on using spreadsheets (Excel/Sheets) to sanity‑check calculations.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <div class="item-header">
-        <span class="item-title">Peer Tutor & Mentor</span>
-        <span class="item-date">Oct 2023 – May 2024</span>
-      </div>
-      <div class="item-sub">SuOn Academy (Toronto)</div>
-      <ul class="desc-list">
-        <li data-i18n="teach_s1">Tutored high school math/physics; designed quick rubric checks for weekly quizzes.</li>
-        <li data-i18n="teach_s2">Used Google Sheets to track progress and provide structured feedback.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <div class="item-header">
-        <span class="item-title">Marking & Rubric Assistant (Volunteer)</span>
-        <span class="item-date">2024 – 2025</span>
-      </div>
-      <ul class="desc-list">
-        <li data-i18n="teach_mark">Developed objective criteria-based checklists for peer assignments, reducing grading bias.</li>
-        <li data-i18n="teach_spread">Integrated spreadsheet models for answer verification and grade organization.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PROJECTS (原 Industry) 带箭头按钮 -->
-  <section id="projects" class="card projects-card">
-    <div class="projects-header">
-      <h2 class="section-title" data-i18n="projects_title">Projects</h2>
-      <a href="projects.html" class="arrow-link" aria-label="View all projects">
-        <i class="fas fa-arrow-right"></i>
+    <section class="overview-strip reveal" aria-label="Portfolio overview">
+      <a class="overview-item" href="education.html">
+        <span class="overview-number">01</span>
+        <strong data-i18n="overview_education_title">Education</strong>
+        <p data-i18n="overview_education_text">Current degree, academic highlights, and learning direction.</p>
+        <i class="fa-solid fa-arrow-right"></i>
       </a>
-    </div>
-    <div class="job">
-      <div class="item-header">
-        <span class="item-title">Technical Intern & Mentor</span>
-        <span class="item-date">Jun 2024 – Aug 2024</span>
+      <a class="overview-item accent-warm" href="timeline.html">
+        <span class="overview-number">02</span>
+        <strong data-i18n="overview_timeline_title">Timeline</strong>
+        <p data-i18n="overview_timeline_text">Experience, awards, certificates, and leadership in one visual path.</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a class="overview-item accent-cool" href="projects.html">
+        <span class="overview-number">03</span>
+        <strong data-i18n="overview_projects_title">Projects</strong>
+        <p data-i18n="overview_projects_text">Selected technical work and portfolio-building projects.</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a class="overview-item accent-ink" href="tools.html">
+        <span class="overview-number">04</span>
+        <strong data-i18n="overview_tools_title">Tools</strong>
+        <p data-i18n="overview_tools_text">CAD/engineering software, programming, Office, and Adobe skills.</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+
+    <section class="minimal-section split-section reveal">
+      <div>
+        <p class="eyebrow" data-i18n="home_about_eyebrow">About</p>
+        <h2 data-i18n="home_about_title">A concise engineering portfolio built for recruiters.</h2>
       </div>
-      <div class="item-sub">Suzhou Gaoqing Sanju Precision Technology Co., Ltd.</div>
-      <ul class="desc-list">
-        <li data-i18n="ind_s1">Documented troubleshooting SOPs into clear, teachable steps; onboarded junior interns.</li>
-        <li data-i18n="ind_s2">Translated technical jargon between R&D and production; emphasized accuracy and clarity.</li>
-        <li data-i18n="ind_s3">Practiced objective, criteria‑based evaluation when checking parts and reports.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <div class="item-header">
-        <span class="item-title">Mentorship Intern</span>
-        <span class="item-date">Jun 2022 – Aug 2022, Jun 2023 – Aug 2023</span>
+      <div class="prose-block">
+        <p data-i18n="home_about_text1">I study Mechanical & Materials Engineering at Queen's University and am preparing for third year after completing second year with a 4.1/4.3 cGPA.</p>
+        <p data-i18n="home_about_text2">This site is designed as a quick, searchable portfolio: the homepage gives the overview, while detailed pages show education, tools, projects, and a filtered timeline of experience and awards.</p>
       </div>
-      <div class="item-sub">Suzhou Gaoco Century Industry & Trade Co., Ltd.</div>
-      <ul class="desc-list">
-        <li data-i18n="ind_g1">Assisted in quality control workflows; provided training to new interns on SOPs.</li>
-        <li data-i18n="ind_g2">Used Excel to track production metrics and maintain consistency reports.</li>
-        <li data-i18n="ind_g3">Bridge communication between international clients and local teams (bilingual).</li>
-      </ul>
-    </div>
-    <div class="view-all-hint" data-i18n="projects_hint">Click the arrow to see full project gallery →</div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="card">
-    <h2 class="section-title" data-i18n="skills_title">Technical & Tools</h2>
-    <div class="skills-grid">
-      <span class="skill-tag">📊 Excel / Google Sheets (advanced functions)</span>
-      <span class="skill-tag">🐍 Python / C / C++</span>
-      <span class="skill-tag">🖥️ HTML / CSS</span>
-      <span class="skill-tag">⚙️ SolidWorks / AutoCAD</span>
-      <span class="skill-tag">📝 Technical Writing & Rubrics</span>
-      <span class="skill-tag">🗣️ Bilingual: English & Mandarin</span>
-      <span class="skill-tag">📈 Spreadsheet verification</span>
-      <span class="skill-tag">🧑‍🏫 Peer assessment systems</span>
-      <span class="skill-tag">💬 OnQ / Teams / Zoom</span>
-    </div>
-    <hr>
-    <p data-i18n="skills_note"><strong>Communication highlight:</strong> Concise technical writing, IELTS 7.5, native Mandarin, experienced in translating complex engineering concepts for diverse audiences.</p>
-  </section>
+    <section class="minimal-section feature-river reveal">
+      <div class="river-heading">
+        <p class="eyebrow" data-i18n="home_tools_eyebrow">Tool overview</p>
+        <h2 data-i18n="home_tools_title">A practical toolkit across documents, media, engineering, and code.</h2>
+      </div>
+      <div class="river-grid">
+        <div class="river-item priority-engineering">
+          <span>Engineering</span>
+          <p>SolidWorks · AutoCAD · MATLAB · Arduino · NX</p>
+        </div>
+        <div class="river-item">
+          <span>Programming</span>
+          <p>Python · C · HTML · CSS · JavaScript</p>
+        </div>
+        <div class="river-item">
+          <span>Office</span>
+          <p>Word · PowerPoint · Excel</p>
+        </div>
+        <div class="river-item">
+          <span>Adobe</span>
+          <p>Photoshop · Premiere Pro · Audition</p>
+        </div>
+      </div>
+      <a class="text-arrow" href="tools.html">
+        <span data-i18n="home_tools_link">Open detailed tools page</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+  </main>
 
-  <!-- AWARDS -->
-  <section id="awards" class="card">
-    <h2 class="section-title" data-i18n="awards_title">Awards & Honours</h2>
-    <div class="award-item">
-      <div class="item-header"><span class="item-title">Dean's Scholar 2024 – 2025</span><span class="item-date">Queen's University</span></div>
-    </div>
-    <div class="award-item">
-      <div class="item-header"><span class="item-title">International Admission Award</span><span class="item-date">$80,000 CAD</span></div>
-    </div>
-    <div class="award-item">
-      <div class="item-header"><span class="item-title">Sustainable Development in Practice 2025</span><span class="item-date">UNITAR</span></div>
-    </div>
-    <div class="award-item">
-      <div class="item-header"><span class="item-title">Canadian Senior Mathematics Contest</span><span class="item-date">CEMC Waterloo 2023</span></div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="card">
-    <h2 class="section-title" data-i18n="contact_title">Get in touch</h2>
-    <div class="contact-flex">
-      <div class="contact-item"><i class="fas fa-envelope"></i> <span>23RL30@queensu.ca</span></div>
-      <div class="contact-item"><i class="fas fa-phone-alt"></i> <span>+1 (437) 663-8088</span></div>
-      <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span data-i18n="address">Kingston, Ontario, Canada</span></div>
-    </div>
-    <hr>
-    <p data-i18n="ref_note"><i class="fas fa-check-circle" style="color:#1e88e5;"></i> References available upon request (course instructors / internship supervisors).</p>
-    <p style="margin-top: 0.8rem; font-size: 0.85rem;" data-i18n="inbox_msg">Open to Summer 2026 internships in engineering, technical mentorship, or teaching assistant roles.</p>
-  </section>
-  <footer>
-    <p data-i18n="footer_txt">© 2026 Shenghan Gao — Designed for internship recruitment | Blue & White Edition</p>
+  <footer class="site-footer">
+    <p data-i18n="footer_text">© 2026 Shenghan Gao. Mechanical & Materials Engineering Portfolio.</p>
+    <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
-</div>
 
-<script src="script.js"></script>
+  <script src="script.js?v=20260610-v7"></script>
 </body>
 </html>
