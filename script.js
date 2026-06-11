@@ -193,8 +193,75 @@ const translations = {
     "timeline_view_pdf": "View PDF",
     "projects_eyebrow": "Projects",
     "projects_title": "Selected work that connects tools, communication, and engineering judgment.",
-    "projects_intro": "Each project block is ready for future images, drawings, screenshots, or CAD renders.",
+    "projects_intro": "Each project block can be opened into a focused case study with images, design logic, build decisions, and technical stack.",
+    "project_harvest_type": "Robotics · Lunar greenhouse end effector",
+    "project_harvest_title": "HarveStar Lunar Harvest End Effector",
+    "project_harvest_text": "A CSA-client project focused on a crab-claw end effector prototype for autonomous lunar greenhouse harvesting, with servo control, path planning, emergency stop logic, and SolidWorks stress simulation.",
+    "project_harvest_expand": "Click to expand case study",
+    "harvest_modal_fig1": "Physical end-effector prototype mounted on the CSA-provided robotic manipulator setup.",
+    "harvest_modal_fig2": "SolidWorks simulation: displacement/stress behavior under gripping load.",
+    "harvest_modal_fig3": "Control logic excerpt: path planning, servo grip angles, and emergency stop behavior.",
+    "harvest_modal_eyebrow": "Featured project",
+    "harvest_modal_title": "HarveStar Lunar Harvest End Effector",
+    "harvest_modal_lead": "A Canadian Space Agency client project with Queen’s University to design, build, and test a lunar greenhouse harvesting end effector. The selected crab-claw design used a fixed arm, a servo-driven moving arm, elastic-band gripping surfaces, and an emergency-stop enabled path-planning program. I completed the project code and SolidWorks simulations; the CAD model itself was modeled by a teammate.",
+    "harvest_modal_mech_label": "End-effector design",
+    "harvest_modal_mech_text": "The claw used a simple asymmetric gripping strategy: one fixed side, one moving side, and compliant bands to handle different plant geometries with fewer moving parts and easier maintenance.",
+    "harvest_modal_control_label": "Control & validation",
+    "harvest_modal_control_text": "CircuitPython control refined pickup paths, release motions, speed, grip angles, and an emergency-stop routine while SolidWorks simulation checked load response and likely high-strain areas.",
+    "harvest_modal_flow_title": "Engineering workflow",
+    "harvest_modal_step1": "Defined the lunar greenhouse harvesting context, including reduced gravity, tight workspace, safety, and plant-handling constraints.",
+    "harvest_modal_step2": "Evaluated gripper concepts and selected a crab-claw end effector for simplicity, grip adaptability, and maintainability.",
+    "harvest_modal_step3": "Ran SolidWorks stress/displacement simulation under gripping load to assess whether the design stayed structurally reasonable.",
+    "harvest_modal_step4": "Programmed path planning, servo movements, release motions, and emergency stop behavior, then iterated through physical testing.",
+    "timeline_harvest_title": "HarveStar Lunar Harvest End Effector",
+    "timeline_harvest_meta": "CSA client project · Queen's University · APSC 103",
+    "timeline_harvest_text": "Designed and tested a crab-claw end-effector prototype for lunar greenhouse harvesting. I completed the project code and SolidWorks simulations; the CAD model itself was modeled by a teammate.",
+    "code_showcase_label": "Code highlight",
+    "project_stride_type": "Mechatronics · Manufacturing automation",
+    "project_stride_title": "Femoral Head Indexing Station",
+    "project_stride_text": "A recyclable-material transmission prototype using encoder feedback, motor testing, Arduino/C control, and Python analysis to index a prosthetic femoral head through manufacturing stations.",
+    "project_stride_expand": "Click to expand case study",
+    "stride_modal_fig1": "Prototype top view: recyclable support, driven cap, belt transmission, lever arm, and femoral head model.",
+    "stride_modal_fig2": "Motor test plot: torque-speed behavior compared across duty cycles.",
+    "stride_modal_fig3": "Control logic excerpt: state machine, dwell timing, belt-ratio conversion, and anti-stall tuning.",
+    "stride_modal_eyebrow": "Featured project",
+    "stride_modal_title": "Femoral Head Indexing Station",
+    "stride_modal_lead": "A manufacturing-cell redesign project for moving a prosthetic femoral head through laser etching and surface mapping positions. The system used recycled materials, motor characterization, encoder feedback, Arduino/C control, Excel data collection, and Python plotting. I wrote all project code independently.",
+    "stride_modal_mech_label": "Mechanical system",
+    "stride_modal_mech_text": "A belt-and-lever transmission converted motor rotation into controlled angular indexing while keeping the femoral head restrained only at the lower contact band.",
+    "stride_modal_control_label": "Controls & testing",
+    "stride_modal_control_text": "Encoder feedback, duty-cycle testing, and control logic were used to verify position, reduce slip effects, execute dwell times, and support emergency-stop behavior.",
+    "stride_modal_flow_title": "Engineering workflow",
+    "stride_modal_step1": "Defined the required 108° clockwise, 198° counterclockwise, and 90° clockwise indexing sequence.",
+    "stride_modal_step2": "Collected motor speed, torque, and duty-cycle data in Excel, then used Python to plot and interpret performance.",
+    "stride_modal_step3": "Programmed the microcontroller in Arduino/C to control motor movement, dwell timing, encoder-based position checks, and emergency stopping.",
+    "stride_modal_step4": "Iterated the recycled-material transmission until the mechanism could move predictably and verify position within a tight angular tolerance.",
+    "timeline_strideworks_title": "Femoral Head Indexing Station",
+    "timeline_strideworks_meta": "APSC 200 · StrideWorks Prosthetics manufacturing cell",
+    "timeline_strideworks_text": "Built a recyclable-material indexing mechanism with encoder feedback, Arduino/C control, motor testing, Excel data collection, Python plotting, and emergency-stop logic. Project code was written independently.",
+    "timeline_water_project_title": "Water Filtration Prototype",
+    "timeline_water_project_meta": "APSC 101 · Water treatment prototype",
+    "timeline_water_project_text": "Designed and tested an automated prototype for alum dosing, magnetic mixing, pump-driven transfer, staged filtration, and clean-water collection. Project code was written independently.",
     "project_img_placeholder": "Project image placeholder",
+    "project_water_type": "Mechatronics · Water treatment prototype",
+    "project_water_title": "Water Filtration Prototype",
+    "project_water_text": "A SolidWorks-planned prototype that combined Arduino/C control, pump-driven flow, two-step alum dosing, magnetic mixing, multi-layer filtration, and clean-water collection.",
+    "project_water_expand": "Click to expand case study",
+    "water_modal_fig1": "Physical prototype with pump, tubing, Arduino, dosing and filtration modules.",
+    "water_modal_fig2": "Close-up of the mixing, dosing, and water-transfer structure.",
+    "water_modal_fig3": "SolidWorks assembly used to plan component layout and printed parts.",
+    "water_modal_eyebrow": "Featured project",
+    "water_modal_title": "Water Filtration Prototype",
+    "water_modal_lead": "A working water-treatment prototype combining mechanical design, CAD modeling, 3D-printed parts, Arduino/C control, pump-driven flow, two-step alum dosing, magnetic mixing, staged filtration, and clean-water collection. I wrote the project code independently.",
+    "water_modal_design_label": "Design logic",
+    "water_modal_design_text": "The SolidWorks assembly helped organize the pump, base plate, dosing tower, magnetic mixing system, filtration path, and receiving container before physical assembly and testing.",
+    "water_modal_control_label": "Control & build",
+    "water_modal_control_text": "Arduino/C logic coordinated the liquid-level check, alum dispenser, DC-motor mixing, and pump-driven transfer; code adjustments corrected the dosing sequence to deliver the target alum amount.",
+    "water_modal_flow_title": "Process flow",
+    "water_modal_step1": "Pump untreated water into the process structure.",
+    "water_modal_step2": "Use the dispenser to introduce alum for coagulation and sedimentation.",
+    "water_modal_step3": "Drive a gear-based magnetic system at the bottom so the internal magnetic mixing bar can sync with the changing magnet position.",
+    "water_modal_step4": "Pump water onward through multi-layer filtration and collect cleaner output in a final container.",
     "project_gaoco_title": "Gaoco.org Company Website",
     "project_gaoco_text": "Designed and built a company-facing website for Suzhou Gaoqing Sanju Precision Technology Co., Ltd., making company information easier to browse and present professionally.",
     "project1_title": "Technical Documentation & SOP Design",
@@ -427,8 +494,75 @@ const translations = {
     "timeline_view_pdf": "查看 PDF",
     "projects_eyebrow": "项目",
     "projects_title": "连接工具、沟通与工程判断的精选作品。",
-    "projects_intro": "每个项目块都预留了未来放图片、图纸、截图或 CAD 渲染图的位置。",
+    "projects_intro": "每个项目块都可以点击展开成更完整的 case study，展示图片、设计逻辑、搭建决策与技术栈。",
+    "project_harvest_type": "机器人 · 月球温室采摘末端执行器",
+    "project_harvest_title": "HarveStar 月球温室采摘末端执行器",
+    "project_harvest_text": "一个以加拿大航天局为 client 的项目，重点设计并制作蟹钳式末端执行器原型，用于自动化月球温室采摘，包含舵机控制、路径规划、急停逻辑与 SolidWorks 应力模拟。",
+    "project_harvest_expand": "点击展开项目详情",
+    "harvest_modal_fig1": "安装在 CSA 提供的机械臂测试平台上的实体末端执行器原型。",
+    "harvest_modal_fig2": "SolidWorks 模拟：夹持载荷下的位移 / 应力表现。",
+    "harvest_modal_fig3": "控制逻辑节选：路径规划、舵机夹持角度与急停行为。",
+    "harvest_modal_eyebrow": "重点项目",
+    "harvest_modal_title": "HarveStar 月球温室采摘末端执行器",
+    "harvest_modal_lead": "这是加拿大航天局与 Queen’s University 合作的 client project，目标是设计、制作并测试用于月球温室自动采摘的末端执行器。最终采用蟹钳式结构：一侧固定、一侧由舵机驱动，并用弹性带增强夹持适应性。项目代码和 SolidWorks 模拟由我完成；CAD 模型本身由组员建模。",
+    "harvest_modal_mech_label": "末端执行器设计",
+    "harvest_modal_mech_text": "夹爪采用简单的不对称策略：一侧固定、一侧运动，并利用柔性带适应不同植物几何形状，减少运动部件，提高可维护性。",
+    "harvest_modal_control_label": "控制与验证",
+    "harvest_modal_control_text": "CircuitPython 控制用于细化抓取路径、释放动作、移动速度、夹持角度与急停；SolidWorks 模拟用于检查载荷响应与潜在高应变区域。",
+    "harvest_modal_flow_title": "工程流程",
+    "harvest_modal_step1": "定义月球温室采摘场景，包括低重力、紧凑工作空间、安全性与植物夹持约束。",
+    "harvest_modal_step2": "评估不同夹爪方案，选择蟹钳式末端执行器以兼顾简单性、适应性与维护便利。",
+    "harvest_modal_step3": "在 SolidWorks 中进行应力 / 位移模拟，检查夹持载荷下结构是否合理。",
+    "harvest_modal_step4": "编写路径规划、舵机动作、释放动作与急停逻辑，并结合实体测试持续迭代。",
+    "timeline_harvest_title": "HarveStar 月球温室采摘末端执行器",
+    "timeline_harvest_meta": "CSA client project · Queen's University · APSC 103",
+    "timeline_harvest_text": "设计并测试用于月球温室采摘的蟹钳式末端执行器原型。项目代码和 SolidWorks 模拟由我完成；CAD 模型本身由组员建模。",
+    "code_showcase_label": "代码亮点",
+    "project_stride_type": "机电系统 · 制造自动化",
+    "project_stride_title": "股骨头定位转台原型",
+    "project_stride_text": "一个使用可回收材料搭建的传动原型，结合 encoder 反馈、电机测试、Arduino/C 控制与 Python 分析，让假体股骨头按工位完成定位移动。",
+    "project_stride_expand": "点击展开项目详情",
+    "stride_modal_fig1": "原型俯视图：可回收支撑结构、驱动盖、皮带传动、杠杆臂与股骨头模型。",
+    "stride_modal_fig2": "电机测试图：比较不同 duty cycle 下的扭矩—转速表现。",
+    "stride_modal_fig3": "控制逻辑节选：状态机、停留时间、皮带比例换算与防卡顿调参。",
+    "stride_modal_eyebrow": "重点项目",
+    "stride_modal_title": "股骨头定位转台原型",
+    "stride_modal_lead": "一个针对假体股骨头制造单元的改造项目，用于在激光刻蚀与表面测绘工位之间移动工件。系统使用可回收材料、电机特性测试、encoder 反馈、Arduino/C 控制、Excel 数据收集与 Python 绘图。所有项目代码由我独立完成。",
+    "stride_modal_mech_label": "机械系统",
+    "stride_modal_mech_text": "皮带—杠杆传动把电机旋转转化为可控角度定位，同时让股骨头只在底部允许接触区域被约束。",
+    "stride_modal_control_label": "控制与测试",
+    "stride_modal_control_text": "通过 encoder 反馈、duty cycle 测试与控制逻辑确认位置、降低打滑影响、执行停留时间，并支持急停行为。",
+    "stride_modal_flow_title": "工程流程",
+    "stride_modal_step1": "定义 108° 顺时针、198° 逆时针、90° 顺时针的定位序列。",
+    "stride_modal_step2": "用 Excel 收集电机转速、扭矩与 duty cycle 数据，再用 Python 绘图和分析性能。",
+    "stride_modal_step3": "使用 Arduino/C 为微控制器编程，控制电机运动、停留时间、基于 encoder 的位置检查与急停。",
+    "stride_modal_step4": "反复迭代可回收材料传动结构，使机构能够较可预测地移动，并在较小角度误差内确认位置。",
+    "timeline_strideworks_title": "股骨头定位转台原型",
+    "timeline_strideworks_meta": "APSC 200 · StrideWorks Prosthetics 制造单元",
+    "timeline_strideworks_text": "搭建了可回收材料定位机构，结合 encoder 反馈、Arduino/C 控制、电机测试、Excel 数据收集、Python 绘图与急停逻辑。项目代码由我独立完成。",
+    "timeline_water_project_title": "水处理过滤原型",
+    "timeline_water_project_meta": "APSC 101 · 水处理原型",
+    "timeline_water_project_text": "设计并测试了一个自动化原型，包含明矾投放、磁力搅拌、泵抽水、多层过滤与净水收集。项目代码由我独立完成。",
     "project_img_placeholder": "项目图片占位",
+    "project_water_type": "机电系统 · 水处理原型",
+    "project_water_title": "水处理过滤原型",
+    "project_water_text": "一个基于 SolidWorks 总体设计的水处理原型，结合 Arduino/C 控制、泵抽水、两步明矾投放、磁力搅拌、多层过滤与净水收集。",
+    "project_water_expand": "点击展开项目详情",
+    "water_modal_fig1": "实体原型：包含水泵、管路、Arduino、投放与过滤结构。",
+    "water_modal_fig2": "搅拌、投放与水流转移结构的近景。",
+    "water_modal_fig3": "用于规划整体布局与打印件位置的 SolidWorks 总装模型。",
+    "water_modal_eyebrow": "重点项目",
+    "water_modal_title": "水处理过滤原型",
+    "water_modal_lead": "一个可运行的水处理原型，结合机械设计、CAD 建模、3D 打印、Arduino/C 控制、泵抽水、两步明矾投放、磁力搅拌、多层过滤与净水收集。项目代码由我独立完成。",
+    "water_modal_design_label": "设计逻辑",
+    "water_modal_design_text": "SolidWorks 总装模型用于在实体装配与测试前规划水泵、底板、投放塔、磁力搅拌系统、过滤路径与收集容器的位置关系。",
+    "water_modal_control_label": "控制与搭建",
+    "water_modal_control_text": "Arduino/C 逻辑协调液位检测、明矾投放器、DC 电机搅拌与泵抽水流程；通过代码调整修正投放序列，使明矾达到目标投放量。",
+    "water_modal_flow_title": "流程设计",
+    "water_modal_step1": "用水泵将待处理水抽入处理结构。",
+    "water_modal_step2": "通过投放器加入明矾，辅助絮凝与沉降。",
+    "water_modal_step3": "底部齿轮组改变磁铁位置，使容器内部的磁力搅拌棒与外部运动同步。",
+    "water_modal_step4": "将水继续抽送经过多层过滤，最后收集到干净水容器中。",
     "project_gaoco_title": "Gaoco.org 公司网站",
     "project_gaoco_text": "为高擎三炬精密科技有限公司设计并搭建公司展示网站，让公司信息更容易浏览，也更适合对外展示。",
     "project1_title": "技术文档与 SOP 设计",
@@ -565,6 +699,53 @@ const initTimelineFilter = () => {
   });
 };
 
+
+const initProjectModals = () => {
+  const triggers = document.querySelectorAll("[data-project-modal]");
+  const closeButtons = document.querySelectorAll("[data-modal-close]");
+  let activeModal = null;
+  let lastTrigger = null;
+
+  const openModal = (modalId, trigger) => {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+    activeModal = modal;
+    lastTrigger = trigger || null;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    const panel = modal.querySelector(".project-modal-panel");
+    panel?.focus();
+  };
+
+  const closeModal = () => {
+    if (!activeModal) return;
+    activeModal.classList.remove("open");
+    activeModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+    const triggerToFocus = lastTrigger;
+    activeModal = null;
+    lastTrigger = null;
+    triggerToFocus?.focus?.();
+  };
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => openModal(trigger.dataset.projectModal, trigger));
+    trigger.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openModal(trigger.dataset.projectModal, trigger);
+      }
+    });
+  });
+
+  closeButtons.forEach((button) => button.addEventListener("click", closeModal));
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeModal();
+  });
+};
+
 const initLanguageButton = () => {
   const toggleBtn = document.getElementById("langToggleBtn");
   toggleBtn?.addEventListener("click", () => {
@@ -577,5 +758,6 @@ window.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initReveal();
   initTimelineFilter();
+  initProjectModals();
   initLanguageButton();
 });

@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Projects | Shenghan Gao</title>
-  <meta name="description" content="Selected projects from Shenghan Gao's mechanical engineering portfolio, including documentation, company website development, documentation, spreadsheet modeling, sustainability, and web development.">
+  <meta name="description" content="Selected projects from Shenghan Gao's mechanical engineering portfolio, including mechatronics prototypes, lunar greenhouse end effector design, CAD-driven design, Arduino/C control, CircuitPython control, engineering data analysis, company website development, documentation, spreadsheet modeling, sustainability, and web development.">
   <meta name="keywords" content="Shenghan Gao projects, mechanical engineering portfolio, engineering documentation, spreadsheet modeling, SolidWorks, MATLAB, web portfolio">
   <meta name="author" content="Shenghan Gao">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://shenghan.cc/projects.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Projects | Shenghan Gao">
-  <meta property="og:description" content="Selected technical and portfolio projects.">
+  <meta property="og:description" content="Selected technical and portfolio projects, including automated mechatronics prototypes and engineering data analysis.">
   <meta property="og:url" content="https://shenghan.cc/projects.html">
   <meta name="theme-color" content="#111827">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20260610-v7">
+  <link rel="stylesheet" href="style.css?v=20260610-v10">
 </head>
 <body data-page="projects">
   <header class="site-header" id="siteHeader">
@@ -62,6 +62,59 @@
     </section>
 
     <section class="project-gallery reveal">
+      <article class="project-tile interactive-project compact-feature harvestar-project" data-project-modal="harvestarModal" role="button" tabindex="0" aria-controls="harvestarModal">
+        <div class="project-visual has-image compact-visual">
+          <img class="project-photo" src="img/projects/harvestar-prototype.jpg" alt="HarveStar lunar greenhouse end effector prototype mounted on a robotic arm">
+        </div>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_harvest_type">Robotics · Lunar greenhouse end effector</span>
+          <h2 data-i18n="project_harvest_title">HarveStar Lunar Harvest End Effector</h2>
+          <p data-i18n="project_harvest_text">A CSA-client project focused on a crab-claw end effector prototype for autonomous lunar greenhouse harvesting, with servo control, path planning, emergency stop logic, and SolidWorks stress simulation.</p>
+          <div class="mini-chip-row" aria-label="Project tools">
+            <span>SolidWorks</span>
+            <span>Stress Simulation</span>
+            <span>CircuitPython</span>
+            <span>Servo Control</span>
+          </div>
+          <span class="project-expand-hint" data-i18n="project_harvest_expand">Click to expand case study</span>
+        </div>
+      </article>
+
+      <article class="project-tile interactive-project compact-feature strideworks-project" data-project-modal="strideworksModal" role="button" tabindex="0" aria-controls="strideworksModal">
+        <div class="project-visual has-image compact-visual">
+          <img class="project-photo" src="img/projects/strideworks-preview.jpg" alt="Top view of a recycled-material indexing station prototype for a femoral head manufacturing sequence">
+        </div>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_stride_type">Mechatronics · Manufacturing automation</span>
+          <h2 data-i18n="project_stride_title">Femoral Head Indexing Station</h2>
+          <p data-i18n="project_stride_text">A recyclable-material transmission prototype using encoder feedback, motor testing, Arduino/C control, and Python analysis to index a prosthetic femoral head through manufacturing stations.</p>
+          <div class="mini-chip-row" aria-label="Project tools">
+            <span>Arduino/C</span>
+            <span>Encoder</span>
+            <span>Excel</span>
+            <span>Python</span>
+          </div>
+          <span class="project-expand-hint" data-i18n="project_stride_expand">Click to expand case study</span>
+        </div>
+      </article>
+
+      <article class="project-tile interactive-project compact-feature water-filter-project" data-project-modal="waterFilterModal" role="button" tabindex="0" aria-controls="waterFilterModal">
+        <div class="project-visual has-image compact-visual">
+          <img class="project-photo" src="img/projects/water-filtration-preview.jpg" alt="Water filtration prototype with Arduino, tubing, pump, funnel, and filtration tower">
+        </div>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_water_type">Mechatronics · Water treatment prototype</span>
+          <h2 data-i18n="project_water_title">Water Filtration Prototype</h2>
+          <p data-i18n="project_water_text">A SolidWorks-planned prototype that combined Arduino/C control, pump-driven flow, alum dosing, magnetic mixing, multi-layer filtration, and clean-water collection.</p>
+          <div class="mini-chip-row" aria-label="Project tools">
+            <span>SolidWorks</span>
+            <span>3D Printing</span>
+            <span>Arduino</span>
+            <span>C</span>
+          </div>
+          <span class="project-expand-hint" data-i18n="project_water_expand">Click to expand case study</span>
+        </div>
+      </article>
       <article class="project-tile large-tile featured-web-project">
         <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
         <div>
@@ -104,6 +157,182 @@
         </div>
       </article>
     </section>
+
+    <div class="project-modal" id="harvestarModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <section class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="harvestarModalTitle" tabindex="-1">
+        <button class="project-modal-close" type="button" data-modal-close aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-media-grid">
+          <figure class="modal-main-image">
+            <img src="img/projects/harvestar-prototype.jpg" alt="Physical HarveStar crab-claw end-effector prototype attached to a robotic arm">
+            <figcaption data-i18n="harvest_modal_fig1">Physical end-effector prototype mounted on the CSA-provided robotic manipulator setup.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/harvestar-stress.jpg" alt="SolidWorks stress simulation of the HarveStar end effector under gripping load">
+            <figcaption data-i18n="harvest_modal_fig2">SolidWorks simulation: displacement/stress behavior under gripping load.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/harvestar-code-snippet.png" alt="CircuitPython control logic excerpt for HarveStar path planning and emergency stop">
+            <figcaption data-i18n="harvest_modal_fig3">Control logic excerpt: path planning, servo grip angles, and emergency stop behavior.</figcaption>
+          </figure>
+        </div>
+        <div class="modal-copy">
+          <p class="eyebrow" data-i18n="harvest_modal_eyebrow">Featured project</p>
+          <h2 id="harvestarModalTitle" data-i18n="harvest_modal_title">HarveStar Lunar Harvest End Effector</h2>
+          <p class="modal-lead" data-i18n="harvest_modal_lead">A Canadian Space Agency client project with Queen’s University to design, build, and test a lunar greenhouse harvesting end effector. The selected crab-claw design used a fixed arm, a servo-driven moving arm, elastic-band gripping surfaces, and an emergency-stop enabled path-planning program. I completed the project code and SolidWorks simulations; the CAD model itself was modeled by a teammate.</p>
+          <div class="project-detail-grid">
+            <article>
+              <span data-i18n="harvest_modal_mech_label">End-effector design</span>
+              <p data-i18n="harvest_modal_mech_text">The claw used a simple asymmetric gripping strategy: one fixed side, one moving side, and compliant bands to handle different plant geometries with fewer moving parts and easier maintenance.</p>
+            </article>
+            <article>
+              <span data-i18n="harvest_modal_control_label">Control & validation</span>
+              <p data-i18n="harvest_modal_control_text">CircuitPython control refined pickup paths, release motions, speed, grip angles, and an emergency-stop routine while SolidWorks simulation checked load response and likely high-strain areas.</p>
+            </article>
+          </div>
+          <h3 data-i18n="harvest_modal_flow_title">Engineering workflow</h3>
+          <ol class="modal-steps">
+            <li data-i18n="harvest_modal_step1">Defined the lunar greenhouse harvesting context, including reduced gravity, tight workspace, safety, and plant-handling constraints.</li>
+            <li data-i18n="harvest_modal_step2">Evaluated gripper concepts and selected a crab-claw end effector for simplicity, grip adaptability, and maintainability.</li>
+            <li data-i18n="harvest_modal_step3">Ran SolidWorks stress/displacement simulation under gripping load to assess whether the design stayed structurally reasonable.</li>
+            <li data-i18n="harvest_modal_step4">Programmed path planning, servo movements, release motions, and emergency stop behavior, then iterated through physical testing.</li>
+          </ol>
+          <div class="code-showcase">
+            <span data-i18n="code_showcase_label">Code highlight</span>
+            <pre><code>if stop_button.value:
+    emergency_stop()
+arm.move_to(plant.pick_pose)
+gripper.close(angle=plant.grip_angle, speed="slow")
+arm.move_to(storage_bin)
+gripper.open(angle=plant.release_angle)</code></pre>
+          </div>
+          <div class="modal-stack" aria-label="Technical stack">
+            <span>CSA Client Project</span>
+            <span>End Effector</span>
+            <span>CircuitPython</span>
+            <span>Servo Control</span>
+            <span>SolidWorks Simulation</span>
+            <span>3D Printing</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="project-modal" id="waterFilterModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <section class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="waterFilterModalTitle" tabindex="-1">
+        <button class="project-modal-close" type="button" data-modal-close aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-media-grid">
+          <figure class="modal-main-image">
+            <img src="img/projects/water-filtration-prototype.jpg" alt="Full water filtration prototype assembly on a clear base plate">
+            <figcaption data-i18n="water_modal_fig1">Physical prototype with pump, tubing, Arduino, dosing and filtration modules.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/water-filtration-closeup.jpg" alt="Close-up of the prototype mixing and sedimentation section">
+            <figcaption data-i18n="water_modal_fig2">Close-up of the mixing, dosing, and water-transfer structure.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/water-filtration-solidworks.jpg" alt="SolidWorks model of the water filtration prototype">
+            <figcaption data-i18n="water_modal_fig3">SolidWorks assembly used to plan component layout and printed parts.</figcaption>
+          </figure>
+        </div>
+        <div class="modal-copy">
+          <p class="eyebrow" data-i18n="water_modal_eyebrow">Featured project</p>
+          <h2 id="waterFilterModalTitle" data-i18n="water_modal_title">Water Filtration Prototype</h2>
+          <p class="modal-lead" data-i18n="water_modal_lead">A working water-treatment prototype combining mechanical design, CAD modeling, 3D-printed parts, Arduino/C control, pump-driven flow, two-step alum dosing, magnetic mixing, staged filtration, and clean-water collection. I wrote the project code independently.</p>
+          <div class="project-detail-grid">
+            <article>
+              <span data-i18n="water_modal_design_label">Design logic</span>
+              <p data-i18n="water_modal_design_text">The SolidWorks assembly helped organize the pump, base plate, dosing tower, magnetic mixing system, filtration path, and receiving container before physical assembly and testing.</p>
+            </article>
+            <article>
+              <span data-i18n="water_modal_control_label">Control & build</span>
+              <p data-i18n="water_modal_control_text">Arduino/C logic coordinated the liquid-level check, alum dispenser, DC-motor mixing, and pump-driven transfer; code adjustments corrected the dosing sequence to deliver the target alum amount.</p>
+            </article>
+          </div>
+          <h3 data-i18n="water_modal_flow_title">Process flow</h3>
+          <ol class="modal-steps">
+            <li data-i18n="water_modal_step1">Pump untreated water into the process structure.</li>
+            <li data-i18n="water_modal_step2">Use the dispenser to introduce alum for coagulation and sedimentation.</li>
+            <li data-i18n="water_modal_step3">Drive a gear-based magnetic system at the bottom so the internal magnetic mixing bar can sync with the changing magnet position.</li>
+            <li data-i18n="water_modal_step4">Pump water onward through multi-layer filtration and collect cleaner output in a final container.</li>
+          </ol>
+          <div class="modal-stack" aria-label="Technical stack">
+            <span>SolidWorks</span>
+            <span>3D Printing</span>
+            <span>Arduino</span>
+            <span>C Programming</span>
+            <span>Pump Control</span>
+            <span>Fluid Path Design</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="project-modal" id="strideworksModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <section class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="strideworksModalTitle" tabindex="-1">
+        <button class="project-modal-close" type="button" data-modal-close aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-media-grid">
+          <figure class="modal-main-image">
+            <img src="img/projects/strideworks-prototype-top.jpg" alt="Top view of recycled-material indexing station prototype with femoral head model and lever arm">
+            <figcaption data-i18n="stride_modal_fig1">Prototype top view: recyclable support, driven cap, belt transmission, lever arm, and femoral head model.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/strideworks-motor-test.jpg" alt="Motor speed versus torque graph with duty cycle comparison">
+            <figcaption data-i18n="stride_modal_fig2">Motor test plot: torque-speed behavior compared across duty cycles.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/strideworks-control-code.png" alt="Arduino C control logic excerpt for anti-stall encoder-based indexing">
+            <figcaption data-i18n="stride_modal_fig3">Control logic excerpt: state machine, dwell timing, belt-ratio conversion, and anti-stall tuning.</figcaption>
+          </figure>
+        </div>
+        <div class="modal-copy">
+          <p class="eyebrow" data-i18n="stride_modal_eyebrow">Featured project</p>
+          <h2 id="strideworksModalTitle" data-i18n="stride_modal_title">Femoral Head Indexing Station</h2>
+          <p class="modal-lead" data-i18n="stride_modal_lead">A manufacturing-cell redesign project for moving a prosthetic femoral head through laser etching and surface mapping positions. The system used recycled materials, motor characterization, encoder feedback, Arduino/C control, Excel data collection, and Python plotting. I wrote all project code independently.</p>
+          <div class="project-detail-grid">
+            <article>
+              <span data-i18n="stride_modal_mech_label">Mechanical system</span>
+              <p data-i18n="stride_modal_mech_text">A belt-and-lever transmission converted motor rotation into controlled angular indexing while keeping the femoral head restrained only at the lower contact band.</p>
+            </article>
+            <article>
+              <span data-i18n="stride_modal_control_label">Controls & testing</span>
+              <p data-i18n="stride_modal_control_text">Encoder feedback, duty-cycle testing, and control logic were used to verify position, reduce slip effects, execute dwell times, and support emergency-stop behavior.</p>
+            </article>
+          </div>
+          <h3 data-i18n="stride_modal_flow_title">Engineering workflow</h3>
+          <ol class="modal-steps">
+            <li data-i18n="stride_modal_step1">Defined the required 108° clockwise, 198° counterclockwise, and 90° clockwise indexing sequence.</li>
+            <li data-i18n="stride_modal_step2">Collected motor speed, torque, and duty-cycle data in Excel, then used Python to plot and interpret performance.</li>
+            <li data-i18n="stride_modal_step3">Programmed the microcontroller in Arduino/C to control motor movement, dwell timing, encoder-based position checks, and emergency stopping.</li>
+            <li data-i18n="stride_modal_step4">Iterated the recycled-material transmission until the mechanism could move predictably and verify position within a tight angular tolerance.</li>
+          </ol>
+          <div class="code-showcase">
+            <span data-i18n="code_showcase_label">Code highlight</span>
+            <pre><code>theta_motor = theta_output * (D_large / D_small)
+setpointDeg = outputAngleDegCW * MOTOR_DEG_PER_OUTPUT_DEG
+if (abs(outputErrDeg) > STALL_ERROR_OUTPUT_DEG) {
+  return STALL_KICK_DUTY;
+}</code></pre>
+          </div>
+          <div class="modal-stack" aria-label="Technical stack">
+            <span>Arduino/C</span>
+            <span>Encoder feedback</span>
+            <span>Motor testing</span>
+            <span>Excel analysis</span>
+            <span>Python plotting</span>
+            <span>Recyclable materials</span>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -111,6 +340,6 @@
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20260610-v7"></script>
+  <script src="script.js?v=20260610-v10"></script>
 </body>
 </html>
