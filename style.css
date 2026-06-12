@@ -3541,3 +3541,100 @@ html[lang="zh"] .tool-family p {
     font-size: 0.76rem;
   }
 }
+
+
+/* v17 additions: award/certificate imagery and favicon polish */
+.project-visual img,
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.timeline-image img[src*="ielts-score-band"] {
+  object-fit: contain;
+  background: #f7f7f4;
+  padding: 10px;
+}
+.timeline-image img[src*="international-admission-award"] {
+  object-fit: contain;
+  background: #ffffff;
+  padding: 10px;
+}
+.timeline-image img[src*="sustainable-development-certificate"] {
+  object-fit: contain;
+  background: #ffffff;
+  padding: 8px;
+}
+.inline-link i { margin-left: 0.25rem; }
+@media (max-width: 760px) {
+  .timeline-image img[src*="ielts-score-band"],
+  .timeline-image img[src*="international-admission-award"],
+  .timeline-image img[src*="sustainable-development-certificate"] {
+    padding: 6px;
+  }
+}
+
+
+/* v18 refinements */
+.timeline-image img[src*="ielts-badge"] {
+  object-fit: contain;
+  background: linear-gradient(135deg, rgba(255,255,255,0.92), rgba(238,243,255,0.92));
+  padding: 12px;
+}
+.compact-web-tile .project-visual {
+  min-height: 190px;
+  max-height: 220px;
+}
+.compact-web-tile .project-visual img {
+  object-position: top left;
+}
+@media (max-width: 760px) {
+  .compact-web-tile .project-visual {
+    min-height: 160px;
+    max-height: 190px;
+  }
+}
+
+
+/* v19 refinements: project image containment, certificate thumbnails, shorter education headline */
+.project-visual {
+  overflow: hidden;
+}
+.project-visual img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.compact-web-tile .project-visual {
+  height: clamp(150px, 17vw, 205px);
+  min-height: 0;
+  max-height: 205px;
+}
+.compact-web-tile .project-visual img {
+  object-fit: cover;
+  object-position: left top;
+}
+.timeline-image img[src*="ielts-logo-photo"] {
+  object-fit: cover;
+  object-position: center;
+  background: #f3f6fb;
+  padding: 0;
+}
+.timeline-image img[src*="sustainable-development-certificate-zoom"] {
+  object-fit: cover;
+  object-position: center;
+  background: #ffffff;
+  padding: 0;
+}
+@media (max-width: 760px) {
+  .compact-web-tile .project-visual {
+    height: 160px;
+    max-height: 160px;
+  }
+  .timeline-image img[src*="ielts-logo-photo"],
+  .timeline-image img[src*="sustainable-development-certificate-zoom"] {
+    padding: 0;
+  }
+}
