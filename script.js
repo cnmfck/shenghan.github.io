@@ -31,14 +31,16 @@ const translations = {
     "overview_projects_title": "Projects",
     "overview_projects_text": "Selected technical work, company website work, and portfolio-building projects.",
     "overview_tools_title": "Tools",
-    "overview_tools_text": "CAD/engineering software, programming, Office, and Adobe skills.",
+    "overview_tools_text": "CAD/engineering software, programming, shop-floor manufacturing exposure, Office, and Adobe skills.",
     "home_about_eyebrow": "About",
     "home_about_title": "A concise engineering portfolio built for recruiters.",
     "home_about_text1": "I study Mechanical & Materials Engineering (MME) at Queen's University Smith Engineering, with the Materials Option. I am preparing for third year after completing second year with a 4.1/4.3 cGPA.",
     "home_about_text2": "This site is designed as a quick, searchable portfolio: the homepage gives the overview, while detailed pages show education, tools, projects, and a filtered timeline of experience and awards.",
     "home_tools_eyebrow": "Tool overview",
-    "home_tools_title": "A practical toolkit across engineering, code, documents, and media.",
+    "home_tools_title": "A practical toolkit across engineering, code, manufacturing exposure, documents, and media.",
     "home_tools_link": "Open detailed tools page",
+    "home_tools_shop_label": "Shop-floor",
+    "home_tools_shop_text": "Injection molding · Welding exposure · Pipe heat-fusion · Assembly",
     "education_eyebrow": "Education",
     "education_title": "Academic foundation with an engineering focus.",
     "education_intro": "A fuller academic page for the details that would make the homepage too crowded.",
@@ -137,6 +139,7 @@ const translations = {
     "filter_certificate": "Certificates",
     "filter_leadership": "Leadership",
     "filter_project": "Projects",
+    "timeline_expand_project": "Click to view project details",
     "cat_internship": "Internship",
     "cat_award": "Award",
     "cat_certificate": "Certificate",
@@ -273,17 +276,83 @@ const translations = {
     "project4_title": "Personal Portfolio Website",
     "project4_text": "Designed and deployed a responsive, bilingual personal portfolio with separated HTML, CSS, and JavaScript files plus search-friendly metadata.",
     "tools_eyebrow": "Tools",
-    "tools_title": "A toolkit page that starts with engineering software.",
-    "tools_intro": "This page puts CAD and engineering software first, then programming, Office, and Adobe for supporting documentation and media work.",
-    "tool_family_office_label": "Documents & presentations",
+    "tools_title": "Engineering Process",
+    "tools_intro": "Define · Design · Build · Test · Communicate",
+    "process_step_problem": "Problem",
+    "process_step_concept": "Concept",
+    "process_step_cad": "CAD",
+    "process_step_code": "Code",
+    "process_step_test": "Test",
+    "process_step_report": "Report",
+    "process_showcase_title": "Methods before tools.",
+    "process_showcase_text": "I use tools inside a full engineering workflow: define the problem, compare concepts, model, build, test, analyze, and communicate clear results.",
+    "method_morphological": "Morphological Analysis",
+    "method_decision": "Decision Matrix",
+    "method_gantt": "Gantt Planning",
+    "method_flowchart": "Flowcharting",
+    "method_cad_iteration": "CAD Iteration",
+    "method_simulation": "Simulation",
+    "method_testing": "Experimental Testing",
+    "method_data_viz": "Data Visualization",
+    "method_reporting": "Technical Reporting",
+    "tool_engineering_title": "CAD · Simulation · Prototyping",
+    "tool_code_title": "Code · Data · Control",
+    "tool_office_title": "Reports · Diagrams · Data",
+    "tool_adobe_title": "Adobe · Visual Communication",
+    "cap_water_flow": "Water-treatment control flow",
+    "cap_harvestar_matrix": "HarveStar decision matrix",
+    "cap_index_matrix": "Indexing-station concept scoring",
+    "cap_gantt": "Project planning Gantt chart",
+    "cap_csa_bom": "CSA project BOM",
+    "cap_long_flow": "Long-form program flowchart",
+    "cap_system_map": "Systems pathway map",
+    "cap_dosing_cad": "SolidWorks dosing assembly",
+    "cap_early_cad": "Early-stage CAD concept",
+    "cap_fea_strain": "SolidWorks FEA strain result",
+    "cap_water_cad": "Water-system CAD layout",
+    "cap_water_tank": "Water prototype electronics",
+    "cap_effector_stress": "End-effector stress simulation",
+    "cap_blender": "Blender model & shader workflow",
+    "cap_python_code": "Python root-finding code",
+    "cap_python_contour": "Python contour visualization",
+    "cap_encoder_data": "Encoder-derived motion data",
+    "cap_arduino_serial": "Arduino serial plotting",
+    "cap_matlab_3d": "MATLAB 3D trajectory",
+    "cap_matlab_path": "MATLAB particle path",
+    "cap_matlab_energy": "MATLAB energy plot",
+    "cap_circuit_sim": "Circuit simulation",
+    "cap_rc_filter": "RC filter response plot",
+    "cap_oscilloscope": "Oscilloscope waveform",
+    "cap_injection": "Injection molding operation & maintenance",
+    "cap_welding": "Welding shop session",
+    "cap_hardness": "Hardness testing",
+    "cap_load_test": "Deformation-based load test",
+    "cap_creep": "Creep-testing setup",
+    "cap_dogbone": "Dog-bone material sample",
+    "cap_materials_data": "Materials data analysis",
+    "cap_visio": "Visio workflow diagram",
+    "cap_design_schematic": "Design schematic",
+    "cap_harvestar_flow": "HarveStar control flow",
+    "cap_premiere": "Premiere Pro timeline",
+    "cap_fl": "FL Studio arrangement",
+    "tool_family_office_label": "Documentation & systems modeling",
     "tool_family_adobe_label": "Creative media",
     "tool_family_engineering_label": "Engineering software",
-    "tool_family_code_label": "Programming",
+    "tool_family_code_label": "Programming & controls",
     "tool_image_placeholder": "Future screenshot / sample work",
-    "tool_office_text": "Useful for reports, slide decks, tables, data checks, and clear professional documentation.",
-    "tool_adobe_text": "Supports image editing, video editing, audio cleanup, and polished visual communication.",
-    "tool_engineering_text": "A practical engineering stack for mechanical design, drafting, numerical analysis, prototyping, and technical modeling.",
-    "tool_code_text": "Useful for automation, computation, portfolio development, and small tools that make engineering work easier to inspect.",
+    "tool_office_text": "Reports, slides, flowcharts, matrices, and test tables live here—the things that make a design readable to teammates, instructors, and future reviewers.",
+    "tool_adobe_text": "Used when a project needs to look and sound finished: edited images, video timelines, cleaned audio, and presentation visuals.",
+    "tool_engineering_text": "From parts and assemblies to simulation and prototype planning, these tools help move ideas toward things that can be built and tested.",
+    "tool_code_text": "Control code, data scripts, and web files sit in the same workflow: make the device move, make the data readable, and make the result easier to check.",
+    "tool_family_shop_label": "Manufacturing & shop-floor exposure",
+    "tool_shop_title": "Hands-on fabrication · maintenance · production",
+    "tool_shop_chip_injection": "Screw-type injection molding operation & maintenance support",
+    "tool_shop_chip_welding": "Welding and fixture-repair exposure",
+    "tool_shop_chip_pipe": "Thermoplastic pipe heat-fusion joining",
+    "tool_shop_chip_fastening": "Fixture and shelving installation",
+    "tool_shop_chip_electrical": "Light wiring and maintenance support",
+    "tool_shop_chip_proto": "Prototype assembly and troubleshooting",
+    "tool_shop_text": "Hands-on work from factory floors, workshops, and repair situations: injection molding operation, welding and fixture repair, heat-fused pipe joints, fastening shelves and brackets, light wiring support, small repairs, and prototype assembly.",
     "contact_eyebrow": "Contact",
     "contact_title": "Let's talk about engineering opportunities.",
     "contact_intro": "Open to internship conversations, technical mentorship roles, engineering-related projects, and professional networking.",
@@ -340,6 +409,8 @@ const translations = {
     "home_tools_eyebrow": "工具概览",
     "home_tools_title": "覆盖工程、代码、文档与媒体的实用工具组合。",
     "home_tools_link": "打开详细工具页面",
+    "home_tools_shop_label": "生产现场",
+    "home_tools_shop_text": "注塑操作 · 焊接接触 · 管件热熔 · 装配维修",
     "education_eyebrow": "教育",
     "education_title": "以工程能力为核心的学术基础。",
     "education_intro": "更详细的教育页面，把首页会显得拥挤的信息单独展开。",
@@ -438,6 +509,7 @@ const translations = {
     "filter_certificate": "证书",
     "filter_leadership": "领导力",
     "filter_project": "项目",
+    "timeline_expand_project": "点击查看项目详情",
     "cat_internship": "实习",
     "cat_award": "奖项",
     "cat_certificate": "证书",
@@ -574,17 +646,83 @@ const translations = {
     "project4_title": "个人作品集网站",
     "project4_text": "设计并上线响应式双语个人作品集，HTML、CSS、JavaScript 文件分离，并加入便于搜索的 metadata。",
     "tools_eyebrow": "工具",
-    "tools_title": "以工程软件为优先展示的工具页面。",
-    "tools_intro": "这里把 CAD 与工程软件放在最前面，其次是编程、Office，最后是支持视觉表达的 Adobe 工具。",
-    "tool_family_office_label": "文档与演示",
+    "tools_title": "工程流程",
+    "tools_intro": "定义 · 方案 · 建模 · 制作 · 测试 · 表达",
+    "process_step_problem": "定义问题",
+    "process_step_concept": "方案构思",
+    "process_step_cad": "建模设计",
+    "process_step_code": "控制代码",
+    "process_step_test": "测试验证",
+    "process_step_report": "文档表达",
+    "process_showcase_title": "先看怎么做，再看用什么做。",
+    "process_showcase_text": "我会把工具放进完整的工程流程里使用：先拆问题、比方案，再建模型、写控制、搭原型、跑测试，最后把结果讲清楚。",
+    "method_morphological": "形态分析",
+    "method_decision": "决策矩阵",
+    "method_gantt": "甘特图规划",
+    "method_flowchart": "流程图",
+    "method_cad_iteration": "CAD 迭代",
+    "method_simulation": "仿真分析",
+    "method_testing": "实验测试",
+    "method_data_viz": "数据可视化",
+    "method_reporting": "技术报告",
+    "tool_engineering_title": "CAD · 仿真 · 原型制作",
+    "tool_code_title": "代码 · 数据 · 控制",
+    "tool_office_title": "报告 · 图解 · 数据",
+    "tool_adobe_title": "Adobe · 视觉表达",
+    "cap_water_flow": "净水系统控制流程",
+    "cap_harvestar_matrix": "HarveStar 决策矩阵",
+    "cap_index_matrix": "定位装置方案评分",
+    "cap_gantt": "项目甘特图",
+    "cap_csa_bom": "CSA 项目物料成本",
+    "cap_long_flow": "长流程程序图",
+    "cap_system_map": "系统路径图",
+    "cap_dosing_cad": "SolidWorks 投料机构",
+    "cap_early_cad": "早期 CAD 方案",
+    "cap_fea_strain": "SolidWorks 应变仿真",
+    "cap_water_cad": "净水系统 CAD 布局",
+    "cap_water_tank": "净水原型电子部分",
+    "cap_effector_stress": "末端执行器应力仿真",
+    "cap_blender": "Blender 模型与材质节点",
+    "cap_python_code": "Python 数值求解代码",
+    "cap_python_contour": "Python 等高线可视化",
+    "cap_encoder_data": "编码器运动数据",
+    "cap_arduino_serial": "Arduino 串口绘图",
+    "cap_matlab_3d": "MATLAB 三维轨迹",
+    "cap_matlab_path": "MATLAB 质心相对轨迹",
+    "cap_matlab_energy": "MATLAB 能量曲线",
+    "cap_circuit_sim": "电路仿真",
+    "cap_rc_filter": "RC 滤波响应曲线",
+    "cap_oscilloscope": "示波器波形",
+    "cap_injection": "注塑机操作与维护",
+    "cap_welding": "焊接车间实践",
+    "cap_hardness": "硬度测试",
+    "cap_load_test": "变形载荷测试",
+    "cap_creep": "蠕变测试装置",
+    "cap_dogbone": "狗骨试样",
+    "cap_materials_data": "材料数据分析",
+    "cap_visio": "Visio 工作流程图",
+    "cap_design_schematic": "设计示意图",
+    "cap_harvestar_flow": "HarveStar 控制流程",
+    "cap_premiere": "Premiere Pro 时间线",
+    "cap_fl": "FL Studio 编曲界面",
+    "tool_family_office_label": "文档与系统建模",
     "tool_family_adobe_label": "创意媒体",
     "tool_family_engineering_label": "工程软件",
-    "tool_family_code_label": "编程",
+    "tool_family_code_label": "编程与控制",
     "tool_image_placeholder": "未来截图 / 作品样例",
-    "tool_office_text": "用于报告、演示、表格、数据检查，以及清晰专业的文档输出。",
-    "tool_adobe_text": "支持图片处理、视频剪辑、音频整理与更精致的视觉表达。",
-    "tool_engineering_text": "面向机械设计、制图、数值分析、原型制作与技术建模的实用工程工具组合。",
-    "tool_code_text": "用于自动化、计算、作品集开发，以及让工程工作更容易检查的小工具。",
+    "tool_office_text": "报告、PPT、流程图、决策矩阵和测试数据都归在这里。它们负责把设计过程讲明白，让别人看得懂我为什么这样做。",
+    "tool_adobe_text": "用来把项目展示得更完整：图片修整、视频剪辑、音频处理，还有作品集里的视觉包装。",
+    "tool_engineering_text": "从零件、装配到仿真和原型规划，我主要用它们把想法推到能制造、能测试的状态。",
+    "tool_code_text": "代码不只是写在屏幕上：它要让设备动起来，让数据跑出来，也让结果能被别人检查。",
+    "tool_family_shop_label": "制造与生产现场经验",
+    "tool_shop_title": "动手制作 · 现场维护 · 生产流程",
+    "tool_shop_chip_injection": "螺杆式注塑机操作与维护协助",
+    "tool_shop_chip_welding": "焊接与工装维修接触",
+    "tool_shop_chip_pipe": "塑料管件热熔连接",
+    "tool_shop_chip_fastening": "货架与固定件安装",
+    "tool_shop_chip_electrical": "轻量电线维修协助",
+    "tool_shop_chip_proto": "原型装配与故障排查",
+    "tool_shop_text": "这些是我跟着现场师傅和项目团队一点点做出来的经验：操作螺杆式注塑机，协助更换螺杆加热圈等部件，也做过焊接、管件热熔、货架固定、简单接线、小修小补和原型装配。能看懂图纸和代码，也愿意真正上手把东西做出来。",
     "contact_eyebrow": "联系",
     "contact_title": "欢迎交流工程相关机会。",
     "contact_intro": "开放实习、技术导师、工程相关项目，以及职业交流机会。",
@@ -746,6 +884,41 @@ const initProjectModals = () => {
   });
 };
 
+
+const initToolConveyors = () => {
+  const tracks = document.querySelectorAll(".conveyor-track");
+  if (!tracks.length) return;
+
+  const setup = (track) => {
+    if (track.dataset.loopReady === "true") return;
+    const originals = Array.from(track.children).filter((child) => !child.dataset.clone);
+    if (!originals.length) return;
+
+    const originalWidth = track.scrollWidth;
+    if (!originalWidth) return;
+    track.style.setProperty("--scroll-distance", `${originalWidth}px`);
+
+    let totalWidth = originalWidth;
+    const parentWidth = track.parentElement?.clientWidth || window.innerWidth;
+    while (totalWidth < originalWidth + parentWidth + 80) {
+      originals.forEach((node) => {
+        const clone = node.cloneNode(true);
+        clone.dataset.clone = "true";
+        clone.setAttribute("aria-hidden", "true");
+        track.appendChild(clone);
+      });
+      totalWidth += originalWidth;
+    }
+
+    const pxPerSecond = 42;
+    const duration = Math.max(18, originalWidth / pxPerSecond);
+    track.style.setProperty("--conveyor-duration", `${duration}s`);
+    track.dataset.loopReady = "true";
+  };
+
+  tracks.forEach(setup);
+};
+
 const initLanguageButton = () => {
   const toggleBtn = document.getElementById("langToggleBtn");
   toggleBtn?.addEventListener("click", () => {
@@ -759,5 +932,6 @@ window.addEventListener("DOMContentLoaded", () => {
   initReveal();
   initTimelineFilter();
   initProjectModals();
+  initToolConveyors();
   initLanguageButton();
 });

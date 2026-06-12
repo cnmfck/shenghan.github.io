@@ -2859,3 +2859,685 @@ html[lang="zh"] .modal-copy h2 {
     line-height: 1.26;
   }
 }
+
+
+/* ---------- V11 shop-floor skills, mobile education, and modal usability ---------- */
+html,
+body {
+  overflow-x: hidden;
+}
+
+.priority-shop {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.74), rgba(255,255,255,0.48)),
+    radial-gradient(circle at 12% 20%, rgba(196, 138, 53, 0.18), transparent 38%),
+    radial-gradient(circle at 92% 86%, rgba(47, 125, 91, 0.16), transparent 42%);
+}
+
+.shop-family {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,255,255,0.58)),
+    radial-gradient(circle at 4% 0%, rgba(196, 138, 53, 0.18), transparent 36%),
+    radial-gradient(circle at 92% 100%, rgba(47, 125, 91, 0.17), transparent 40%);
+}
+
+.shop-family::before {
+  background: linear-gradient(90deg, var(--gold), var(--green));
+}
+
+.shop-family .tool-family-head i {
+  background: linear-gradient(135deg, var(--gold-dark), var(--green));
+}
+
+.shop-chip-grid span {
+  background: rgba(47, 125, 91, 0.1);
+}
+
+.timeline-project-trigger {
+  cursor: pointer;
+}
+
+.timeline-project-trigger .timeline-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.timeline-project-trigger:hover .timeline-card,
+.timeline-project-trigger:focus-visible .timeline-card {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px rgba(17, 24, 39, 0.16);
+  border-color: rgba(196, 138, 53, 0.38);
+}
+
+.timeline-expand-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: var(--gold-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.timeline-expand-hint::after {
+  content: "↗";
+}
+
+.project-modal,
+.project-modal * {
+  box-sizing: border-box;
+}
+
+.project-modal-panel {
+  min-width: 0;
+}
+
+.modal-copy,
+.modal-media-grid,
+.project-detail-grid,
+.code-showcase {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 820px) {
+  .academic-arc-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .arc-card {
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .arc-card h3 {
+    font-size: clamp(1.9rem, 9vw, 3rem);
+    line-height: 1;
+  }
+
+  .metric-badge-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .foundation-map {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .subject-sparkline {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 560px) {
+  .metric-badge-grid,
+  .foundation-map {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-map div {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .project-modal {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: calc(env(safe-area-inset-top, 0px) + 86px) 10px calc(env(safe-area-inset-bottom, 0px) + 18px);
+    place-items: initial;
+  }
+
+  .project-modal-panel {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    overflow: visible;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 26px;
+  }
+
+  .project-modal-close {
+    position: sticky;
+    top: 8px;
+    right: auto;
+    margin-left: auto;
+    grid-column: 1;
+    width: 42px;
+    height: 42px;
+  }
+
+  .modal-media-grid,
+  .project-detail-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .modal-media-grid figure,
+  .modal-main-image {
+    grid-column: 1;
+  }
+
+  .modal-media-grid img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .modal-copy {
+    padding: 0 2px 8px;
+  }
+
+  .modal-copy h2 {
+    font-size: clamp(1.58rem, 8vw, 2.35rem);
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+  }
+
+  .modal-lead {
+    font-size: 0.98rem;
+  }
+
+  .modal-stack {
+    gap: 8px;
+  }
+
+  .code-showcase pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .code-showcase code {
+    font-size: 0.72rem;
+  }
+}
+
+
+/* ---------- V12 tools: engineering process + visual conveyors ---------- */
+.tools-page-main {
+  padding-bottom: 72px;
+}
+
+.tools-process-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: 28px;
+  align-items: end;
+}
+
+.tools-process-hero h1 {
+  max-width: 980px;
+  font-size: clamp(3.15rem, 7.4vw, 7rem);
+}
+
+.tools-process-hero p:last-child {
+  max-width: 850px;
+}
+
+.process-board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid rgba(17,24,39,0.1);
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,255,255,0.48)),
+    radial-gradient(circle at 10% 16%, rgba(196,138,53,0.16), transparent 32%),
+    radial-gradient(circle at 86% 92%, rgba(49,101,191,0.12), transparent 42%);
+  box-shadow: var(--shadow-soft);
+}
+
+.process-node {
+  position: relative;
+  min-height: 104px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.68);
+  border: 1px solid rgba(17,24,39,0.08);
+  overflow: hidden;
+}
+
+.process-node::after {
+  content: "";
+  position: absolute;
+  inset: auto 14px 12px auto;
+  width: 34px;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.18;
+}
+
+.process-node span {
+  color: var(--gold-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.process-node strong {
+  color: var(--ink);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  letter-spacing: -0.04em;
+}
+
+.process-showcase {
+  margin-top: 34px;
+  padding: 26px;
+  border-radius: 34px;
+  border: 1px solid rgba(17,24,39,0.09);
+  background: rgba(255,255,255,0.56);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.section-heading-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(300px, 0.62fr);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.section-heading-row h2 {
+  margin: 0;
+  max-width: 780px;
+  color: var(--ink);
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.section-heading-row p:last-child {
+  margin: 0;
+  color: var(--ink-soft);
+  font-weight: 650;
+}
+
+.tool-conveyor {
+  --shot-width: 250px;
+  --shot-height: 170px;
+  position: relative;
+  margin: 20px 0 4px;
+  padding: 12px;
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.78), rgba(255,255,255,0.38)),
+    rgba(17,24,39,0.045);
+  border: 1px solid rgba(17,24,39,0.08);
+}
+
+.tool-conveyor::before,
+.tool-conveyor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 72px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tool-conveyor::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(246,244,239,0.96), rgba(246,244,239,0));
+}
+
+.tool-conveyor::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(246,244,239,0.96), rgba(246,244,239,0));
+}
+
+.conveyor-track {
+  display: flex;
+  width: max-content;
+  gap: 14px;
+  animation: toolConveyor 44s linear infinite;
+  will-change: transform;
+}
+
+.tool-family:nth-child(2n) .conveyor-track {
+  animation-duration: 52s;
+}
+
+.tool-family:nth-child(3n) .conveyor-track {
+  animation-duration: 60s;
+}
+
+.tool-conveyor:hover .conveyor-track {
+  animation-play-state: paused;
+}
+
+.tool-shot {
+  position: relative;
+  flex: 0 0 var(--shot-width);
+  width: var(--shot-width);
+  height: var(--shot-height);
+  margin: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 14px 34px rgba(17,24,39,0.12);
+  border: 1px solid rgba(255,255,255,0.8);
+}
+
+.tool-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.96) contrast(1.02);
+}
+
+.tool-shot figcaption {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 14px;
+  color: white;
+  background: rgba(17,24,39,0.74);
+  backdrop-filter: blur(10px);
+  font-size: 0.72rem;
+  line-height: 1.25;
+  font-weight: 850;
+}
+
+@keyframes toolConveyor {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 7px)); }
+}
+
+.process-method-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.process-method-grid span {
+  padding: 9px 13px;
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(17,24,39,0.066);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.office-family .tool-family-head i {
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+}
+
+.tool-family {
+  backdrop-filter: blur(12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .conveyor-track {
+    animation: none;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .tools-process-hero,
+  .section-heading-row {
+    grid-template-columns: 1fr;
+  }
+
+  .process-board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .tools-process-hero h1 {
+    font-size: clamp(2.45rem, 13vw, 4.2rem);
+    line-height: 0.98;
+  }
+
+  .process-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-radius: 26px;
+    padding: 12px;
+  }
+
+  .process-node {
+    min-height: 86px;
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .process-showcase {
+    padding: 18px;
+    border-radius: 28px;
+  }
+
+  .section-heading-row h2 {
+    font-size: clamp(1.9rem, 10vw, 3.1rem);
+  }
+
+  .tool-conveyor {
+    --shot-width: 210px;
+    --shot-height: 146px;
+    border-radius: 23px;
+    padding: 10px;
+  }
+
+  .tool-conveyor::before,
+  .tool-conveyor::after {
+    width: 42px;
+  }
+
+  .tool-family h2 {
+    font-size: clamp(1.75rem, 8vw, 2.45rem);
+  }
+}
+
+html[lang="zh"] .tools-process-hero h1 {
+  font-size: clamp(2.5rem, 6.2vw, 5.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+
+html[lang="zh"] .section-heading-row h2 {
+  font-family: "Noto Sans SC", "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(1.9rem, 4.2vw, 3.6rem);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  font-weight: 800;
+}
+
+html[lang="zh"] .process-node strong {
+  letter-spacing: -0.02em;
+}
+
+
+/* ---------- V13 tools: compact process hero + non-duplicated conveyors ---------- */
+.compact-process-hero {
+  align-items: center;
+  padding-top: clamp(44px, 7vw, 84px);
+  padding-bottom: clamp(28px, 5vw, 54px);
+}
+
+.compact-process-hero h1 {
+  font-size: clamp(3.2rem, 8vw, 8rem);
+  line-height: 0.88;
+  max-width: 900px;
+}
+
+.process-mini-line {
+  margin-top: 18px;
+  max-width: 720px;
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.5vw, 1.24rem);
+  font-weight: 750;
+  letter-spacing: 0.01em;
+}
+
+.compact-heading-row h2 {
+  font-size: clamp(2rem, 3.5vw, 3.35rem);
+}
+
+.conveyor-track {
+  animation-name: toolConveyorSweep;
+  animation-duration: 34s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.tool-family:nth-child(2n) .conveyor-track {
+  animation-duration: 40s;
+}
+
+.tool-family:nth-child(3n) .conveyor-track {
+  animation-duration: 46s;
+}
+
+@keyframes toolConveyorSweep {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% + min(78vw, 1020px))); }
+}
+
+.tool-shot img {
+  object-position: center;
+}
+
+.process-showcase .tool-conveyor {
+  --shot-width: 280px;
+  --shot-height: 178px;
+}
+
+.tool-family .tool-conveyor {
+  --shot-width: 240px;
+  --shot-height: 164px;
+}
+
+@media (max-width: 900px) {
+  .compact-process-hero h1 {
+    font-size: clamp(3rem, 12vw, 5.2rem);
+  }
+  .compact-process-hero {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .compact-process-hero h1 {
+    font-size: clamp(2.55rem, 15vw, 4.1rem);
+    line-height: 0.94;
+  }
+  .process-mini-line {
+    font-size: 0.98rem;
+    margin-top: 12px;
+  }
+  .process-showcase .tool-conveyor,
+  .tool-family .tool-conveyor {
+    --shot-width: 210px;
+    --shot-height: 142px;
+  }
+}
+
+html[lang="zh"] .compact-process-hero h1 {
+  font-size: clamp(2.8rem, 7.2vw, 6.4rem);
+  line-height: 1.02;
+}
+
+
+/* ---------- V14 tools: continuous equal-speed looping + cleaner spacing ---------- */
+.process-showcase {
+  margin-bottom: clamp(54px, 6vw, 86px);
+}
+
+.process-showcase .section-heading-row {
+  margin-bottom: 26px;
+}
+
+.process-showcase .section-heading-row h2 {
+  margin-top: 0;
+}
+
+.conveyor-track {
+  animation-name: toolConveyorLoop;
+  animation-duration: var(--conveyor-duration, 32s);
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.tool-family:nth-child(2n) .conveyor-track,
+.tool-family:nth-child(3n) .conveyor-track {
+  animation-duration: var(--conveyor-duration, 32s);
+}
+
+@keyframes toolConveyorLoop {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-1 * var(--scroll-distance, 50%))); }
+}
+
+/* Keep the first methods block separate from detailed software cards. */
+.tool-wall {
+  margin-top: 8px;
+}
+
+/* Make tool page Chinese text line breaks feel less cramped. */
+html[lang="zh"] .process-showcase .section-heading-row h2 {
+  font-size: clamp(1.75rem, 3.6vw, 3rem);
+  line-height: 1.18;
+}
+
+html[lang="zh"] .process-showcase .section-heading-row p:last-child,
+html[lang="zh"] .tool-family p {
+  line-height: 1.85;
+}
+
+@media (max-width: 900px) {
+  .process-showcase {
+    margin-bottom: 48px;
+  }
+  .process-showcase .section-heading-row {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 620px) {
+  .process-showcase {
+    margin-top: 26px;
+    margin-bottom: 42px;
+    padding: 16px;
+  }
+  .process-showcase .section-heading-row {
+    margin-bottom: 18px;
+  }
+  .process-showcase .section-heading-row h2 {
+    font-size: clamp(1.85rem, 9vw, 2.65rem);
+    line-height: 1;
+  }
+  .process-showcase .section-heading-row p:last-child {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .tool-conveyor {
+    --shot-width: min(72vw, 240px);
+    --shot-height: 148px;
+    margin-top: 14px;
+  }
+  .tool-family .tool-conveyor {
+    --shot-width: min(72vw, 230px);
+    --shot-height: 150px;
+  }
+  .process-method-grid span,
+  .tool-chip-grid span {
+    font-size: 0.76rem;
+  }
+}
