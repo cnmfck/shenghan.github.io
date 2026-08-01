@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20260610-v19">
+  <link rel="stylesheet" href="style.css?v=20260801-v23">
 </head>
 <body data-page="timeline">
   <header class="site-header" id="siteHeader">
@@ -59,9 +59,7 @@
 
   <main class="page-main timeline-page">
     <section class="page-hero reveal">
-      <p class="eyebrow" data-i18n="timeline_eyebrow">Experience & Awards</p>
-      <h1 data-i18n="timeline_title">A visual path from academic growth to applied engineering work.</h1>
-      <p data-i18n="timeline_intro">Use the filter panel to separate internships, awards, certificates, leadership, and projects. Patent and certificate entries can be expanded with document images over time.</p>
+      <h1 data-i18n="timeline_title">A visual path from newest work to earlier academic growth.</h1>
     </section>
 
     <section class="timeline-layout">
@@ -94,16 +92,16 @@
       </aside>
 
       <div class="timeline-stream">
-        <article class="timeline-item reveal category-leadership" data-category="leadership">
-          <div class="timeline-date">2026 May – Present</div>
+        <article class="timeline-item reveal category-certificate" data-category="certificate">
+          <div class="timeline-date">2026 Aug</div>
           <div class="timeline-card">
-            <div class="timeline-image"><img src="img/timeline/smith-engineering-sign.jpg" alt="Smith Engineering sign at Queen's University"></div>
+            <div class="timeline-image"><img src="img/timeline/net-zero-101-certificate.png" alt="UNU-IAS Net Zero 101 certificate for Shenghan Gao" data-i18n-alt="timeline_net_zero_alt" loading="lazy" decoding="async"></div>
             <div class="timeline-body">
-              <span class="timeline-category" data-i18n="cat_leadership">Leadership</span>
-              <h2 data-i18n="timeline_smith_mentor_title">Smith Engineering International Mentor</h2>
-              <p class="timeline-meta" data-i18n="timeline_smith_mentor_meta">Queen's University Smith Engineering · May 2026 – Present · Paid position</p>
-              <p data-i18n="timeline_smith_mentor_text">Support incoming international engineering students through outreach, onboarding guidance, follow-ups, and resource navigation as part of the QSuccess Engineering mentorship program.</p>
-              <a class="inline-link" href="https://smithengineering.queensu.ca/student-experience/qsuccess-engineering-international-student-mentorship-program.html" target="_blank" rel="noopener" data-i18n="timeline_smith_mentor_link">Program page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span class="timeline-category" data-i18n="cat_certificate">Certificate</span>
+              <h2 data-i18n="timeline_net_zero_title">Net Zero 101: What, Why and How</h2>
+              <p class="timeline-meta" data-i18n="timeline_net_zero_meta">UNU-IAS · Aug 2026</p>
+              <p data-i18n="timeline_net_zero_text">Completed the UNU-IAS e-learning course covering the meaning of net zero, why it matters, and the main approaches used to move from targets to implementation.</p>
+              <a class="inline-link" href="docs/certificates/net-zero-101.pdf" target="_blank" rel="noopener" data-i18n="timeline_view_pdf">View PDF</a>
             </div>
           </div>
         </article>
@@ -111,7 +109,7 @@
         <article class="timeline-item reveal category-project" data-category="project">
           <div class="timeline-date">2026 Jun</div>
           <div class="timeline-card">
-            <div class="timeline-image"><span data-i18n="timeline_img_placeholder">Image placeholder</span></div>
+            <div class="timeline-image"><img src="img/projects/gaoco-company-website.png" alt="Gaoco.org precision gear product page" data-i18n-alt="gaoco_image_alt" loading="lazy" decoding="async"></div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_project">Project</span>
               <h2 data-i18n="timeline_gaoco_title">Gaoco.org Company Website</h2>
@@ -135,6 +133,40 @@
           </div>
         </article>
 
+        <article class="timeline-item reveal category-internship" data-category="internship">
+          <div class="timeline-date">2026 May – Aug</div>
+          <div class="timeline-card">
+            <div class="timeline-image research-visual">
+              <i class="fa-solid fa-flask-vial" aria-hidden="true"></i>
+              <span data-i18n="timeline_materials_ra_visual">Ceramic materials R&amp;D</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-category" data-i18n="cat_internship">Internship</span>
+              <h2 data-i18n="timeline_materials_ra_title">Materials Research Assistant</h2>
+              <p class="timeline-meta" data-i18n="timeline_materials_ra_meta">Suzhou Jinci Semiconductor Materials Co., Ltd. · Suzhou, Jiangsu, China · May–Aug 2026</p>
+              <ul class="timeline-bullets">
+                <li data-i18n="timeline_materials_ra_b1">Reviewed literature on advanced ceramics and semiconductor applications, then assisted with material batching and sample preparation.</li>
+                <li data-i18n="timeline_materials_ra_b2">Supported sample testing and measurement logging, organizing data to compare formulations and processing conditions.</li>
+                <li data-i18n="timeline_materials_ra_b3">Maintained experiment records, summarized interim findings, and helped the research team with routine laboratory work.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal category-leadership" data-category="leadership">
+          <div class="timeline-date">2026 May – Present</div>
+          <div class="timeline-card">
+            <div class="timeline-image"><img src="img/timeline/smith-engineering-sign.jpg" alt="Smith Engineering sign at Queen's University"></div>
+            <div class="timeline-body">
+              <span class="timeline-category" data-i18n="cat_leadership">Leadership</span>
+              <h2 data-i18n="timeline_smith_mentor_title">Smith Engineering International Mentor</h2>
+              <p class="timeline-meta" data-i18n="timeline_smith_mentor_meta">Queen's University Smith Engineering · May 2026 – Present · Paid position</p>
+              <p data-i18n="timeline_smith_mentor_text">Support incoming international engineering students through outreach, onboarding guidance, follow-ups, and resource navigation as part of the QSuccess Engineering mentorship program.</p>
+              <a class="inline-link" href="https://smithengineering.queensu.ca/student-experience/qsuccess-engineering-international-student-mentorship-program.html" target="_blank" rel="noopener" data-i18n="timeline_smith_mentor_link">Program page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
 
         <article class="timeline-item reveal category-project timeline-project-trigger" data-category="project" data-project-modal="strideworksModal" role="button" tabindex="0" aria-controls="strideworksModal">
           <div class="timeline-date">2026 Jan – Apr</div>
@@ -144,7 +176,7 @@
               <span class="timeline-category" data-i18n="cat_project">Project</span>
               <h2 data-i18n="timeline_strideworks_title">Femoral Head Indexing Station</h2>
               <p class="timeline-meta" data-i18n="timeline_strideworks_meta">APSC 200 · StrideWorks Prosthetics manufacturing cell</p>
-              <p data-i18n="timeline_strideworks_text">Built a recyclable-material indexing mechanism with encoder feedback, Arduino/C control, motor testing, Excel data collection, Python plotting, and emergency-stop logic. Project code was written independently.</p>
+              <p data-i18n="timeline_strideworks_text">Built a recycled-material femoral-head indexing mechanism and completed the motor testing, encoder feedback, Arduino/C control, Excel data organization, and Python plotting. I wrote the project code independently.</p>
               <span class="timeline-expand-hint" data-i18n="timeline_expand_project">Click to view project details</span>
             </div>
           </div>
@@ -167,7 +199,9 @@
         <article class="timeline-item reveal category-certificate" data-category="certificate">
           <div class="timeline-date">2025 Jun</div>
           <div class="timeline-card">
-            <div class="timeline-image"><span data-i18n="timeline_img_placeholder">Image placeholder</span></div>
+            <div class="timeline-image">
+              <img src="img/timeline/china-c1-driver-license.png" alt="China C1 driver's license cover" data-i18n-alt="timeline_driver_image_alt" width="611" height="388" loading="lazy" decoding="async">
+            </div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_certificate">Certificate</span>
               <h2 data-i18n="timeline_driver_title">China C1 Driver's License</h2>
@@ -186,8 +220,8 @@
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_project">Project</span>
               <h2 data-i18n="timeline_harvest_title">HarveStar Lunar Harvest End Effector</h2>
-              <p class="timeline-meta" data-i18n="timeline_harvest_meta">CSA client project · Queen's University · APSC 103</p>
-              <p data-i18n="timeline_harvest_text">Designed and tested a crab-claw end-effector prototype for lunar greenhouse harvesting. I completed the project code and SolidWorks simulations; the CAD model itself was modeled by a teammate.</p>
+              <p class="timeline-meta" data-i18n="timeline_harvest_meta">Canadian Space Agency project · Queen's University · APSC 103</p>
+              <p data-i18n="timeline_harvest_text">Designed and tested a crab-claw end effector for lunar greenhouse harvesting. I wrote the control code and completed the SolidWorks simulations; a teammate created the CAD model.</p>
               <span class="timeline-expand-hint" data-i18n="timeline_expand_project">Click to view project details</span>
             </div>
           </div>
@@ -201,22 +235,22 @@
               <span class="timeline-category" data-i18n="cat_certificate">Certificate</span>
               <h2 data-i18n="timeline_item3_title">Sustainable Development in Practice</h2>
               <p class="timeline-meta">UNITAR · Jan 2025</p>
-              <p data-i18n="timeline_item3_text">Completed a certificate program focused on sustainable development and its connection to applied project thinking.</p>
+              <p data-i18n="timeline_item3_text">Completed UNITAR's Introduction to Sustainable Development in Practice e-learning certificate, adding sustainability language to engineering decision-making.</p>
             </div>
           </div>
         </article>
 
 
-        <article class="timeline-item reveal category-project timeline-project-trigger" data-category="project" data-project-modal="waterFilterModal" role="button" tabindex="0" aria-controls="waterFilterModal">
-          <div class="timeline-date">2024 Sep – Dec</div>
+        <article class="timeline-item reveal category-certificate" data-category="certificate">
+          <div class="timeline-date">2024 Dec</div>
           <div class="timeline-card">
-            <div class="timeline-image"><img src="img/projects/water-filtration-preview.jpg" alt="Arduino-controlled water filtration prototype"></div>
+            <div class="timeline-image"><img src="img/timeline/whmis-2015-certificate.png" alt="Queen's University WHMIS 2015 training certificate for Shenghan Gao" data-i18n-alt="timeline_whmis_alt" loading="lazy" decoding="async"></div>
             <div class="timeline-body">
-              <span class="timeline-category" data-i18n="cat_project">Project</span>
-              <h2 data-i18n="timeline_water_project_title">Water Filtration Prototype</h2>
-              <p class="timeline-meta" data-i18n="timeline_water_project_meta">APSC 101 · Water treatment prototype</p>
-              <p data-i18n="timeline_water_project_text">Designed and tested an automated prototype for alum dosing, magnetic mixing, pump-driven transfer, staged filtration, and clean-water collection. Project code was written independently.</p>
-              <span class="timeline-expand-hint" data-i18n="timeline_expand_project">Click to view project details</span>
+              <span class="timeline-category" data-i18n="cat_certificate">Certificate</span>
+              <h2 data-i18n="timeline_whmis_title">WHMIS 2015 Full Training</h2>
+              <p class="timeline-meta" data-i18n="timeline_whmis_meta">Queen's University Environmental Health &amp; Safety · Dec 2024</p>
+              <p data-i18n="timeline_whmis_text">Completed WHMIS 2015 training and the required written assessment covering workplace hazardous materials information and safe-handling principles.</p>
+              <a class="inline-link" href="docs/certificates/whmis-2015.pdf" target="_blank" rel="noopener" data-i18n="timeline_view_pdf">View PDF</a>
             </div>
           </div>
         </article>
@@ -231,6 +265,20 @@
               <h2 data-i18n="timeline_item4_title">Peer / Volunteer Tutor</h2>
               <p class="timeline-meta">Queen's University</p>
               <p data-i18n="timeline_item4_text">Supported small-group and one-on-one review sessions, step-by-step explanations, spreadsheet verification, and structured peer feedback.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal category-project timeline-project-trigger" data-category="project" data-project-modal="waterFilterModal" role="button" tabindex="0" aria-controls="waterFilterModal">
+          <div class="timeline-date">2024 Sep – Dec</div>
+          <div class="timeline-card">
+            <div class="timeline-image"><img src="img/projects/water-filtration-preview.jpg" alt="Arduino-controlled water filtration prototype"></div>
+            <div class="timeline-body">
+              <span class="timeline-category" data-i18n="cat_project">Project</span>
+              <h2 data-i18n="timeline_water_project_title">Water Filtration Prototype</h2>
+              <p class="timeline-meta" data-i18n="timeline_water_project_meta">APSC 101 · Water treatment prototype</p>
+              <p data-i18n="timeline_water_project_text">Designed and tested a water-treatment prototype with pump-driven flow, alum dosing, magnetic mixing, multi-layer filtration, and clean-water collection. I wrote the control code independently.</p>
+              <span class="timeline-expand-hint" data-i18n="timeline_expand_project">Click to view project details</span>
             </div>
           </div>
         </article>
@@ -258,7 +306,7 @@
             <div class="timeline-image"><span data-i18n="timeline_img_placeholder">Image placeholder</span></div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_leadership">Leadership</span>
-              <h2 data-i18n="timeline_suon_tutor_title">Peer Tutor & Mentor</h2>
+              <h2 data-i18n="timeline_suon_tutor_title">Peer Tutor &amp; Mentor</h2>
               <p class="timeline-meta">SuOn Academy · Toronto</p>
               <p data-i18n="timeline_suon_tutor_text">Tutored high school math and physics, used structured feedback, and helped students review quantitative problem solving.</p>
             </div>
@@ -317,7 +365,7 @@
               <span class="timeline-category" data-i18n="cat_award">Award</span>
               <h2 data-i18n="timeline_item6_title">International Admission Award</h2>
               <p class="timeline-meta">Queen's University · $80,000 CAD</p>
-              <p data-i18n="timeline_item6_text">Major entrance award supporting undergraduate study at Queen's University.</p>
+              <p data-i18n="timeline_item6_text">Major entrance scholarship awarded by Queen's University.</p>
             </div>
           </div>
         </article>
@@ -346,7 +394,7 @@
             <div class="timeline-image"><img src="img/timeline/patent-thermal-cushion.png" alt="Utility model patent certificate for a multifunctional heating and cooling cushion"></div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_patent">Patent</span>
-              <h2 data-i18n="timeline_patent_cushion_title">Utility Model Patent · Multifunctional Heating & Cooling Cushion</h2>
+              <h2 data-i18n="timeline_patent_cushion_title">Utility Model Patent · Multifunctional Heating &amp; Cooling Cushion</h2>
               <p class="timeline-meta">ZL 2020 2 2060439.7 · CN 213155039 U</p>
               <p data-i18n="timeline_patent_cushion_text">Listed as inventor and patentee for a utility model patent involving a multifunctional cushion capable of heating and cooling.</p>
               <a class="inline-link" href="docs/patents/MyPatent2.pdf" target="_blank" rel="noopener" data-i18n="timeline_view_pdf">View PDF</a>
@@ -392,23 +440,23 @@
         <div class="modal-copy">
           <p class="eyebrow" data-i18n="harvest_modal_eyebrow">Featured project</p>
           <h2 id="harvestarModalTitle" data-i18n="harvest_modal_title">HarveStar Lunar Harvest End Effector</h2>
-          <p class="modal-lead" data-i18n="harvest_modal_lead">A Canadian Space Agency client project with Queen’s University to design, build, and test a lunar greenhouse harvesting end effector. The selected crab-claw design used a fixed arm, a servo-driven moving arm, elastic-band gripping surfaces, and an emergency-stop enabled path-planning program. I completed the project code and SolidWorks simulations; the CAD model itself was modeled by a teammate.</p>
+          <p class="modal-lead" data-i18n="harvest_modal_lead">This Canadian Space Agency project asked our team to design, build, and test an end effector for automated harvesting in a lunar greenhouse. We chose a crab-claw design with one fixed side, one servo-driven side, and elastic gripping bands. I wrote the control program and completed the SolidWorks simulations; a teammate created the CAD model.</p>
           <div class="project-detail-grid">
             <article>
               <span data-i18n="harvest_modal_mech_label">End-effector design</span>
-              <p data-i18n="harvest_modal_mech_text">The claw used a simple asymmetric gripping strategy: one fixed side, one moving side, and compliant bands to handle different plant geometries with fewer moving parts and easier maintenance.</p>
+              <p data-i18n="harvest_modal_mech_text">The claw kept one side fixed and moved the other with a servo. Elastic bands added compliance so the same mechanism could grip plants with different shapes without adding more moving parts.</p>
             </article>
             <article>
-              <span data-i18n="harvest_modal_control_label">Control & validation</span>
-              <p data-i18n="harvest_modal_control_text">CircuitPython control refined pickup paths, release motions, speed, grip angles, and an emergency-stop routine while SolidWorks simulation checked load response and likely high-strain areas.</p>
+              <span data-i18n="harvest_modal_control_label">Control &amp; validation</span>
+              <p data-i18n="harvest_modal_control_text">The CircuitPython program controlled the pickup path, release motion, speed, grip angle, and emergency stop. SolidWorks simulations were used to check displacement, stress, and likely high-strain areas.</p>
             </article>
           </div>
           <h3 data-i18n="harvest_modal_flow_title">Engineering workflow</h3>
           <ol class="modal-steps">
-            <li data-i18n="harvest_modal_step1">Defined the lunar greenhouse harvesting context, including reduced gravity, tight workspace, safety, and plant-handling constraints.</li>
-            <li data-i18n="harvest_modal_step2">Evaluated gripper concepts and selected a crab-claw end effector for simplicity, grip adaptability, and maintainability.</li>
-            <li data-i18n="harvest_modal_step3">Ran SolidWorks stress/displacement simulation under gripping load to assess whether the design stayed structurally reasonable.</li>
-            <li data-i18n="harvest_modal_step4">Programmed path planning, servo movements, release motions, and emergency stop behavior, then iterated through physical testing.</li>
+            <li data-i18n="harvest_modal_step1">Defined the working conditions of a lunar greenhouse, including reduced gravity, limited space, safety, and gentle plant handling.</li>
+            <li data-i18n="harvest_modal_step2">Compared several gripper ideas and selected the crab-claw concept for its simple structure and adaptable grip.</li>
+            <li data-i18n="harvest_modal_step3">Used SolidWorks to check stress and displacement under the expected gripping load.</li>
+            <li data-i18n="harvest_modal_step4">Programmed the path, servo motion, release sequence, and emergency stop, then refined them through physical testing.</li>
           </ol>
           <div class="code-showcase">
             <span data-i18n="code_showcase_label">Code highlight</span>
@@ -454,15 +502,15 @@ gripper.open(angle=plant.release_angle)</code></pre>
         <div class="modal-copy">
           <p class="eyebrow" data-i18n="water_modal_eyebrow">Featured project</p>
           <h2 id="waterFilterModalTitle" data-i18n="water_modal_title">Water Filtration Prototype</h2>
-          <p class="modal-lead" data-i18n="water_modal_lead">A working water-treatment prototype combining mechanical design, CAD modeling, 3D-printed parts, Arduino/C control, pump-driven flow, two-step alum dosing, magnetic mixing, staged filtration, and clean-water collection. I wrote the project code independently.</p>
+          <p class="modal-lead" data-i18n="water_modal_lead">Our team built a working water-treatment prototype that pumped water through alum dosing, magnetic mixing, settling, and multi-layer filtration. I used SolidWorks to plan the layout and wrote the Arduino/C control code independently.</p>
           <div class="project-detail-grid">
             <article>
               <span data-i18n="water_modal_design_label">Design logic</span>
-              <p data-i18n="water_modal_design_text">The SolidWorks assembly helped organize the pump, base plate, dosing tower, magnetic mixing system, filtration path, and receiving container before physical assembly and testing.</p>
+              <p data-i18n="water_modal_design_text">The SolidWorks assembly helped us place the pump, base plate, dosing tower, magnetic mixer, filters, and receiving container before we started the physical build.</p>
             </article>
             <article>
-              <span data-i18n="water_modal_control_label">Control & build</span>
-              <p data-i18n="water_modal_control_text">Arduino/C logic coordinated the liquid-level check, alum dispenser, DC-motor mixing, and pump-driven transfer; code adjustments corrected the dosing sequence to deliver the target alum amount.</p>
+              <span data-i18n="water_modal_control_label">Control &amp; build</span>
+              <p data-i18n="water_modal_control_text">The Arduino/C program coordinated the water-level check, alum dispenser, DC-motor mixer, and pump. I adjusted the timing sequence until the dispenser delivered the intended amount of alum.</p>
             </article>
           </div>
           <h3 data-i18n="water_modal_flow_title">Process flow</h3>
@@ -507,23 +555,23 @@ gripper.open(angle=plant.release_angle)</code></pre>
         <div class="modal-copy">
           <p class="eyebrow" data-i18n="stride_modal_eyebrow">Featured project</p>
           <h2 id="strideworksModalTitle" data-i18n="stride_modal_title">Femoral Head Indexing Station</h2>
-          <p class="modal-lead" data-i18n="stride_modal_lead">A manufacturing-cell redesign project for moving a prosthetic femoral head through laser etching and surface mapping positions. The system used recycled materials, motor characterization, encoder feedback, Arduino/C control, Excel data collection, and Python plotting. I wrote all project code independently.</p>
+          <p class="modal-lead" data-i18n="stride_modal_lead">This project redesigned a manufacturing cell so a prosthetic femoral head could move through laser-etching and surface-mapping positions. I helped build the recycled-material transmission, tested the motor, added encoder feedback, and wrote the Arduino/C control code. I also organized the test data in Excel and plotted the results in Python.</p>
           <div class="project-detail-grid">
             <article>
               <span data-i18n="stride_modal_mech_label">Mechanical system</span>
-              <p data-i18n="stride_modal_mech_text">A belt-and-lever transmission converted motor rotation into controlled angular indexing while keeping the femoral head restrained only at the lower contact band.</p>
+              <p data-i18n="stride_modal_mech_text">A belt-and-lever transmission converted motor rotation into the required indexing angles while holding the femoral head only along its permitted lower contact band.</p>
             </article>
             <article>
-              <span data-i18n="stride_modal_control_label">Controls & testing</span>
-              <p data-i18n="stride_modal_control_text">Encoder feedback, duty-cycle testing, and control logic were used to verify position, reduce slip effects, execute dwell times, and support emergency-stop behavior.</p>
+              <span data-i18n="stride_modal_control_label">Controls &amp; testing</span>
+              <p data-i18n="stride_modal_control_text">Motor tests established a usable duty-cycle range, while encoder feedback checked position and reduced the effect of belt slip. The program also handled dwell timing and emergency stopping.</p>
             </article>
           </div>
           <h3 data-i18n="stride_modal_flow_title">Engineering workflow</h3>
           <ol class="modal-steps">
             <li data-i18n="stride_modal_step1">Defined the required 108° clockwise, 198° counterclockwise, and 90° clockwise indexing sequence.</li>
-            <li data-i18n="stride_modal_step2">Collected motor speed, torque, and duty-cycle data in Excel, then used Python to plot and interpret performance.</li>
-            <li data-i18n="stride_modal_step3">Programmed the microcontroller in Arduino/C to control motor movement, dwell timing, encoder-based position checks, and emergency stopping.</li>
-            <li data-i18n="stride_modal_step4">Iterated the recycled-material transmission until the mechanism could move predictably and verify position within a tight angular tolerance.</li>
+            <li data-i18n="stride_modal_step2">Recorded motor speed, torque, and duty-cycle data in Excel, then used Python to plot and interpret the results.</li>
+            <li data-i18n="stride_modal_step3">Programmed the microcontroller in Arduino/C to control motion, dwell timing, encoder position checks, and emergency stopping.</li>
+            <li data-i18n="stride_modal_step4">Adjusted the recycled-material transmission and control settings until the mechanism moved through the sequence consistently.</li>
           </ol>
           <div class="code-showcase">
             <span data-i18n="code_showcase_label">Code highlight</span>
@@ -547,10 +595,10 @@ if (abs(outputErrDeg) > STALL_ERROR_OUTPUT_DEG) {
   </main>
 
   <footer class="site-footer">
-    <p data-i18n="footer_text">© 2026 Shenghan Gao. Mechanical & Materials Engineering Portfolio.</p>
+    <p data-i18n="footer_text">© 2026 Shenghan Gao. Mechanical &amp; Materials Engineering Portfolio.</p>
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20260610-v19"></script>
+  <script src="script.js?v=20260801-v23"></script>
 </body>
 </html>

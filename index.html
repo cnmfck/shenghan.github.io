@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Shenghan Gao | Mechanical & Materials Engineering Portfolio</title>
-  <meta name="description" content="Shenghan Gao is a Mechanical & Materials Engineering student at Queen's University, entering third year with a 4.1/4.3 cGPA. Explore engineering projects, tools, experience, awards, and contact information.">
+  <meta name="description" content="Shenghan Gao is a third-year Mechanical & Materials Engineering student at Queen's University with a 4.1/4.3 cGPA. Explore engineering projects, tools, experience, awards, and contact information.">
   <meta name="keywords" content="Shenghan Gao, Gao Shenghan, 高胜寒, Mechanical Engineering, Queen's University, engineering portfolio, materials option, SolidWorks, AutoCAD, MATLAB, Python, Shenghan.cc">
   <meta name="author" content="Shenghan Gao">
   <meta name="robots" content="index, follow">
@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20260610-v19">
+  <link rel="stylesheet" href="style.css?v=20260801-v23">
 </head>
 <body data-page="home">
   <header class="site-header" id="siteHeader">
@@ -67,7 +67,9 @@
       <div class="hero-copy reveal">
         <p class="eyebrow" data-i18n="home_eyebrow">Queen's University · Smith Engineering · MME</p>
         <div class="university-lockup" aria-label="Queen's University affiliation">
-          <span class="university-lockup-mark">Q</span>
+          <span class="university-lockup-logo">
+            <img src="img/profile/queens-university-logo.png" alt="Queen's University logo" data-i18n-alt="queens_logo_alt" width="256" height="256">
+          </span>
           <span>
             <strong>Queen's University</strong>
             <small data-i18n="home_university_sub">Smith Engineering · Mechanical &amp; Materials Engineering</small>
@@ -77,38 +79,45 @@
           <span data-i18n="home_title_line1">Engineering mind.</span>
           <span data-i18n="home_title_line2">Human clarity.</span>
         </h1>
-        <p class="hero-lead" data-i18n="home_lead">Completed second year and entering third year after the break, with a 4.1/4.3 cGPA and a practical focus on mechanical design, materials, technical communication, and engineering tools.</p>
+        <p class="hero-lead" data-i18n="home_lead">I'm studying Mechanical &amp; Materials Engineering at Queen's University, in the Materials Option. I'm now in third year with a 4.1/4.3 cGPA, and I'm especially interested in mechanical design, materials, and hands-on engineering work.</p>
         <div class="hero-actions">
           <a class="primary-link" href="timeline.html">
             <span data-i18n="home_cta_timeline">View timeline</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <a class="secondary-link" href="tools.html" data-i18n="home_cta_tools">Tool stack</a>
+          <a class="secondary-link" href="tools.html" data-i18n="home_cta_tools">Tools I use</a>
         </div>
       </div>
       <div class="hero-panel reveal">
         <figure class="portrait-card">
           <div class="portrait-frame">
-            <img src="img/profile/portrait-placeholder.svg" alt="Professional portrait placeholder for Shenghan Gao">
+            <img
+              src="img/profile/shenghan-gao-portrait.jpg"
+              alt="Portrait of Shenghan Gao"
+              data-i18n-alt="portrait_alt"
+              width="1235"
+              height="1315"
+              fetchpriority="high"
+              decoding="async"
+            >
           </div>
         </figure>
         <div class="profile-plate">
-          <span class="plate-label" data-i18n="profile_label">Portfolio snapshot</span>
           <h2 id="heroName">Shenghan Gao</h2>
-          <p data-i18n="profile_title">B.ASc. Mechanical & Materials Engineering · Materials Option</p>
+          <p data-i18n="profile_title">B.ASc. Mechanical &amp; Materials Engineering · Materials Option</p>
         </div>
         <dl class="signal-list">
           <div>
             <dt data-i18n="signal_year_label">Status</dt>
-            <dd data-i18n="signal_year_value">Entering 3rd year</dd>
+            <dd data-i18n="signal_year_value">Third year</dd>
           </div>
-          <div>
+          <div class="signal-gpa">
             <dt data-i18n="signal_gpa_label">cGPA</dt>
-            <dd>4.1 / 4.3</dd>
+            <dd class="signal-gpa-value"><strong>4.1</strong><span>/ 4.3</span></dd>
           </div>
           <div>
             <dt data-i18n="signal_focus_label">Focus</dt>
-            <dd data-i18n="signal_focus_value">Design · Materials · Communication</dd>
+            <dd data-i18n="signal_focus_value">Design · Materials · Applications</dd>
           </div>
         </dl>
       </div>
@@ -116,81 +125,61 @@
 
     <section class="overview-strip reveal" aria-label="Portfolio overview">
       <a class="overview-item" href="education.html">
-        <span class="overview-number">01</span>
         <strong data-i18n="overview_education_title">Education</strong>
-        <p data-i18n="overview_education_text">Current degree, academic highlights, and learning direction.</p>
+        <p data-i18n="overview_education_text">Current degree, academic highlights, and transcript snapshot.</p>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
       <a class="overview-item accent-warm" href="timeline.html">
-        <span class="overview-number">02</span>
         <strong data-i18n="overview_timeline_title">Timeline</strong>
-        <p data-i18n="overview_timeline_text">Experience, awards, certificates, and leadership in one visual path.</p>
+        <p data-i18n="overview_timeline_text">Experience, awards, certificates, leadership, and projects in one visual path.</p>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
       <a class="overview-item accent-cool" href="projects.html">
-        <span class="overview-number">03</span>
         <strong data-i18n="overview_projects_title">Projects</strong>
-        <p data-i18n="overview_projects_text">Selected technical work and portfolio-building projects.</p>
+        <p data-i18n="overview_projects_text">Selected technical work, company website work, and portfolio-building projects.</p>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
       <a class="overview-item accent-ink" href="tools.html">
-        <span class="overview-number">04</span>
         <strong data-i18n="overview_tools_title">Tools</strong>
         <p data-i18n="overview_tools_text">CAD/engineering software, programming, shop-floor manufacturing exposure, Office, and Adobe skills.</p>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
     </section>
 
-    <section class="minimal-section split-section reveal">
-      <div>
-        <p class="eyebrow" data-i18n="home_about_eyebrow">About</p>
-        <h2 data-i18n="home_about_title">A concise engineering portfolio built for recruiters.</h2>
-      </div>
-      <div class="prose-block">
-        <p data-i18n="home_about_text1">I study Mechanical & Materials Engineering at Queen's University and am preparing for third year after completing second year with a 4.1/4.3 cGPA.</p>
-        <p data-i18n="home_about_text2">This site is designed as a quick, searchable portfolio: the homepage gives the overview, while detailed pages show education, tools, projects, and a filtered timeline of experience and awards.</p>
-      </div>
-    </section>
-
     <section class="minimal-section feature-river reveal">
       <div class="river-heading">
-        <p class="eyebrow" data-i18n="home_tools_eyebrow">Tool overview</p>
-        <h2 data-i18n="home_tools_title">A practical toolkit across engineering, code, manufacturing exposure, documents, and media.</h2>
+        <h2 class="section-title" data-i18n="home_tools_eyebrow">TOOL OVERVIEW</h2>
       </div>
       <div class="river-grid">
         <div class="river-item priority-engineering">
-          <span>Engineering</span>
+          <span data-i18n="home_tools_engineering_label">Engineering</span>
           <p>SolidWorks · AutoCAD · MATLAB · Arduino · NX</p>
-        </div>
-        <div class="river-item">
-          <span>Programming</span>
-          <p>Python · C · HTML · CSS · JavaScript</p>
         </div>
         <div class="river-item priority-shop">
           <span data-i18n="home_tools_shop_label">Shop-floor</span>
           <p data-i18n="home_tools_shop_text">Injection molding · Welding exposure · Pipe heat-fusion · Assembly</p>
         </div>
         <div class="river-item">
-          <span>Office</span>
+          <span data-i18n="home_tools_programming_label">Programming</span>
+          <p>Python · C · HTML · CSS · JavaScript</p>
+        </div>
+        <div class="river-item">
+          <span data-i18n="home_tools_office_label">Documents &amp; data</span>
           <p>Word · PowerPoint · Excel</p>
         </div>
         <div class="river-item">
-          <span>Adobe</span>
+          <span data-i18n="home_tools_media_label">Media</span>
           <p>Photoshop · Premiere Pro · Audition</p>
         </div>
       </div>
-      <a class="text-arrow" href="tools.html">
-        <span data-i18n="home_tools_link">Open detailed tools page</span>
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p data-i18n="footer_text">© 2026 Shenghan Gao. Mechanical & Materials Engineering Portfolio.</p>
+    <p data-i18n="footer_text">© 2026 Shenghan Gao. Mechanical &amp; Materials Engineering Portfolio.</p>
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20260610-v19"></script>
+  <script src="script.js?v=20260801-v23"></script>
 </body>
 </html>
