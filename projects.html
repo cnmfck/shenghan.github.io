@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20260801-v23">
+  <link rel="stylesheet" href="style.css?v=20260804-v26">
 </head>
 <body data-page="projects">
   <header class="site-header" id="siteHeader">
@@ -117,6 +117,23 @@
         </div>
       </article>
 
+      <article class="project-tile interactive-project compact-feature orbital-project" data-project-modal="orbitalSimulationModal" role="button" tabindex="0" aria-controls="orbitalSimulationModal">
+        <div class="project-visual has-image compact-visual orbital-project-visual">
+          <img class="project-photo" src="img/projects/orbital-wide-system-motion.png" alt="Wide three-dimensional MATLAB view of the moving Earth and satellite particle system" data-i18n-alt="orbital_wide_system_alt" loading="lazy" decoding="async">
+        </div>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_orbital_type">Dynamics · MATLAB · Numerical simulation</span>
+          <h2 data-i18n="project_orbital_title">Earth–Satellite Particle-System Simulation</h2>
+          <p data-i18n="project_orbital_text">Completed the center-of-mass, momentum, velocity, and position updates in a provided MATLAB particle-system framework. Used an Earth-and-three-satellite model to analyze trajectories and linear momentum, then compared system responses by varying satellite velocity, satellite mass, and Earth's initial velocity.</p>
+          <div class="mini-chip-row" aria-label="Project tools">
+            <span>MATLAB</span>
+            <span>Dynamics</span>
+            <span>Numerical Simulation</span>
+          </div>
+          <span class="project-expand-hint" data-i18n="project_orbital_expand">Click to expand simulation details</span>
+        </div>
+      </article>
+
       <article class="project-tile wide-tile">
         <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
         <div>
@@ -126,17 +143,8 @@
         </div>
       </article>
 
-      <article class="project-tile">
-        <div class="project-visual"><span data-i18n="project_img_placeholder">Project image placeholder</span></div>
-        <div>
-          <span class="project-type" data-i18n="project_check_type">Spreadsheet · Verification</span>
-          <h2 data-i18n="project2_title">Engineering Check Models</h2>
-          <p data-i18n="project2_text">Built spreadsheet checks for calculations, peer feedback, and result tracking so the work could be reviewed without retracing every step.</p>
-        </div>
-      </article>
-
       <article class="project-tile large-tile featured-web-project">
-        <div class="project-visual has-image gaoco-project-visual"><img class="project-photo gaoco-project-image" src="img/projects/gaoco-company-website.png" alt="Gaoco.org precision gear product page" data-i18n-alt="gaoco_image_alt" loading="lazy" decoding="async"></div>
+        <div class="project-visual has-image gaoco-project-visual"><img class="project-photo gaoco-project-image" src="img/projects/gaoco-company-website.png" alt="Gaoco.org homepage showing precision gear, semiconductor material, and optical ceramics content" data-i18n-alt="gaoco_image_alt" loading="lazy" decoding="async"></div>
         <div>
           <span class="project-type" data-i18n="project_gaoco_type">Web development · Company website</span>
           <h2 data-i18n="project_gaoco_title">Gaoco.org Company Website</h2>
@@ -154,6 +162,69 @@
         </div>
       </article>
     </section>
+
+    <div class="project-modal" id="orbitalSimulationModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <section class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="orbitalSimulationModalTitle" tabindex="-1">
+        <button class="project-modal-close" type="button" data-modal-close aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-media-grid orbital-media-grid">
+          <figure class="modal-main-image">
+            <img src="img/projects/orbital-trajectories.png" alt="MATLAB plot of Earth and three satellite trajectories relative to the center of mass" data-i18n-alt="orbital_trajectories_alt">
+            <figcaption data-i18n="orbital_modal_fig1">Particle trajectories plotted relative to the system center of mass.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-system-motion.png" alt="Three-dimensional MATLAB visualization of the moving Earth and satellite particle system" data-i18n-alt="orbital_system_motion_alt">
+            <figcaption data-i18n="orbital_modal_fig2">Three-dimensional view of the four-particle system over the simulation.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-earth-momentum.png" alt="MATLAB plot of Earth's linear momentum components over time" data-i18n-alt="orbital_earth_momentum_alt">
+            <figcaption data-i18n="orbital_modal_fig3">Earth linear-momentum components over time.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-satellite-momentum.png" alt="MATLAB plot of a satellite's linear momentum components over time" data-i18n-alt="orbital_satellite_momentum_alt">
+            <figcaption data-i18n="orbital_modal_fig4">Satellite linear-momentum components over time.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-alternate-trajectories.png" alt="Alternate MATLAB parameter case showing satellite trajectories relative to the center of mass" data-i18n-alt="orbital_alternate_trajectories_alt">
+            <figcaption data-i18n="orbital_modal_fig5">Alternate parameter case showing a wider set of satellite trajectories relative to the center of mass.</figcaption>
+          </figure>
+          <figure class="orbital-wide-figure">
+            <img src="img/projects/orbital-wide-system-motion.png" alt="Wide three-dimensional MATLAB view of the moving Earth and satellite particle system" data-i18n-alt="orbital_wide_system_alt">
+            <figcaption data-i18n="orbital_modal_fig6">Wide three-dimensional view of the moving four-particle system.</figcaption>
+          </figure>
+        </div>
+        <div class="modal-copy">
+          <p class="eyebrow" data-i18n="orbital_modal_eyebrow">Coursework simulation</p>
+          <h2 id="orbitalSimulationModalTitle" data-i18n="project_orbital_title">Earth–Satellite Particle-System Simulation</h2>
+          <p class="modal-lead" data-i18n="orbital_modal_lead">This MECH 228 coursework exercise used a provided MATLAB framework for a four-particle system. I completed the center-of-mass, momentum, velocity, and position updates, then used an Earth-and-three-satellite model to compare trajectories and linear momentum under different parameter settings.</p>
+          <div class="project-detail-grid">
+            <article>
+              <span data-i18n="orbital_modal_model_label">Numerical model</span>
+              <p data-i18n="orbital_modal_model_text">Pairwise gravitational forces updated momentum at each time step; momentum determined velocity, and velocity advanced each particle's position. The center of mass was recalculated throughout the simulation.</p>
+            </article>
+            <article>
+              <span data-i18n="orbital_modal_analysis_label">Parameter study</span>
+              <p data-i18n="orbital_modal_analysis_text">Changing satellite velocity, satellite mass, and Earth's initial velocity showed how orbital behavior and system motion changed while total momentum remained conserved in the closed system.</p>
+            </article>
+          </div>
+          <h3 data-i18n="orbital_modal_flow_title">Simulation workflow</h3>
+          <ol class="modal-steps">
+            <li data-i18n="orbital_modal_step1">Completed the center-of-mass, momentum, velocity, and position-update sections in the provided MATLAB model.</li>
+            <li data-i18n="orbital_modal_step2">Ran the Earth-and-three-satellite baseline case and plotted trajectories and momentum components.</li>
+            <li data-i18n="orbital_modal_step3">Varied initial velocity and mass values, then compared the resulting system response.</li>
+          </ol>
+          <div class="modal-stack" aria-label="Technical stack">
+            <span>MATLAB</span>
+            <span>Dynamics</span>
+            <span>Numerical Simulation</span>
+            <span>Momentum Analysis</span>
+            <span>Data Visualization</span>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <div class="project-modal" id="harvestarModal" aria-hidden="true">
       <div class="project-modal-backdrop" data-modal-close></div>
@@ -337,6 +408,6 @@ if (abs(outputErrDeg) > STALL_ERROR_OUTPUT_DEG) {
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20260801-v23"></script>
+  <script src="script.js?v=20260804-v26"></script>
 </body>
 </html>

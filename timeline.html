@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20260801-v23">
+  <link rel="stylesheet" href="style.css?v=20260804-v26">
 </head>
 <body data-page="timeline">
   <header class="site-header" id="siteHeader">
@@ -109,7 +109,7 @@
         <article class="timeline-item reveal category-project" data-category="project">
           <div class="timeline-date">2026 Jun</div>
           <div class="timeline-card">
-            <div class="timeline-image"><img src="img/projects/gaoco-company-website.png" alt="Gaoco.org precision gear product page" data-i18n-alt="gaoco_image_alt" loading="lazy" decoding="async"></div>
+            <div class="timeline-image"><img src="img/projects/gaoco-company-website.png" alt="Gaoco.org homepage showing precision gear, semiconductor material, and optical ceramics content" data-i18n-alt="gaoco_image_alt" loading="lazy" decoding="async"></div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_project">Project</span>
               <h2 data-i18n="timeline_gaoco_title">Gaoco.org Company Website</h2>
@@ -163,6 +163,22 @@
               <p class="timeline-meta" data-i18n="timeline_smith_mentor_meta">Queen's University Smith Engineering · May 2026 – Present · Paid position</p>
               <p data-i18n="timeline_smith_mentor_text">Support incoming international engineering students through outreach, onboarding guidance, follow-ups, and resource navigation as part of the QSuccess Engineering mentorship program.</p>
               <a class="inline-link" href="https://smithengineering.queensu.ca/student-experience/qsuccess-engineering-international-student-mentorship-program.html" target="_blank" rel="noopener" data-i18n="timeline_smith_mentor_link">Program page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal category-project timeline-project-trigger" data-category="project" data-project-modal="orbitalSimulationModal" role="button" tabindex="0" aria-controls="orbitalSimulationModal">
+          <div class="timeline-date">2026 Feb</div>
+          <div class="timeline-card">
+            <div class="timeline-image orbital-timeline-image">
+              <img src="img/projects/orbital-trajectories.png" alt="MATLAB plot of Earth and three satellite trajectories relative to the center of mass" data-i18n-alt="orbital_trajectories_alt" loading="lazy" decoding="async">
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-category" data-i18n="cat_project">Project</span>
+              <h2 data-i18n="project_orbital_title">Earth–Satellite Particle-System Simulation</h2>
+              <p class="timeline-meta" data-i18n="timeline_orbital_meta">MECH 228 · MATLAB particle-system coursework</p>
+              <p data-i18n="timeline_orbital_text">Completed the center-of-mass, momentum, velocity, and position updates in a provided MATLAB framework, then compared the trajectories and linear momentum of an Earth-and-three-satellite model under different parameter settings.</p>
+              <span class="timeline-expand-hint" data-i18n="timeline_expand_project">Click to view project details</span>
             </div>
           </div>
         </article>
@@ -286,7 +302,9 @@
         <article class="timeline-item reveal category-internship" data-category="internship">
           <div class="timeline-date">2024 Jun – Aug</div>
           <div class="timeline-card">
-            <div class="timeline-image"><span data-i18n="timeline_img_placeholder">Image placeholder</span></div>
+            <div class="timeline-image internship-photo">
+              <img src="img/timeline/engineering-intern-gear-test.png" alt="Gear measurement and inspection equipment used during the 2024 engineering internship" data-i18n-alt="timeline_2024_intern_image_alt" loading="lazy" decoding="async">
+            </div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_internship">Internship</span>
               <h2 data-i18n="timeline_2024_intern_title">Engineering Intern</h2>
@@ -302,8 +320,7 @@
 
         <article class="timeline-item reveal category-leadership" data-category="leadership">
           <div class="timeline-date">2023 Oct – 2024 May</div>
-          <div class="timeline-card">
-            <div class="timeline-image"><span data-i18n="timeline_img_placeholder">Image placeholder</span></div>
+          <div class="timeline-card timeline-card-no-image">
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_leadership">Leadership</span>
               <h2 data-i18n="timeline_suon_tutor_title">Peer Tutor &amp; Mentor</h2>
@@ -317,7 +334,9 @@
         <article class="timeline-item reveal category-internship" data-category="internship">
           <div class="timeline-date">2023 Jun – Aug</div>
           <div class="timeline-card">
-            <div class="timeline-image"><span data-i18n="timeline_img_placeholder">Image placeholder</span></div>
+            <div class="timeline-image internship-photo">
+              <img src="img/timeline/injection-molding-line.png" alt="Injection molding production line inside a manufacturing workshop" data-i18n-alt="timeline_injection_image_alt" loading="lazy" decoding="async">
+            </div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_internship">Internship</span>
               <h2 data-i18n="timeline_2023_intern_title">Injection Molding Intern</h2>
@@ -374,7 +393,9 @@
         <article class="timeline-item reveal category-internship" data-category="internship">
           <div class="timeline-date">2022 Jun – Aug</div>
           <div class="timeline-card">
-            <div class="timeline-image"><span data-i18n="timeline_img_placeholder">Image placeholder</span></div>
+            <div class="timeline-image internship-photo">
+              <img src="img/timeline/machining-workshop.png" alt="Manual milling and machining equipment inside a machine shop" data-i18n-alt="timeline_machining_image_alt" loading="lazy" decoding="async">
+            </div>
             <div class="timeline-body">
               <span class="timeline-category" data-i18n="cat_internship">Internship</span>
               <h2 data-i18n="timeline_2022_intern_title">Machinist Apprentice</h2>
@@ -532,6 +553,69 @@ gripper.open(angle=plant.release_angle)</code></pre>
       </section>
     </div>
 
+    <div class="project-modal" id="orbitalSimulationModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <section class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="orbitalSimulationModalTitle" tabindex="-1">
+        <button class="project-modal-close" type="button" data-modal-close aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-media-grid orbital-media-grid">
+          <figure class="modal-main-image">
+            <img src="img/projects/orbital-trajectories.png" alt="MATLAB plot of Earth and three satellite trajectories relative to the center of mass" data-i18n-alt="orbital_trajectories_alt">
+            <figcaption data-i18n="orbital_modal_fig1">Particle trajectories plotted relative to the system center of mass.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-system-motion.png" alt="Three-dimensional MATLAB visualization of the moving Earth and satellite particle system" data-i18n-alt="orbital_system_motion_alt">
+            <figcaption data-i18n="orbital_modal_fig2">Three-dimensional view of the four-particle system over the simulation.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-earth-momentum.png" alt="MATLAB plot of Earth's linear momentum components over time" data-i18n-alt="orbital_earth_momentum_alt">
+            <figcaption data-i18n="orbital_modal_fig3">Earth linear-momentum components over time.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-satellite-momentum.png" alt="MATLAB plot of a satellite's linear momentum components over time" data-i18n-alt="orbital_satellite_momentum_alt">
+            <figcaption data-i18n="orbital_modal_fig4">Satellite linear-momentum components over time.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/projects/orbital-alternate-trajectories.png" alt="Alternate MATLAB parameter case showing satellite trajectories relative to the center of mass" data-i18n-alt="orbital_alternate_trajectories_alt">
+            <figcaption data-i18n="orbital_modal_fig5">Alternate parameter case showing a wider set of satellite trajectories relative to the center of mass.</figcaption>
+          </figure>
+          <figure class="orbital-wide-figure">
+            <img src="img/projects/orbital-wide-system-motion.png" alt="Wide three-dimensional MATLAB view of the moving Earth and satellite particle system" data-i18n-alt="orbital_wide_system_alt">
+            <figcaption data-i18n="orbital_modal_fig6">Wide three-dimensional view of the moving four-particle system.</figcaption>
+          </figure>
+        </div>
+        <div class="modal-copy">
+          <p class="eyebrow" data-i18n="orbital_modal_eyebrow">Coursework simulation</p>
+          <h2 id="orbitalSimulationModalTitle" data-i18n="project_orbital_title">Earth–Satellite Particle-System Simulation</h2>
+          <p class="modal-lead" data-i18n="orbital_modal_lead">This MECH 228 coursework exercise used a provided MATLAB framework for a four-particle system. I completed the center-of-mass, momentum, velocity, and position updates, then used an Earth-and-three-satellite model to compare trajectories and linear momentum under different parameter settings.</p>
+          <div class="project-detail-grid">
+            <article>
+              <span data-i18n="orbital_modal_model_label">Numerical model</span>
+              <p data-i18n="orbital_modal_model_text">Pairwise gravitational forces updated momentum at each time step; momentum determined velocity, and velocity advanced each particle's position. The center of mass was recalculated throughout the simulation.</p>
+            </article>
+            <article>
+              <span data-i18n="orbital_modal_analysis_label">Parameter study</span>
+              <p data-i18n="orbital_modal_analysis_text">Changing satellite velocity, satellite mass, and Earth's initial velocity showed how orbital behavior and system motion changed while total momentum remained conserved in the closed system.</p>
+            </article>
+          </div>
+          <h3 data-i18n="orbital_modal_flow_title">Simulation workflow</h3>
+          <ol class="modal-steps">
+            <li data-i18n="orbital_modal_step1">Completed the center-of-mass, momentum, velocity, and position-update sections in the provided MATLAB model.</li>
+            <li data-i18n="orbital_modal_step2">Ran the Earth-and-three-satellite baseline case and plotted trajectories and momentum components.</li>
+            <li data-i18n="orbital_modal_step3">Varied initial velocity and mass values, then compared the resulting system response.</li>
+          </ol>
+          <div class="modal-stack" aria-label="Technical stack">
+            <span>MATLAB</span>
+            <span>Dynamics</span>
+            <span>Numerical Simulation</span>
+            <span>Momentum Analysis</span>
+            <span>Data Visualization</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <div class="project-modal" id="strideworksModal" aria-hidden="true">
       <div class="project-modal-backdrop" data-modal-close></div>
       <section class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="strideworksModalTitle" tabindex="-1">
@@ -599,6 +683,6 @@ if (abs(outputErrDeg) > STALL_ERROR_OUTPUT_DEG) {
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20260801-v23"></script>
+  <script src="script.js?v=20260804-v26"></script>
 </body>
 </html>

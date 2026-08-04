@@ -3659,6 +3659,35 @@ html[lang="zh"] .tool-family p {
   }
 }
 
+/* v25: edge-to-edge timeline images and expanded orbital-simulation gallery */
+.timeline-image img {
+  object-fit: cover !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.timeline-card-no-image {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.orbital-wide-figure {
+  grid-column: 1 / -1;
+}
+
+.orbital-wide-figure img {
+  aspect-ratio: 1247 / 589;
+}
+
+@media (max-width: 760px) {
+  .orbital-wide-figure {
+    grid-column: 1;
+  }
+
+  .orbital-wide-figure img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
 /* v23: certificates, Gaoco imagery, and materials research timeline card */
 .timeline-image img[src*="net-zero-101-certificate"],
 .timeline-image img[src*="whmis-2015-certificate"] {
@@ -3749,6 +3778,60 @@ html[lang="zh"] .tool-family p {
   object-position: center;
 }
 
+/* v24: internship photography and MATLAB orbital-simulation case study */
+.timeline-image.internship-photo img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.orbital-timeline-image img,
+.orbital-project .project-photo,
+.orbital-media-grid img {
+  object-fit: contain !important;
+  object-position: center;
+  background: #f5f6f8;
+}
+
+.orbital-timeline-image img,
+.orbital-project .project-photo {
+  padding: 7px;
+}
+
+.orbital-project {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.66)),
+    radial-gradient(circle at 86% 12%, rgba(52, 84, 209, 0.2), transparent 40%),
+    radial-gradient(circle at 8% 92%, rgba(196, 138, 53, 0.16), transparent 42%);
+}
+
+.orbital-project-visual,
+.orbital-media-grid figure {
+  background: #f5f6f8;
+}
+
+.orbital-media-grid img {
+  padding: 4px;
+}
+
+.gaoco-project-image {
+  object-fit: contain;
+  background: #f4f7fb;
+}
+
+.gaoco-project-visual {
+  background: #f4f7fb;
+}
+
+@media (max-width: 760px) {
+  .orbital-project .project-photo {
+    min-height: 190px;
+  }
+
+  .orbital-media-grid img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
 @media (max-width: 760px) {
   .river-grid {
     grid-template-columns: 1fr;
@@ -3772,5 +3855,42 @@ html[lang="zh"] .tool-family p {
   .timeline-image img[src*="ielts-logo-photo"],
   .timeline-image img[src*="sustainable-development-certificate-zoom"] {
     padding: 0;
+  }
+}
+
+/* v26: orbital previews and compact right-aligned process board */
+.orbital-project .project-photo {
+  object-fit: cover !important;
+  object-position: center;
+  padding: 0;
+}
+
+.orbital-timeline-image {
+  position: relative;
+  align-self: stretch;
+}
+
+.orbital-timeline-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100% !important;
+  min-height: 0;
+  max-height: none;
+  object-fit: cover !important;
+  object-position: center;
+  padding: 0;
+}
+
+@media (min-width: 901px) {
+  .tools-process-hero .process-board {
+    width: min(100%, 540px);
+    justify-self: end;
+  }
+}
+
+@media (max-width: 760px) {
+  .orbital-timeline-image {
+    min-height: 220px;
   }
 }
