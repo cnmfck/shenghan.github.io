@@ -3894,3 +3894,66 @@ html[lang="zh"] .tool-family p {
     min-height: 220px;
   }
 }
+
+
+/* v27: ongoing experience, new timeline photos, and documentation image */
+.timeline-item.is-ongoing .timeline-card {
+  border: 2px solid var(--gold);
+}
+
+.timeline-photo {
+  position: relative;
+  align-self: stretch;
+  border: 0;
+}
+
+.timeline-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.campus-tour-photo img {
+  object-position: center 48%;
+}
+
+.sop-figure {
+  margin: 0;
+  align-self: center;
+  min-width: 0;
+}
+
+.documentation-project .sop-project-visual {
+  aspect-ratio: 652 / 450;
+  min-height: 0;
+  height: auto;
+  border: 0;
+  background: #fff;
+}
+
+.sop-project-visual .project-photo {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  object-fit: contain;
+}
+
+.sop-figure figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 760px) {
+  .timeline-photo {
+    min-height: 220px;
+  }
+  .campus-tour-photo img {
+    object-position: center 44%;
+  }
+}
