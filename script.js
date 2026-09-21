@@ -440,7 +440,15 @@ const translations = {
     "timeline_queens_meta": "Queen's University",
     "timeline_suon_meta": "SuOn Academy · Toronto",
     "timeline_unitar_meta": "UNITAR · Jan 2025",
-    "timeline_admission_meta": "Queen's University · $80,000 CAD"
+    "timeline_admission_meta": "Queen's University · $80,000 CAD",
+    "scholarship_macdonald_title": "Ian Joseph MacDonald Scholarship in Mechanical Engineering",
+    "scholarship_macdonald_meta": "Queen's University · 2026–2027 academic year · CAD $1,400",
+    "scholarship_macdonald_text": "Awarded to the Mechanical Engineering student completing second year with the highest aggregate mark in Statistics, Kinematics, Dynamics, and Solid Mechanics.",
+    "scholarship_macdonald_certificate": "Certificate pending issuance.",
+    "welcome_dinner_title": "International Student Welcome Dinner Volunteer",
+    "welcome_dinner_meta": "Queen's University · Sep 2026",
+    "welcome_dinner_text": "Volunteered at the international student welcome dinner, supporting the event and welcoming students to the university community.",
+    "welcome_dinner_alt": "Venue for the international student welcome dinner, with tables set out in a wood-panelled hall"
   },
   "zh": {
     "brand_role": "机械与材料工程",
@@ -883,7 +891,15 @@ const translations = {
     "timeline_queens_meta": "女王大学",
     "timeline_suon_meta": "苏安高中 · 多伦多",
     "timeline_unitar_meta": "联合国训练研究所 · 2025 年 1 月",
-    "timeline_admission_meta": "女王大学 · 80,000 加元"
+    "timeline_admission_meta": "女王大学 · 80,000 加元",
+    "scholarship_macdonald_title": "伊恩·约瑟夫·麦克唐纳机械工程奖学金",
+    "scholarship_macdonald_meta": "女王大学 · 2026–2027 学年 · 1,400 加元",
+    "scholarship_macdonald_text": "授予完成大二学业、在统计学、运动学、动力学和固体力学四门课程中综合成绩最高的机械工程学生。",
+    "scholarship_macdonald_certificate": "获奖证书尚待发放。",
+    "welcome_dinner_title": "国际学生迎新晚宴志愿者",
+    "welcome_dinner_meta": "女王大学 · 2026 年 9 月",
+    "welcome_dinner_text": "参与国际学生迎新晚宴志愿服务，协助活动开展，欢迎新生加入校园生活。",
+    "welcome_dinner_alt": "国际学生迎新晚宴场地，木饰面大厅内摆放着餐桌和座椅"
   }
 };
 

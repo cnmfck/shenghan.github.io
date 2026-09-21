@@ -3957,3 +3957,22 @@ html[lang="zh"] .tool-family p {
     object-position: center 44%;
   }
 }
+
+
+/* v28: scholarship details and welcome dinner photograph */
+.education-scholarship strong,
+.education-scholarship span {
+  display: block;
+}
+.education-scholarship .scholarship-meta {
+  margin-top: 6px;
+  color: var(--muted);
+}
+.education-scholarship .scholarship-description {
+  margin-top: 8px;
+  font-size: 0.9em;
+  line-height: 1.55;
+}
+.welcome-dinner-photo img {
+  object-position: center 62%;
+}
