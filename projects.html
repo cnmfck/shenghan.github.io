@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20261018-v30">
+  <link rel="stylesheet" href="style.css?v=20261018-v31">
 </head>
 <body data-page="projects">
   <header class="site-header" id="siteHeader">
@@ -134,15 +134,42 @@
         </div>
       </article>
 
-      <article class="project-tile wide-tile documentation-project">
-        <figure class="sop-figure">
-          <div class="project-visual has-image sop-project-visual"><img class="project-photo" src="img/projects/sop-layout.png" alt="Illustrative two-page standard operating procedure layout" data-i18n-alt="project_sop_alt" width="652" height="450" loading="lazy" decoding="async"></div>
-          <figcaption data-i18n="project_sop_caption">Illustrative SOP layout</figcaption>
+      <article class="project-tile compact-feature lab-project" id="metallography">
+        <figure class="lab-project-figure">
+          <div class="project-visual has-image compact-visual lab-project-visual">
+            <img class="project-photo" src="img/projects/metallography-microstructure.webp" alt="Etched steel micrograph showing light ferrite regions and textured pearlite colonies, with a 100 µm scale bar." data-i18n-alt="project_metallography_cover_alt" width="1024" height="576" loading="lazy" decoding="async">
+          </div>
+          <figcaption data-i18n="project_metallography_cover_caption">Ferrite–pearlite · Micrograph: Queen’s teaching team.</figcaption>
         </figure>
-        <div>
-          <span class="project-type" data-i18n="project_documentation_type">Engineering documentation</span>
-          <h2 data-i18n="project1_title">Technical Documentation &amp; SOP Design</h2>
-          <p data-i18n="project1_text">Turned troubleshooting notes and shop-floor workflows into clear SOPs that new interns could follow during onboarding and quality checks.</p>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_metallography_type">Metallography · Image analysis · Phase diagrams</span>
+          <h2 data-i18n="project_metallography_title">Metallography &amp; Phase Diagrams</h2>
+          <p data-i18n="project_metallography_text">Worked with my lab team to grind and polish an unknown steel specimen. I used ImageJ point counting on the supplied micrographs and phase-diagram calculations to estimate 65.8 vol% pearlite and approximately 0.51 wt% carbon.</p>
+          <div class="mini-chip-row">
+            <span data-i18n="project_metallography_tag_prep">Specimen preparation</span>
+            <span>ImageJ</span>
+            <span data-i18n="project_metallography_tag_phase">Phase diagrams</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-tile compact-feature lab-project interactive-project" id="wettability" data-project-modal="wettabilityModal" role="button" tabindex="0" aria-controls="wettabilityModal">
+        <figure class="lab-project-figure">
+          <div class="project-visual has-image compact-visual lab-project-visual">
+            <img class="project-photo" src="img/projects/wettability-microstructure.webp" alt="Annotated solder section showing an apparent contact angle of approximately 20° between the inferred copper wall and the meniscus tangent." data-i18n-alt="project_wettability_cover_alt" width="916" height="515" loading="lazy" decoding="async">
+          </div>
+          <figcaption data-i18n="project_wettability_cover_caption">Contact-angle analysis · Micrograph: Queen’s teaching team.</figcaption>
+        </figure>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_wettability_type">Wetting · Capillarity · Surface energy</span>
+          <h2 data-i18n="project_wettability_title">Solder Wettability on Copper</h2>
+          <p data-i18n="project_wettability_text">Compared lead-free Aquabond and Pb–Sn solder on copper with my lab team. The polished sections showed internal penetration of 0.95 cm and 1.50 cm, respectively, in this trial. I used apparent contact angles and a capillary model to estimate interfacial properties.</p>
+          <div class="mini-chip-row">
+            <span data-i18n="project_wettability_tag_solder">Soldering</span>
+            <span data-i18n="project_wettability_tag_angle">Contact angles</span>
+            <span data-i18n="project_wettability_tag_capillary">Capillary analysis</span>
+          </div>
+          <span class="project-expand-hint" data-i18n="wetting_expand">Click to explore the experiment</span>
         </div>
       </article>
 
@@ -165,44 +192,56 @@
         </div>
       </article>
 
-      <article class="project-tile compact-feature lab-project" id="metallography">
-        <figure class="lab-project-figure">
-          <div class="project-visual has-image compact-visual lab-project-visual">
-            <img class="project-photo" src="img/projects/metallography-microstructure.webp" alt="Etched steel micrograph showing light ferrite regions and textured pearlite colonies, with a 100 µm scale bar." data-i18n-alt="project_metallography_cover_alt" width="1024" height="576" loading="lazy" decoding="async">
-          </div>
-          <figcaption data-i18n="project_metallography_cover_caption">Ferrite–pearlite · Micrograph: MECH 396 teaching team.</figcaption>
+      <article class="project-tile wide-tile documentation-project">
+        <figure class="sop-figure">
+          <div class="project-visual has-image sop-project-visual"><img class="project-photo" src="img/projects/sop-layout.png" alt="Illustrative two-page standard operating procedure layout" data-i18n-alt="project_sop_alt" width="652" height="450" loading="lazy" decoding="async"></div>
+          <figcaption data-i18n="project_sop_caption">Illustrative SOP layout</figcaption>
         </figure>
-        <div class="project-copy">
-          <span class="project-type" data-i18n="project_metallography_type">Materials laboratory · MECH 396 · Sep 2026</span>
-          <h2 data-i18n="project_metallography_title">Metallography &amp; Phase Diagrams</h2>
-          <p data-i18n="project_metallography_text">Worked with my lab team to grind and polish an unknown steel specimen. I used ImageJ point counting on the supplied micrographs and phase-diagram calculations to estimate 65.8 vol% pearlite and approximately 0.51 wt% carbon.</p>
-          <div class="mini-chip-row">
-            <span data-i18n="project_metallography_tag_prep">Specimen preparation</span>
-            <span>ImageJ</span>
-            <span data-i18n="project_metallography_tag_phase">Phase diagrams</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-tile compact-feature lab-project" id="wettability">
-        <figure class="lab-project-figure">
-          <div class="project-visual has-image compact-visual lab-project-visual">
-            <img class="project-photo" src="img/projects/wettability-microstructure.webp" alt="Annotated solder section showing an apparent contact angle of approximately 20° between the inferred copper wall and the meniscus tangent." data-i18n-alt="project_wettability_cover_alt" width="916" height="515" loading="lazy" decoding="async">
-          </div>
-          <figcaption data-i18n="project_wettability_cover_caption">Contact-angle analysis · Micrograph: MECH 396 teaching team.</figcaption>
-        </figure>
-        <div class="project-copy">
-          <span class="project-type" data-i18n="project_wettability_type">Materials laboratory · MECH 396 · Oct 2026</span>
-          <h2 data-i18n="project_wettability_title">Solder Wettability on Copper</h2>
-          <p data-i18n="project_wettability_text">Compared lead-free Aquabond and Pb–Sn solder on copper with my lab team. The polished sections showed internal penetration of 0.95 cm and 1.50 cm, respectively, in this trial. I used apparent contact angles and a capillary model to estimate interfacial properties.</p>
-          <div class="mini-chip-row">
-            <span data-i18n="project_wettability_tag_solder">Soldering</span>
-            <span data-i18n="project_wettability_tag_angle">Contact angles</span>
-            <span data-i18n="project_wettability_tag_capillary">Capillary analysis</span>
-          </div>
+        <div>
+          <span class="project-type" data-i18n="project_documentation_type">Engineering documentation</span>
+          <h2 data-i18n="project1_title">Technical Documentation &amp; SOP Design</h2>
+          <p data-i18n="project1_text">Turned troubleshooting notes and shop-floor workflows into clear SOPs that new interns could follow during onboarding and quality checks.</p>
         </div>
       </article>
     </section>
+
+    <div class="project-modal" id="wettabilityModal" aria-hidden="true" inert>
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <section class="project-modal-panel wetting-modal-panel" role="dialog" aria-modal="true" aria-labelledby="wettabilityModalTitle" tabindex="-1">
+        <div class="wetting-modal-toolbar">
+          <a class="inline-link" href="wettability.html" data-i18n="wetting_full_page">Open full case study</a>
+          <button class="project-modal-close" type="button" data-modal-close><i class="fa-solid fa-xmark" aria-hidden="true"></i><span class="sr-only" data-i18n="wetting_close">Close project details</span></button>
+        </div>
+        <div class="wetting-case-content">
+          <p class="eyebrow" data-i18n="project_wettability_type">Wetting · Capillarity · Surface energy</p>
+          <h2 id="wettabilityModalTitle" data-i18n="project_wettability_title">Solder Wettability on Copper</h2>
+          <p class="wetting-intro" data-i18n="wetting_intro">I investigated how lead-free Aquabond and Pb–50 wt.% Sn solder wet copper and fill a narrow tube. The aim was to compare internal penetration and connect the visible meniscus shape to a capillary-force model.</p><div class="wetting-metrics">
+        <div><span data-i18n="wetting_metric_a">Aquabond · Internal filling</span><strong>0.95 <small>cm</small></strong></div>
+        <div><span data-i18n="wetting_metric_b">Pb–Sn · Internal filling</span><strong>1.50 <small>cm</small></strong></div>
+        <div><span data-i18n="wetting_metric_radius">Reconstructed bore radii</span><strong>0.779–0.795 <small>mm</small></strong></div>
+      </div><p class="wetting-result-note" data-i18n="wetting_metric_note">Measured filling lengths from this trial; bore radii inferred from tube measurements.</p><div class="wetting-content-grid">
+        <div class="wetting-analysis"><section class="wetting-text-section"><h3 data-i18n="wetting_section_1_title">Preparation and measurements</h3><p data-i18n="wetting_section_1_text">Our MECH 396 Team 3B weighed and measured the copper tubes, applied flux, and heated the solders with a propane torch. We mounted the cooled specimens in phenolic resin, then ground them through 240-, 400- and 600-grit papers and polished the sections. Micrometer readings tracked material removal and unevenness across the mount. I also compared local mount heights with the planned grinding depth to assess section preparation.</p></section>
+<section class="wetting-text-section"><h3 data-i18n="wetting_section_2_title">Reconstructing the geometry</h3><p data-i18n="wetting_section_2_text">For my analysis, I reconstructed each bore radius from copper mass, tube length and outer diameter, treating the wall as a uniform annulus. This gave 0.795 mm for the Aquabond tube and 0.779 mm for Pb–Sn. On 20× images, I extended the copper-wall line and fitted a local meniscus tangent to estimate apparent contact angles of 20° and 70° for specimens 1 and 2.</p></section>
+<section class="wetting-text-section"><h3 data-i18n="wetting_section_3_title">From measurements to a model</h3><p data-i18n="wetting_section_3_text">Measured internal filling was 0.95 cm for Aquabond and 1.50 cm for Pb–Sn: 57.9% greater for Pb–Sn in this trial. Using those lengths, reconstructed radii and assumed liquid densities, I applied Δγ = ρgrh/2 to estimate copper interfacial-energy differences of 0.259 and 0.491 N/m, respectively.</p></section>
+<section class="wetting-text-section"><h3 data-i18n="wetting_section_4_title">Checking the interpretation</h3><p data-i18n="wetting_section_4_text">I compared internal filling with total mass gains of 0.1627 g and 0.2218 g, accounting for exterior solder and retained flux when interpreting the weighing results. I kept the alloy-to-image assignment provisional and treated missing bath-level and temperature records, together with uneven sectioning, as limits on model precision.</p></section><div class="mini-chip-row"><span data-i18n="wetting_skill_1">Soldering and specimen preparation</span><span data-i18n="wetting_skill_2">Micrometer measurements</span><span data-i18n="wetting_skill_3">Image-based geometry</span><span data-i18n="wetting_skill_4">Capillary-force modelling</span><span data-i18n="wetting_skill_5">Measurement checks</span></div></div>
+        <div class="wetting-primary-image"><figure class="wetting-figure">
+          <a href="img/projects/wetting-contact-angles.webp" target="_blank" rel="noopener"><img src="img/projects/wetting-contact-angles.webp" alt="Annotated 20× micrographs of specimens 1 and 2 showing copper-wall fits, meniscus tangents and apparent contact angles." data-i18n-alt="wetting_fig_2_alt" width="1431" height="1490" loading="lazy" decoding="async"></a>
+          <figcaption><span data-i18n="wetting_fig_2_caption">Wall and meniscus constructions give apparent angles of about 20° and 70° on the solidified sections.</span> <a href="img/projects/wetting-contact-angles.webp" target="_blank" rel="noopener" data-i18n="wetting_open_image">Open full-size image</a></figcaption>
+        </figure></div>
+      </div>
+      <div class="wetting-support-grid"><figure class="wetting-figure">
+          <a href="img/projects/solder-polished-sections.webp" target="_blank" rel="noopener"><img src="img/projects/solder-polished-sections.webp" alt="Two longitudinal copper-tube sections embedded in a phenolic mount, with solidified solder visible inside." data-i18n-alt="wetting_fig_1_alt" width="574" height="544" loading="lazy" decoding="async"></a>
+          <figcaption><span data-i18n="wetting_fig_1_caption">Polished copper-tube sections expose the internal solder filling.</span> <a href="img/projects/solder-polished-sections.webp" target="_blank" rel="noopener" data-i18n="wetting_open_image">Open full-size image</a></figcaption>
+        </figure><figure class="wetting-figure">
+          <a href="img/projects/wetting-before-after.webp" target="_blank" rel="noopener"><img src="img/projects/wetting-before-after.webp" alt="Mounted copper tubes before and after grinding, annotated with the visible extent of Aquabond and Pb–Sn solder." data-i18n-alt="wetting_fig_3_alt" width="784" height="436" loading="lazy" decoding="async"></a>
+          <figcaption><span data-i18n="wetting_fig_3_caption">Before and after grinding: external spreading and internal filling show different solder extents.</span> <a href="img/projects/wetting-before-after.webp" target="_blank" rel="noopener" data-i18n="wetting_open_image">Open full-size image</a></figcaption>
+        </figure><figure class="wetting-figure">
+          <a href="img/projects/wetting-force-balance.webp" target="_blank" rel="noopener"><img src="img/projects/wetting-force-balance.webp" alt="Diagram of the ideal molten-state contact geometry and interfacial tensions between copper, solder and flux." data-i18n-alt="wetting_fig_4_alt" width="1600" height="935" loading="lazy" decoding="async"></a>
+          <figcaption><span data-i18n="wetting_fig_4_caption">Idealized force balance at the copper–solder–flux contact point used in the capillary analysis.</span> <a href="img/projects/wetting-force-balance.webp" target="_blank" rel="noopener" data-i18n="wetting_open_image">Open full-size image</a></figcaption>
+        </figure></div><p class="wetting-source-note" data-i18n="wetting_images_note">Figures from my wettability report. Microscopy images supplied by the teaching team; analysis and annotations from my report.</p>
+        </div>
+      </section>
+    </div>
 
     <div class="project-modal" id="orbitalSimulationModal" aria-hidden="true">
       <div class="project-modal-backdrop" data-modal-close></div>
@@ -449,6 +488,6 @@ if (abs(outputErrDeg) > STALL_ERROR_OUTPUT_DEG) {
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20261018-v30"></script>
+  <script src="script.js?v=20261018-v31"></script>
 </body>
 </html>

@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20261018-v30">
+  <link rel="stylesheet" href="style.css?v=20261018-v31">
 </head>
 <body data-page="education">
   <header class="site-header" id="siteHeader">
@@ -94,45 +94,40 @@
       </aside>
     </section>
 
-    <section class="transcript-section reveal">
-      <div class="section-heading-row">
-        <div>
-          <h2 data-i18n="transcript_title">Coursework snapshot.</h2>
+    <section class="edu-coursework reveal" aria-labelledby="courseworkHeading">
+      <div class="edu-section-head">
+        <h2 id="courseworkHeading" data-i18n="transcript_title">Coursework snapshot.</h2>
+      </div>
+      <div class="edu-current-strip">
+        <div class="edu-current-label">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          <div><span data-i18n="term_current_label">Current</span><h3 data-i18n="term_current_title">Third year</h3></div>
         </div>
+        <p data-i18n="term_current_text">Current cGPA: 4.1/4.3. Academic strengths include design practice, materials science, mechanics, computing, and engineering communication.</p>
       </div>
-      <div class="transcript-grid">
-        <article class="term-card standout-term">
-          <span data-i18n="term_current_label">Current</span>
-          <h3 data-i18n="term_current_title">Third year</h3>
-          <p data-i18n="term_current_text">Current cGPA: 4.1/4.3. Academic strengths include design practice, materials science, mechanics, computing, and engineering communication.</p>
-        </article>
-        <article class="term-card">
-          <span data-i18n="term_2025_fall_label">2025 Fall · GPA 4.13</span>
-          <h3 data-i18n="term_2025_fall_title">Second-year mechanical core</h3>
-          <p data-i18n="term_2025_fall_text">A+ in Mechanical Math &amp; Computing, Manufacturing Methods, Solid Mechanics, and Materials Science Engineering; A in Measurement in Mechatronics and Thermodynamics.</p>
-        </article>
-        <article class="term-card">
-          <span data-i18n="term_2025_summer_label">2025 Summer · GPA 4.30</span>
-          <h3 data-i18n="term_2025_summer_title">Business and engineering context</h3>
-          <p data-i18n="term_2025_summer_text">Earned an A+ in Economic &amp; Business Practice for Engineers.</p>
-        </article>
-        <article class="term-card">
-          <span data-i18n="term_2025_winter_label">2025 Winter · GPA 3.97</span>
-          <h3 data-i18n="term_2025_winter_title">Design, physics, programming, math</h3>
-          <p data-i18n="term_2025_winter_text">A+ results across Physics II, Programming II, Calculus II, Linear Algebra, and Applied Engineering Mechanics.</p>
-        </article>
-        <article class="term-card">
-          <span data-i18n="term_2024_fall_label">2024 Fall · GPA 4.03</span>
-          <h3 data-i18n="term_2024_fall_title">First-year engineering foundation</h3>
-          <p data-i18n="term_2024_fall_text">Strong foundation in design, experimentation, physics, chemistry of engineering materials, programming, graphics, calculus, and communications.</p>
-        </article>
-        <article class="term-card">
-          <span data-i18n="term_2026_winter_label">2026 Winter</span>
-          <h3 data-i18n="term_2026_winter_title">Completed second-year winter coursework</h3>
-          <p data-i18n="term_2026_winter_text">Course areas include engineering design, communications, mechanical math &amp; computing, circuits and motors, dynamics, fluid mechanics, and materials laboratory.</p>
-        </article>
-      </div>
-      <div class="course-clusters">
+      <ol class="edu-term-list">
+        <li class="edu-term">
+          <span class="edu-term-date" data-i18n="term_2026_winter_label">2026 Winter</span>
+          <div class="edu-term-copy"><h3 data-i18n="term_2026_winter_title">Completed second-year winter coursework</h3><p data-i18n="term_2026_winter_text">Course areas include engineering design, communications, mechanical math &amp; computing, circuits and motors, dynamics, fluid mechanics, and materials laboratory.</p></div>
+        </li>
+        <li class="edu-term">
+          <span class="edu-term-date" data-i18n="term_2025_fall_label">2025 Fall · GPA 4.13</span>
+          <div class="edu-term-copy"><h3 data-i18n="term_2025_fall_title">Second-year mechanical core</h3><p data-i18n="term_2025_fall_text">A+ in Mechanical Math &amp; Computing, Manufacturing Methods, Solid Mechanics, and Materials Science Engineering; A in Measurement in Mechatronics and Thermodynamics.</p></div>
+        </li>
+        <li class="edu-term">
+          <span class="edu-term-date" data-i18n="term_2025_summer_label">2025 Summer · GPA 4.30</span>
+          <div class="edu-term-copy"><h3 data-i18n="term_2025_summer_title">Business and engineering context</h3><p data-i18n="term_2025_summer_text">Earned an A+ in Economic &amp; Business Practice for Engineers.</p></div>
+        </li>
+        <li class="edu-term">
+          <span class="edu-term-date" data-i18n="term_2025_winter_label">2025 Winter · GPA 3.97</span>
+          <div class="edu-term-copy"><h3 data-i18n="term_2025_winter_title">Design, physics, programming, math</h3><p data-i18n="term_2025_winter_text">A+ results across Physics II, Programming II, Calculus II, Linear Algebra, and Applied Engineering Mechanics.</p></div>
+        </li>
+        <li class="edu-term">
+          <span class="edu-term-date" data-i18n="term_2024_fall_label">2024 Fall · GPA 4.03</span>
+          <div class="edu-term-copy"><h3 data-i18n="term_2024_fall_title">First-year engineering foundation</h3><p data-i18n="term_2024_fall_text">Strong foundation in design, experimentation, physics, chemistry of engineering materials, programming, graphics, calculus, and communications.</p></div>
+        </li>
+      </ol>
+      <div class="edu-subjects">
         <span data-i18n="course_cluster_design">Design &amp; Practice</span>
         <span data-i18n="course_cluster_materials">Materials Science</span>
         <span data-i18n="course_cluster_mechanics">Mechanics &amp; Dynamics</span>
@@ -146,78 +141,51 @@
       </div>
     </section>
 
-    <section class="preuni-section reveal">
-      <div class="section-heading-row">
-        <div>
-          <h2 data-i18n="preuni_title">Bilingual STEM foundation.</h2>
-        </div>
-        <a class="text-arrow" href="timeline.html">
-          <span data-i18n="education_timeline_link">See timeline</span>
-          <i class="fa-solid fa-arrow-right"></i>
+    <section class="edu-foundation reveal" aria-labelledby="foundationHeading">
+      <div class="edu-section-head">
+        <h2 id="foundationHeading" data-i18n="preuni_title">Bilingual STEM foundation.</h2>
+        <a class="text-arrow" href="timeline.html"><span data-i18n="education_timeline_link">See timeline</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="edu-school-grid">
+        <article class="edu-school edu-school-suon">
+          <div class="edu-school-meta"><span data-i18n="suon_arc_label">Grade 12 · Toronto</span><a href="https://suon.ca/" target="_blank" rel="noopener noreferrer">suon.ca <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+          <div class="edu-school-title"><h3 data-i18n="suon_school_name">SuOn Academy</h3><div class="edu-average"><strong>97<span>%</span></strong><span data-i18n="suon_badge_average_label">Grade 12 average</span></div></div>
+          <p class="edu-school-summary" data-i18n="edu_suon_summary">Completed Ontario Grade 12 in Toronto, with coursework in mathematics, science, computer science, business, and English.</p>
+          <dl class="edu-grade-grid">
+            <div><dt data-i18n="edu_subject_advanced_functions">Advanced Functions</dt><dd>98<span>%</span></dd></div>
+            <div><dt data-i18n="edu_subject_data_management">Data Management</dt><dd>98<span>%</span></dd></div>
+            <div><dt data-i18n="edu_subject_computer_science">Computer Science</dt><dd>98<span>%</span></dd></div>
+            <div><dt data-i18n="edu_subject_chemistry">Chemistry</dt><dd>97<span>%</span></dd></div>
+            <div><dt data-i18n="edu_subject_international_business">International Business</dt><dd>97<span>%</span></dd></div>
+            <div><dt data-i18n="edu_subject_english">English</dt><dd>96<span>%</span></dd></div>
+            <div><dt data-i18n="edu_subject_physics">Physics</dt><dd>95<span>%</span></dd></div>
+            <div><dt data-i18n="edu_subject_calculus">Calculus &amp; Vectors</dt><dd>94<span>%</span></dd></div>
+          </dl>
+          <p class="edu-school-recognition"><i class="fa-solid fa-award" aria-hidden="true"></i><span data-i18n="suon_li3">Principal's Award and Student of the Month recognition.</span></p>
+        </article>
+        <article class="edu-school edu-school-mudu">
+          <div class="edu-school-meta"><span data-i18n="mudu_arc_label">Grades 10–11 · Suzhou</span></div>
+          <div class="edu-school-title"><h3 data-i18n="mudu_title_short">Mudu Senior High School</h3></div>
+          <p class="edu-school-summary" data-i18n="mudu_arc_text">Built an early bilingual and STEM base before transferring into the Ontario system, with consistent strength in mathematics, functions, physics, English, and broad humanities coursework.</p>
+          <ul class="edu-foundation-list">
+            <li><i class="fa-solid fa-square-root-variable" aria-hidden="true"></i><div><strong data-i18n="foundation_math">Math &amp; functions</strong><span data-i18n="foundation_math_text">Mostly 92–95 across Grades 10–11</span></div></li>
+            <li><i class="fa-solid fa-atom" aria-hidden="true"></i><div><strong data-i18n="foundation_science">Science base</strong><span data-i18n="foundation_science_text">Physics, chemistry, biology foundation</span></div></li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i><div><strong data-i18n="foundation_language">Bilingual transition</strong><span data-i18n="foundation_language_text">English + ESL preparation</span></div></li>
+            <li><i class="fa-solid fa-palette" aria-hidden="true"></i><div><strong data-i18n="foundation_range">Range</strong><span data-i18n="foundation_range_text">A-level performance in music, art, and I.T.</span></div></li>
+          </ul>
+        </article>
+      </div>
+      <article class="edu-certificate">
+        <a class="edu-certificate-image" href="img/timeline/csmc-distinction.jpg" target="_blank" rel="noopener">
+          <img src="img/timeline/csmc-distinction.jpg" width="1621" height="1214" loading="lazy" data-i18n-alt="edu_certificate_alt" alt="2023 Canadian Senior Mathematics Contest Certificate of Distinction awarded to Shenghan Gao.">
         </a>
-      </div>
-
-      <div class="academic-arc-grid">
-        <article class="arc-card suon-card">
-          <div class="arc-card-head">
-            <span data-i18n="suon_arc_label">Grade 12 · Toronto</span>
-            <a href="https://suon.ca/" target="_blank" rel="noopener">suon.ca</a>
-          </div>
-          <h3 data-i18n="suon_school_name">SuOn Academy</h3>
-          <p data-i18n="suon_arc_text">Completed Ontario Grade 12 with a 97% average across math, science, computer science, business, and English courses.</p>
-          <div class="metric-badge-grid">
-            <div class="metric-badge large-badge"><span data-i18n="suon_badge_average_label">Grade 12 average</span><strong>97%</strong></div>
-            <div class="metric-badge"><span data-i18n="suon_badge_math_label">Math &amp; data peak</span><strong>98%</strong></div>
-            <div class="metric-badge"><span data-i18n="suon_badge_code_label">Computer science</span><strong>98%</strong></div>
-            <div class="metric-badge"><span data-i18n="suon_badge_english_label">English</span><strong>96%</strong></div>
-          </div>
-          <div class="subject-sparkline" aria-label="Selected Grade 12 final marks">
-            <span class="level-98" title="Advanced Functions 98">AF</span>
-            <span class="level-98" title="Data Management 98">DM</span>
-            <span class="level-98" title="Computer Science 98">CS</span>
-            <span class="level-97" title="Chemistry 97">CH</span>
-            <span class="level-96" title="English 96">EN</span>
-            <span class="level-95" title="Physics 95">PH</span>
-            <span class="level-94" title="Calculus & Vectors 94">CV</span>
-          </div>
-        </article>
-
-        <article class="arc-card mudu-card">
-          <div class="arc-card-head">
-            <span data-i18n="mudu_arc_label">Grades 10–11 · Suzhou</span>
-          </div>
-          <h3 data-i18n="mudu_title_short">Mudu Senior High School</h3>
-          <p data-i18n="mudu_arc_text">Built an early bilingual and STEM base before transferring into the Ontario system, with consistent strength in mathematics, functions, physics, English, and broad humanities coursework.</p>
-          <div class="foundation-map">
-            <div><i class="fa-solid fa-square-root-variable"></i><strong data-i18n="foundation_math">Math &amp; functions</strong><span data-i18n="foundation_math_text">Mostly 92–95 across Grades 10–11</span></div>
-            <div><i class="fa-solid fa-atom"></i><strong data-i18n="foundation_science">Science base</strong><span data-i18n="foundation_science_text">Physics, chemistry, biology foundation</span></div>
-            <div><i class="fa-solid fa-language"></i><strong data-i18n="foundation_language">Bilingual transition</strong><span data-i18n="foundation_language_text">English + ESL preparation</span></div>
-            <div><i class="fa-solid fa-palette"></i><strong data-i18n="foundation_range">Range</strong><span data-i18n="foundation_range_text">A-level performance in music, art, and I.T.</span></div>
-          </div>
-        </article>
-      </div>
-
-      <article class="distinction-card">
-        <div class="distinction-media">
-          <img src="img/timeline/csmc-distinction.jpg" alt="Certificate of Distinction for the Canadian Senior Mathematics Contest awarded to Shenghan Gao">
-        </div>
-        <div class="distinction-copy">
-          <span data-i18n="csmc_card_label">Mathematics contest highlight</span>
+        <div class="edu-certificate-copy">
+          <span class="edu-certificate-label" data-i18n="csmc_card_label">Mathematics contest highlight</span>
           <h3 data-i18n="csmc_card_title">Canadian Senior Mathematics Contest · Certificate of Distinction</h3>
           <p data-i18n="csmc_card_text">Recognized by the Centre for Education in Mathematics and Computing at the University of Waterloo for ranking in the top twenty-five percent of contestants in 2023.</p>
+          <a class="text-arrow" href="img/timeline/csmc-distinction.jpg" target="_blank" rel="noopener"><span data-i18n="edu_certificate_view">View certificate</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
         </div>
       </article>
-
-      <div class="achievement-chips">
-        <span data-i18n="chip_advanced_functions">Advanced Functions 98</span>
-        <span data-i18n="chip_data_management">Data Management 98</span>
-        <span data-i18n="chip_computer_science">Computer Science 98</span>
-        <span data-i18n="chip_chemistry">Chemistry 97</span>
-        <span data-i18n="chip_international_business">International Business 97</span>
-        <span data-i18n="chip_english">English 96</span>
-        <span data-i18n="chip_physics">Physics 95</span>
-        <span data-i18n="chip_calculus">Calculus &amp; Vectors 94</span>
-      </div>
     </section>
   </main>
 
@@ -226,6 +194,6 @@
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20261018-v30"></script>
+  <script src="script.js?v=20261018-v31"></script>
 </body>
 </html>

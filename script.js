@@ -457,12 +457,12 @@ const translations = {
     "alt_polished_steel": "Mounted steel specimen after grinding and diamond polishing",
     "alt_solder_sections": "Polished copper tube sections containing Pb–Sn solder on the left and Aquabond on the right",
     "alt_mount_measurement": "Micrometer measuring the thickness of a metallographic specimen mount",
-    "project_metallography_type": "Materials laboratory · MECH 396 · Sep 2026",
+    "project_metallography_type": "Metallography · Image analysis · Phase diagrams",
     "project_metallography_title": "Metallography & Phase Diagrams",
     "project_metallography_text": "Worked with my lab team to grind and polish an unknown steel specimen. I used ImageJ point counting on the supplied micrographs and phase-diagram calculations to estimate 65.8 vol% pearlite and approximately 0.51 wt% carbon.",
     "project_metallography_tag_prep": "Specimen preparation",
     "project_metallography_tag_phase": "Phase diagrams",
-    "project_wettability_type": "Materials laboratory · MECH 396 · Oct 2026",
+    "project_wettability_type": "Wetting · Capillarity · Surface energy",
     "project_wettability_title": "Solder Wettability on Copper",
     "project_wettability_text": "Compared lead-free Aquabond and Pb–Sn solder on copper with my lab team. The polished sections showed internal penetration of 0.95 cm and 1.50 cm, respectively, in this trial. I used apparent contact angles and a capillary model to estimate interfacial properties.",
     "project_wettability_tag_solder": "Soldering",
@@ -472,9 +472,52 @@ const translations = {
     "contact_linkedin_label": "LinkedIn · Professional profile",
     "contact_linkedin_name": "Shenghan Gao",
     "project_metallography_cover_alt": "Etched steel micrograph showing light ferrite regions and textured pearlite colonies, with a 100 µm scale bar.",
-    "project_metallography_cover_caption": "Ferrite–pearlite · Micrograph: MECH 396 teaching team.",
+    "project_metallography_cover_caption": "Ferrite–pearlite · Micrograph: Queen’s teaching team.",
     "project_wettability_cover_alt": "Annotated solder section showing an apparent contact angle of approximately 20° between the inferred copper wall and the meniscus tangent.",
-    "project_wettability_cover_caption": "Contact-angle analysis · Micrograph: MECH 396 teaching team."
+    "project_wettability_cover_caption": "Contact-angle analysis · Micrograph: Queen’s teaching team.",
+    "wetting_expand": "Click to explore the experiment",
+    "wetting_full_page": "Open full case study",
+    "wetting_back": "Back to projects",
+    "wetting_close": "Close project details",
+    "wetting_metric_a": "Aquabond · Internal filling",
+    "wetting_metric_b": "Pb–Sn · Internal filling",
+    "wetting_metric_radius": "Reconstructed bore radii",
+    "wetting_metric_note": "Measured filling lengths from this trial; bore radii inferred from tube measurements.",
+    "wetting_images_note": "Figures from my wettability report. Microscopy images supplied by the teaching team; analysis and annotations from my report.",
+    "wetting_open_image": "Open full-size image",
+    "wetting_intro": "I investigated how lead-free Aquabond and Pb–50 wt.% Sn solder wet copper and fill a narrow tube. The aim was to compare internal penetration and connect the visible meniscus shape to a capillary-force model.",
+    "wetting_section_1_title": "Preparation and measurements",
+    "wetting_section_1_text": "Our MECH 396 Team 3B weighed and measured the copper tubes, applied flux, and heated the solders with a propane torch. We mounted the cooled specimens in phenolic resin, then ground them through 240-, 400- and 600-grit papers and polished the sections. Micrometer readings tracked material removal and unevenness across the mount. I also compared local mount heights with the planned grinding depth to assess section preparation.",
+    "wetting_section_2_title": "Reconstructing the geometry",
+    "wetting_section_2_text": "For my analysis, I reconstructed each bore radius from copper mass, tube length and outer diameter, treating the wall as a uniform annulus. This gave 0.795 mm for the Aquabond tube and 0.779 mm for Pb–Sn. On 20× images, I extended the copper-wall line and fitted a local meniscus tangent to estimate apparent contact angles of 20° and 70° for specimens 1 and 2.",
+    "wetting_section_3_title": "From measurements to a model",
+    "wetting_section_3_text": "Measured internal filling was 0.95 cm for Aquabond and 1.50 cm for Pb–Sn: 57.9% greater for Pb–Sn in this trial. Using those lengths, reconstructed radii and assumed liquid densities, I applied Δγ = ρgrh/2 to estimate copper interfacial-energy differences of 0.259 and 0.491 N/m, respectively.",
+    "wetting_section_4_title": "Checking the interpretation",
+    "wetting_section_4_text": "I compared internal filling with total mass gains of 0.1627 g and 0.2218 g, accounting for exterior solder and retained flux when interpreting the weighing results. I kept the alloy-to-image assignment provisional and treated missing bath-level and temperature records, together with uneven sectioning, as limits on model precision.",
+    "wetting_skill_1": "Soldering and specimen preparation",
+    "wetting_skill_2": "Micrometer measurements",
+    "wetting_skill_3": "Image-based geometry",
+    "wetting_skill_4": "Capillary-force modelling",
+    "wetting_skill_5": "Measurement checks",
+    "wetting_fig_1_caption": "Polished copper-tube sections expose the internal solder filling.",
+    "wetting_fig_1_alt": "Two longitudinal copper-tube sections embedded in a phenolic mount, with solidified solder visible inside.",
+    "wetting_fig_2_caption": "Wall and meniscus constructions give apparent angles of about 20° and 70° on the solidified sections.",
+    "wetting_fig_2_alt": "Annotated 20× micrographs of specimens 1 and 2 showing copper-wall fits, meniscus tangents and apparent contact angles.",
+    "wetting_fig_3_caption": "Before and after grinding: external spreading and internal filling show different solder extents.",
+    "wetting_fig_3_alt": "Mounted copper tubes before and after grinding, annotated with the visible extent of Aquabond and Pb–Sn solder.",
+    "wetting_fig_4_caption": "Idealized force balance at the copper–solder–flux contact point used in the capillary analysis.",
+    "wetting_fig_4_alt": "Diagram of the ideal molten-state contact geometry and interfacial tensions between copper, solder and flux.",
+    "edu_suon_summary": "Completed Ontario Grade 12 in Toronto, with coursework in mathematics, science, computer science, business, and English.",
+    "edu_certificate_view": "View certificate",
+    "edu_certificate_alt": "2023 Canadian Senior Mathematics Contest Certificate of Distinction awarded to Shenghan Gao.",
+    "edu_subject_advanced_functions": "Advanced Functions",
+    "edu_subject_data_management": "Data Management",
+    "edu_subject_computer_science": "Computer Science",
+    "edu_subject_chemistry": "Chemistry",
+    "edu_subject_international_business": "International Business",
+    "edu_subject_english": "English",
+    "edu_subject_physics": "Physics",
+    "edu_subject_calculus": "Calculus & Vectors"
   },
   "zh": {
     "brand_role": "机械与材料工程",
@@ -934,12 +977,12 @@ const translations = {
     "alt_polished_steel": "经过研磨与金刚石抛光的镶嵌钢试样",
     "alt_solder_sections": "抛光后的铜管截面，左侧为铅锡焊料，右侧为 Aquabond 焊料",
     "alt_mount_measurement": "用千分尺测量金相试样镶嵌块的厚度",
-    "project_metallography_type": "材料实验 · MECH 396 · 2026 年 9 月",
+    "project_metallography_type": "金相制样 · 图像分析 · 相图",
     "project_metallography_title": "金相分析与相图解读",
     "project_metallography_text": "与实验小组一起完成未知钢试样的研磨与抛光。我对提供的显微照片进行 ImageJ 点计数，结合相图计算，估算出 65.8% 的珠光体体积分数和约 0.51 wt% 的碳含量。",
     "project_metallography_tag_prep": "试样制备",
     "project_metallography_tag_phase": "相图分析",
-    "project_wettability_type": "材料实验 · MECH 396 · 2026 年 10 月",
+    "project_wettability_type": "润湿性 · 毛细作用 · 界面能",
     "project_wettability_title": "铜表面的焊料润湿性",
     "project_wettability_text": "与实验小组比较无铅 Aquabond 和铅锡焊料对铜的润湿性。本次实验的抛光截面显示，两种焊料的管内渗入长度分别为 0.95 cm 和 1.50 cm。我结合表观接触角与毛细模型，估算了界面参数。",
     "project_wettability_tag_solder": "软钎焊",
@@ -949,9 +992,52 @@ const translations = {
     "contact_linkedin_label": "LinkedIn · 职业资料",
     "contact_linkedin_name": "高胜寒",
     "project_metallography_cover_alt": "腐蚀后的钢试样显微照片，显示浅色铁素体区域和带纹理的珠光体团，比例尺为 100 µm。",
-    "project_metallography_cover_caption": "铁素体与珠光体 · 显微照片：MECH 396 教学团队。",
+    "project_metallography_cover_caption": "铁素体与珠光体 · 显微照片：女王大学教学团队。",
     "project_wettability_cover_alt": "带测量标注的焊料截面，推定铜壁与弯月面切线之间的表观接触角约为 20°。",
-    "project_wettability_cover_caption": "接触角分析 · 显微照片：MECH 396 教学团队。"
+    "project_wettability_cover_caption": "接触角分析 · 显微照片：女王大学教学团队。",
+    "wetting_expand": "点击查看实验与分析",
+    "wetting_full_page": "在独立页面查看",
+    "wetting_back": "返回项目列表",
+    "wetting_close": "关闭项目详情",
+    "wetting_metric_a": "Aquabond · 管内填充长度",
+    "wetting_metric_b": "铅锡焊料 · 管内填充长度",
+    "wetting_metric_radius": "反算的内孔半径",
+    "wetting_metric_note": "填充长度为本次实验测量值；内孔半径由铜管测量数据反算。",
+    "wetting_images_note": "图片来自我的润湿性报告。显微照片由教学团队提供，分析与标注来自我的报告。",
+    "wetting_open_image": "查看原尺寸图片",
+    "wetting_intro": "我研究了无铅 Aquabond 和 Pb–50 wt.% Sn 铅锡焊料对铜的润湿及其在细管内的填充。实验通过比较管内渗入长度，将观察到的弯月面形状与毛细力模型联系起来。",
+    "wetting_section_1_title": "制样与测量",
+    "wetting_section_1_text": "MECH 396 的 3B 实验小组对铜管称重并测量尺寸，涂覆助焊剂后用丙烷喷灯加热焊料。我们将冷却后的试样镶嵌在酚醛树脂中，依次使用 240、400 和 600 目砂纸研磨，再抛光截面。制样过程中用千分尺跟踪材料去除量及镶嵌块各处的厚度差异。我还将各测点的镶嵌块高度与计划研磨深度对照，检查截面制备情况。",
+    "wetting_section_2_title": "重建测量几何",
+    "wetting_section_2_text": "在个人分析中，我将管壁视为均匀圆环，根据铜管质量、长度和外径反算内孔半径，得到 Aquabond 铜管约 0.795 mm、铅锡焊料铜管约 0.779 mm。我还在 20 倍显微照片上延长铜壁方向线，并拟合弯月面的局部切线，估算试样 1 和 2 的表观接触角分别为 20° 和 70°。",
+    "wetting_section_3_title": "从测量到模型",
+    "wetting_section_3_text": "测得 Aquabond 与铅锡焊料的管内填充长度分别为 0.95 cm 和 1.50 cm，本次实验中铅锡焊料高出 57.9%。结合这些长度、反算半径和假定的液态密度，我用 Δγ = ρgrh/2 估算铜界面能之差，两种焊料对应的结果分别为 0.259 和 0.491 N/m。",
+    "wetting_section_4_title": "核对结果的含义",
+    "wetting_section_4_text": "我将管内填充与 0.1627 g、0.2218 g 的总质量增量对照，解读称重结果时考虑了管外附着焊料和残留助焊剂。我保留了显微照片与焊料种类对应关系的暂定性质，并将缺失的焊料液面与温度记录，以及截面不均匀，作为模型精度的限制。",
+    "wetting_skill_1": "软钎焊与试样制备",
+    "wetting_skill_2": "千分尺测量",
+    "wetting_skill_3": "图像几何测量",
+    "wetting_skill_4": "毛细力建模",
+    "wetting_skill_5": "测量结果核对",
+    "wetting_fig_1_caption": "抛光后的铜管截面露出了管内焊料填充区域。",
+    "wetting_fig_1_alt": "镶嵌在酚醛树脂中的两根铜管纵向截面，管内可见凝固焊料。",
+    "wetting_fig_2_caption": "通过铜壁方向和弯月面切线构图，估算凝固截面的表观接触角约为 20° 和 70°。",
+    "wetting_fig_2_alt": "试样 1 和 2 的 20 倍显微照片，标出了铜壁拟合线、弯月面切线和表观接触角。",
+    "wetting_fig_3_caption": "研磨前后对照：管外铺展与管内填充呈现不同的焊料延伸范围。",
+    "wetting_fig_3_alt": "铜管镶嵌试样在研磨前后的对比图，标出了 Aquabond 和铅锡焊料的可见延伸范围。",
+    "wetting_fig_4_caption": "毛细分析采用的铜、焊料与助焊剂接触点理想受力模型。",
+    "wetting_fig_4_alt": "熔融状态下铜、焊料与助焊剂接触几何及界面张力的理想模型示意图。",
+    "edu_suon_summary": "在多伦多完成安大略省 12 年级课程，所学涵盖数学、科学、计算机科学、商务与英语。",
+    "edu_certificate_view": "查看证书",
+    "edu_certificate_alt": "高胜寒获得的 2023 年加拿大高级数学竞赛优异证书。",
+    "edu_subject_advanced_functions": "高级函数",
+    "edu_subject_data_management": "数据管理",
+    "edu_subject_computer_science": "计算机科学",
+    "edu_subject_chemistry": "化学",
+    "edu_subject_international_business": "国际商务",
+    "edu_subject_english": "英语",
+    "edu_subject_physics": "物理",
+    "edu_subject_calculus": "微积分与向量"
   }
 };
 
@@ -1065,11 +1151,13 @@ const initProjectModals = () => {
   const closeButtons = document.querySelectorAll("[data-modal-close]");
   let activeModal = null;
   let lastTrigger = null;
+  document.querySelectorAll(".project-modal").forEach((modal) => { modal.inert = true; });
 
   const openModal = (modalId, trigger) => {
     const modal = document.getElementById(modalId);
     if (!modal) return;
     activeModal = modal;
+    modal.inert = false;
     lastTrigger = trigger || null;
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
@@ -1082,6 +1170,7 @@ const initProjectModals = () => {
     if (!activeModal) return;
     activeModal.classList.remove("open");
     activeModal.setAttribute("aria-hidden", "true");
+    activeModal.inert = true;
     document.body.classList.remove("modal-open");
     const triggerToFocus = lastTrigger;
     activeModal = null;
@@ -1102,7 +1191,29 @@ const initProjectModals = () => {
   closeButtons.forEach((button) => button.addEventListener("click", closeModal));
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeModal();
+    if (!activeModal) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeModal();
+      return;
+    }
+    if (event.key === "Tab") {
+      const panel = activeModal.querySelector(".project-modal-panel");
+      const focusable = Array.from(panel.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]'))
+        .filter((element) => element.getClientRects().length > 0);
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (!first) {
+        event.preventDefault();
+        panel.focus();
+      } else if (event.shiftKey && (document.activeElement === first || document.activeElement === panel)) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
   });
 };
 
