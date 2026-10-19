@@ -14,6 +14,7 @@
   --green: #2f7d5b;
   --purple: #7656d9;
   --rose: #bd4f6c;
+  --shop-accent: #a65332;
   --shadow: 0 24px 80px rgba(17, 24, 39, 0.12);
   --shadow-soft: 0 12px 34px rgba(17, 24, 39, 0.09);
   --radius-xl: 36px;
@@ -2939,22 +2940,19 @@ body {
 
 .shop-family {
   grid-column: 1 / -1;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,255,255,0.58)),
-    radial-gradient(circle at 4% 0%, rgba(196, 138, 53, 0.18), transparent 36%),
-    radial-gradient(circle at 92% 100%, rgba(47, 125, 91, 0.17), transparent 40%);
+  background: #fff4ec;
 }
 
 .shop-family::before {
-  background: linear-gradient(90deg, var(--gold), var(--green));
+  background: var(--shop-accent);
 }
 
 .shop-family .tool-family-head i {
-  background: linear-gradient(135deg, var(--gold-dark), var(--green));
+  background: var(--shop-accent);
 }
 
 .shop-chip-grid span {
-  background: rgba(47, 125, 91, 0.1);
+  background: rgba(166, 83, 50, 0.1);
 }
 
 .timeline-project-trigger {
@@ -3975,4 +3973,125 @@ html[lang="zh"] .tool-family p {
 }
 .welcome-dinner-photo img {
   object-position: center 62%;
+}
+
+
+/* v29: current certificate, coding tools, and materials lab projects */
+.tool-family-head > i {
+  flex: 0 0 50px;
+}
+
+.tool-family-head > div {
+  min-width: 0;
+}
+
+.tool-family-head h2 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.tool-chip-grid span,
+.lab-project .mini-chip-row span {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.code-tool-shot img,
+.specimen-tool-shot img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.dean-certificate-image {
+  display: block;
+  background: #fff;
+}
+
+.timeline-image.dean-certificate-image img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  min-height: 0;
+  max-height: none;
+  object-fit: contain !important;
+  padding: 0;
+}
+
+.dean-certificate-image:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.lab-project,
+.lab-project .project-copy {
+  min-width: 0;
+}
+
+.project-tile.lab-project .lab-project-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+}
+
+.project-tile.lab-project .project-photo {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.lab-project .mini-chip-row {
+  margin-top: 16px;
+}
+
+.lab-project-figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.lab-project-figure figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+
+/* v30: subtle code tag groups and professional contact links */
+.code-chip-grid span {
+  border: 1px solid transparent;
+}
+
+.code-chip-grid .code-language {
+  background: rgba(47, 125, 91, 0.13);
+  color: #245b43;
+}
+
+.code-chip-grid .code-tool {
+  background: rgba(255, 255, 255, 0.36);
+  border-color: rgba(17, 24, 39, 0.2);
+  color: var(--ink-soft);
+}
+
+.contact-card .social-contact > i {
+  flex: 0 0 20px;
+  text-align: center;
+}
+
+.contact-card .social-contact > span {
+  overflow-wrap: anywhere;
+}
+
+.contact-card .social-contact:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
 }

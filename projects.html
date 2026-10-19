@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20260910-v27">
+  <link rel="stylesheet" href="style.css?v=20261018-v30">
 </head>
 <body data-page="projects">
   <header class="site-header" id="siteHeader">
@@ -162,6 +162,44 @@
           <span class="project-type" data-i18n="project_portfolio_type">Web development · Bilingual portfolio</span>
           <h2 data-i18n="project4_title">Personal Portfolio Website</h2>
           <p data-i18n="project4_text">Designed and built this bilingual portfolio with responsive layouts and separate HTML, CSS, and JavaScript files.</p>
+        </div>
+      </article>
+
+      <article class="project-tile compact-feature lab-project" id="metallography">
+        <figure class="lab-project-figure">
+          <div class="project-visual has-image compact-visual lab-project-visual">
+            <img class="project-photo" src="img/projects/metallography-microstructure.webp" alt="Etched steel micrograph showing light ferrite regions and textured pearlite colonies, with a 100 µm scale bar." data-i18n-alt="project_metallography_cover_alt" width="1024" height="576" loading="lazy" decoding="async">
+          </div>
+          <figcaption data-i18n="project_metallography_cover_caption">Ferrite–pearlite · Micrograph: MECH 396 teaching team.</figcaption>
+        </figure>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_metallography_type">Materials laboratory · MECH 396 · Sep 2026</span>
+          <h2 data-i18n="project_metallography_title">Metallography &amp; Phase Diagrams</h2>
+          <p data-i18n="project_metallography_text">Worked with my lab team to grind and polish an unknown steel specimen. I used ImageJ point counting on the supplied micrographs and phase-diagram calculations to estimate 65.8 vol% pearlite and approximately 0.51 wt% carbon.</p>
+          <div class="mini-chip-row">
+            <span data-i18n="project_metallography_tag_prep">Specimen preparation</span>
+            <span>ImageJ</span>
+            <span data-i18n="project_metallography_tag_phase">Phase diagrams</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-tile compact-feature lab-project" id="wettability">
+        <figure class="lab-project-figure">
+          <div class="project-visual has-image compact-visual lab-project-visual">
+            <img class="project-photo" src="img/projects/wettability-microstructure.webp" alt="Annotated solder section showing an apparent contact angle of approximately 20° between the inferred copper wall and the meniscus tangent." data-i18n-alt="project_wettability_cover_alt" width="916" height="515" loading="lazy" decoding="async">
+          </div>
+          <figcaption data-i18n="project_wettability_cover_caption">Contact-angle analysis · Micrograph: MECH 396 teaching team.</figcaption>
+        </figure>
+        <div class="project-copy">
+          <span class="project-type" data-i18n="project_wettability_type">Materials laboratory · MECH 396 · Oct 2026</span>
+          <h2 data-i18n="project_wettability_title">Solder Wettability on Copper</h2>
+          <p data-i18n="project_wettability_text">Compared lead-free Aquabond and Pb–Sn solder on copper with my lab team. The polished sections showed internal penetration of 0.95 cm and 1.50 cm, respectively, in this trial. I used apparent contact angles and a capillary model to estimate interfacial properties.</p>
+          <div class="mini-chip-row">
+            <span data-i18n="project_wettability_tag_solder">Soldering</span>
+            <span data-i18n="project_wettability_tag_angle">Contact angles</span>
+            <span data-i18n="project_wettability_tag_capillary">Capillary analysis</span>
+          </div>
         </div>
       </article>
     </section>
@@ -411,6 +449,6 @@ if (abs(outputErrDeg) > STALL_ERROR_OUTPUT_DEG) {
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20260910-v27"></script>
+  <script src="script.js?v=20261018-v30"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Tools | Shenghan Gao</title>
-  <meta name="description" content="Shenghan Gao's engineering process and tool stack: CAD, simulation, programming, data analysis, documentation, Visio, manufacturing exposure, and creative media.">
+  <meta name="description" content="Shenghan Gao's engineering process and tool stack: CAD, simulation, programming, data analysis, documentation, Visio, AI-assisted coding, materials testing, manufacturing experience, and creative media.">
   <meta name="keywords" content="Shenghan Gao tools, engineering process, Visio, Morphological Analysis, SolidWorks, AutoCAD, NX, MATLAB, Arduino, Blender, Python, C, PyCharm, CLion, Jupyter Notebook, Sublime Text, Word, PowerPoint, Excel, Photoshop, Premiere Pro, Audition">
   <meta name="author" content="Shenghan Gao">
   <meta name="robots" content="index, follow">
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20260910-v27">
+  <link rel="stylesheet" href="style.css?v=20261018-v30">
 </head>
 <body data-page="tools">
   <header class="site-header" id="siteHeader">
@@ -130,7 +130,6 @@
         <div class="tool-family-head">
           <i class="fa-solid fa-gears"></i>
           <div>
-            <span data-i18n="tool_family_engineering_label">Engineering software</span>
             <h2 data-i18n="tool_engineering_title">CAD · Simulation · Prototyping</h2>
           </div>
         </div>
@@ -176,15 +175,23 @@
         <div class="tool-family-head">
           <i class="fa-solid fa-code"></i>
           <div>
-            <span data-i18n="tool_family_code_label">Programming &amp; controls</span>
             <h2 data-i18n="tool_code_title">Code · Data · Control</h2>
           </div>
         </div>
-        <div class="tool-chip-grid">
-          <span>Python</span><span>C</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PyCharm</span><span>CLion</span><span>Jupyter Notebook</span><span>Sublime Text</span>
+        <div class="tool-chip-grid code-chip-grid">
+          <span class="code-language">Python</span><span class="code-language">C</span><span class="code-language">HTML</span><span class="code-language">CSS</span><span class="code-language">JavaScript</span>
+          <span class="code-tool">VS Code</span><span class="code-tool">GitHub Copilot</span><span class="code-tool">DeepSeek Harness</span><span class="code-tool">PyCharm</span><span class="code-tool">CLion</span><span class="code-tool">Jupyter Notebook</span><span class="code-tool">Sublime Text</span>
         </div>
         <div class="tool-conveyor" aria-label="Programming and data visual conveyor">
           <div class="conveyor-track">
+          <figure class="tool-shot code-tool-shot">
+            <img src="img/tools/vscode-github-copilot.webp" alt="VS Code with JavaScript code and the GitHub Copilot chat panel" data-i18n-alt="alt_copilot" loading="lazy" decoding="async">
+            <figcaption data-i18n="cap_copilot">VS Code + GitHub Copilot · Integrated assistant</figcaption>
+          </figure>
+          <figure class="tool-shot code-tool-shot">
+            <img src="img/tools/deepseek-harness.webp" alt="DeepSeek Harness task trajectory showing file edits and tool calls" data-i18n-alt="alt_deepseek" loading="lazy" decoding="async">
+            <figcaption data-i18n="cap_deepseek">DeepSeek Harness · Agentic tool</figcaption>
+          </figure>
           <figure class="tool-shot">
             <img src="img/tools/python-code-snippet.jpg" alt="Python numerical method code snippet">
             <figcaption data-i18n="cap_python_code">Python root-finding code</figcaption>
@@ -227,14 +234,13 @@
           </figure>
           </div>
         </div>
-        <p data-i18n="tool_code_text">I write control programs, analyze test data, and build websites using the languages and tools below.</p>
+        <p data-i18n="tool_code_text">Control code, data analysis, and web development, with GitHub Copilot in VS Code and DeepSeek Harness for AI-assisted coding (vibe coding).</p>
       </article>
 
       <article class="tool-family shop-family">
         <div class="tool-family-head">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
           <div>
-            <span data-i18n="tool_family_shop_label">Manufacturing &amp; shop-floor exposure</span>
             <h2 data-i18n="tool_shop_title">Hands-on fabrication · maintenance · production</h2>
           </div>
         </div>
@@ -245,9 +251,23 @@
           <span data-i18n="tool_shop_chip_fastening">Fixture and shelving installation</span>
           <span data-i18n="tool_shop_chip_electrical">Light wiring and maintenance support</span>
           <span data-i18n="tool_shop_chip_proto">Prototype assembly and troubleshooting</span>
+          <span data-i18n="tool_shop_chip_metallography">Metallographic grinding &amp; polishing</span>
+          <span data-i18n="tool_shop_chip_wetting">Solder wetting &amp; capillary measurements</span>
         </div>
         <div class="tool-conveyor" aria-label="Manufacturing and shop-floor visual conveyor">
           <div class="conveyor-track">
+          <figure class="tool-shot">
+            <img src="img/projects/metallography-polished-steel.webp" alt="Mounted steel specimen after grinding and diamond polishing" data-i18n-alt="alt_polished_steel" loading="lazy" decoding="async">
+            <figcaption data-i18n="cap_polished_steel">Polished steel specimen</figcaption>
+          </figure>
+          <figure class="tool-shot">
+            <img src="img/tools/metallography-micrometer.webp" alt="Micrometer measuring the thickness of a metallographic specimen mount" data-i18n-alt="alt_mount_measurement" loading="lazy" decoding="async">
+            <figcaption data-i18n="cap_mount_measurement">Specimen mount measurement</figcaption>
+          </figure>
+          <figure class="tool-shot specimen-tool-shot">
+            <img src="img/projects/solder-polished-sections.webp" alt="Polished copper tube sections containing Pb–Sn solder on the left and Aquabond on the right" data-i18n-alt="alt_solder_sections" loading="lazy" decoding="async">
+            <figcaption data-i18n="cap_solder_sections">Polished solder-filled copper tubes</figcaption>
+          </figure>
           <figure class="tool-shot">
             <img src="img/tools/shop-injection-molding-heating.jpg" alt="Screw-type injection molding machine heating zone">
             <figcaption data-i18n="cap_injection">Injection molding operation &amp; maintenance</figcaption>
@@ -274,14 +294,13 @@
           </figure>
           </div>
         </div>
-        <p data-i18n="tool_shop_text">Hands-on work from factory floors, workshops, and repair situations: injection molding operation, welding and fixture repair, heat-fused pipe joints, fastening shelves and brackets, light wiring support, small repairs, and prototype assembly.</p>
+        <p data-i18n="tool_shop_text">My hands-on experience includes injection molding operation and maintenance support, welding and fixture repair, pipe heat-fusion joining, light wiring, and prototype assembly. Materials labs added specimen grinding and polishing, dimensional measurements, and solder-wetting tests on copper.</p>
       </article>
 
       <article class="tool-family office-family">
         <div class="tool-family-head">
           <i class="fa-solid fa-diagram-project"></i>
           <div>
-            <span data-i18n="tool_family_office_label">Documentation &amp; systems modeling</span>
             <h2 data-i18n="tool_office_title">Reports · Diagrams · Data</h2>
           </div>
         </div>
@@ -315,7 +334,6 @@
         <div class="tool-family-head">
           <i class="fa-solid fa-wand-magic-sparkles"></i>
           <div>
-            <span data-i18n="tool_family_adobe_label">Creative media</span>
             <h2 data-i18n="tool_adobe_title">Adobe · Visual Communication</h2>
           </div>
         </div>
@@ -344,6 +362,6 @@
     <a href="sitemap.xml" data-i18n="footer_sitemap">Sitemap</a>
   </footer>
 
-  <script src="script.js?v=20260910-v27"></script>
+  <script src="script.js?v=20261018-v30"></script>
 </body>
 </html>
