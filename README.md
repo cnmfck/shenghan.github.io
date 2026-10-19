@@ -3,7 +3,7 @@
 **Mechanical design, materials, and hands-on engineering.**  
 **机械设计、材料与工程实践。**
 
-[Website / 网站](https://shenghan.cc/) · [GitHub](https://github.com/cnmfck) · [LinkedIn](https://www.linkedin.com/in/shenghan-gao-254157432/) · [Email / 邮箱](mailto:23RL30@queensu.ca)
+[Website / 网站](https://shenghan.cc/) · [LinkedIn](https://www.linkedin.com/in/shenghan-gao-254157432/) · [Email / 邮箱](mailto:23RL30@queensu.ca)
 
 ## About / 关于网站
 
@@ -29,42 +29,6 @@ The site is built with HTML, CSS, and vanilla JavaScript. It uses separate pages
 | Projects / 项目 | `projects.html` | Engineering prototypes, simulations, laboratory studies, documentation, and website projects. Featured projects include expandable details. / 工程原型、仿真、材料实验、文档及网站项目，重点项目可展开查看详情。 |
 | Tools / 工具与方法 | `tools.html` | Engineering methods, software, programming, workshop experience, and examples of their use. / 工程方法、软件、编程、现场实践及对应的应用实例。 |
 | Contact / 联系方式 | `contacts.html` | Email, phone, location, GitHub, LinkedIn, and professional interests. / 邮箱、电话、所在地、GitHub、LinkedIn 与职业交流方向。 |
-
-## Projects / 项目展示
-
-| Project / 项目 | Work shown / 展示内容 |
-| --- | --- |
-| **Femoral Head Indexing Station / 股骨头定位转台原型** | A mechanism that moves a prosthetic femoral head through three manufacturing positions. My work included motor testing, encoder feedback, Arduino/C control, and Python analysis. / 将假体股骨头转至三个加工位置的定位机构；我负责电机测试、编码器反馈、Arduino/C 控制与 Python 分析。 |
-| **Water Filtration Prototype / 水处理过滤原型** | A team-built prototype combining pump-driven flow, alum dosing, magnetic mixing, and filtration. I planned the layout in SolidWorks and independently wrote the control code. / 团队搭建的水处理原型，结合水泵输送、明矾投放、磁力搅拌与过滤；我使用 SolidWorks 规划布局，并独立编写控制代码。 |
-| **HarveStar Lunar Harvest End Effector / HarveStar 月球温室采摘末端执行器** | A crab-claw end effector for a lunar greenhouse project with the Canadian Space Agency. I wrote the CircuitPython control program and completed SolidWorks simulations; a teammate created the CAD model. / 与加拿大航天局合作项目中的蟹钳式采摘末端执行器；我负责 CircuitPython 控制程序与 SolidWorks 仿真，CAD 模型由组员完成。 |
-| **Earth–Satellite Particle-System Simulation / 地球—卫星粒子系统仿真** | A MATLAB coursework model based on a supplied framework. I completed the center-of-mass and motion updates, then compared trajectories and momentum under different initial conditions. / 基于课程框架的 MATLAB 仿真；我补全质心与运动状态更新，并比较不同初始条件下的轨迹和动量。 |
-| **Technical Documentation & SOP Design / 技术文档与 SOP 设计** | Troubleshooting notes and shop-floor procedures organized into instructions for onboarding and quality checks. / 将故障排查记录与现场流程整理为便于新人上手和质量检查的操作说明。 |
-| **Gaoco.org Company Website / Gaoco.org 公司网站** | Website design and development for Suzhou Gaoqing Sanju Precision Technology Co., Ltd., including company and product information for desktop and mobile visitors. / 为苏州高擎三炬精密科技有限公司设计并开发官网，整理公司与产品信息，适配电脑和手机浏览。 |
-| **Personal Portfolio Website / 个人作品集网站** | This bilingual static website, including page structure, responsive styling, and client-side interactions. / 本中英双语静态网站，包括页面结构、响应式样式与前端交互。 |
-| **Metallography & Phase Diagrams / 金相分析与相图解读** | Team preparation of an unknown steel specimen, followed by my ImageJ point counting and phase-diagram analysis of supplied micrographs to estimate pearlite fraction and carbon content. / 与实验小组完成未知钢试样制备，再对提供的显微照片进行 ImageJ 点计数和相图分析，估算珠光体比例与碳含量。 |
-| **Solder Wettability on Copper / 铜表面的焊料润湿性** | A laboratory comparison of Aquabond and Pb–Sn solder using polished copper-tube sections, internal penetration measurements, apparent contact angles, and a capillary model. / 通过铜管抛光截面、管内渗入长度、表观接触角与毛细模型，比较 Aquabond 和铅锡焊料的润湿行为。 |
-
-## Methods & Tools / 方法与工具
-
-**Methods before tools. / 方法先于工具。**
-
-The Tools page follows the work from problem definition and concept comparison through CAD, coding, testing, and reporting. Its image galleries show examples from projects, laboratory work, and workshop experience.
-
-Tools 页面按照定义问题、比较方案、CAD 建模、编写代码、测试和报告的顺序展开。图片展示工具在项目、实验和现场实践中的具体应用。
-
-| Area / 方向 | Examples / 示例 |
-| --- | --- |
-| Engineering methods / 工程方法 | Morphological analysis, decision matrices, Gantt planning, flowcharts, simulation, and experimental testing. / 形态分析、决策矩阵、甘特图、流程图、仿真与实验测试。 |
-| CAD, simulation & prototyping / CAD、仿真与原型 | SolidWorks, AutoCAD, NX, MATLAB, Arduino, Blender. |
-| Languages & web technologies / 语言与网页技术 | Python, C, HTML, CSS, JavaScript. |
-| Development & AI coding tools / 开发与 AI 编程工具 | VS Code, GitHub Copilot, DeepSeek Harness, PyCharm, CLion, Jupyter Notebook, Sublime Text. |
-| Hands-on work / 动手实践 | Injection molding support, welding and fixture repair, pipe heat-fusion joining, prototype assembly, metallographic preparation, and solder-wetting tests. / 注塑操作与维护协助、焊接与工装维修、管件热熔、原型装配、金相制样和焊料润湿测试。 |
-| Reports, diagrams & data / 报告、图解与数据 | Word, PowerPoint, Excel, Visio. |
-| Visual & audio work / 视觉与音频 | Photoshop, Premiere Pro, Audition, FL Studio. |
-
-AI-assisted coding includes an integrated assistant workflow with GitHub Copilot in VS Code and an agentic workflow with DeepSeek Harness. Language tags and development-tool tags use different, restrained styles on the Tools page.
-
-AI 辅助编程包括 VS Code + GitHub Copilot 的编辑器集成助手，以及 DeepSeek Harness 的智能体工作方式。Tools 页面用两种简洁样式区分语言标签和开发工具标签。
 
 ## Site Features / 网站功能
 
@@ -161,7 +125,7 @@ For an archive containing a `shenghan` folder, deploy the contents of that folde
 
 Website design and development: **Shenghan Gao**. The project descriptions identify my own work and contributions made by teammates. The orbital simulation builds on a provided course framework. Laboratory micrographs credited on the site were supplied by the MECH 396 teaching team; the associated analysis is described in my project reports.
 
-网站设计与开发：**高胜寒（Shenghan Gao）**。项目介绍区分本人工作和组员贡献。轨道仿真基于课程提供的框架；网站中注明来源的材料实验显微照片由 MECH 396 教学团队提供，相关分析记录在我的项目报告中。
+网站设计与开发：**高胜寒（Shenghan Gao）**。项目介绍区分本人工作和组员贡献。其中轨道仿真基于课程提供的框架；网站中注明来源的材料实验显微照片由 MECH 396 教学团队提供，相关分析记录在我的项目报告中。
 
 The site uses Google Fonts and Font Awesome for typography and icons. University and company names and logos identify the relevant institutions and projects.
 
@@ -172,6 +136,5 @@ The site uses Google Fonts and Font Awesome for typography and icons. University
 | Channel / 渠道 | Link / 链接 |
 | --- | --- |
 | Website / 网站 | [shenghan.cc](https://shenghan.cc/) |
-| GitHub | [cnmfck](https://github.com/cnmfck) |
 | LinkedIn | [Shenghan Gao](https://www.linkedin.com/in/shenghan-gao-254157432/) |
 | Email / 邮箱 | [23RL30@queensu.ca](mailto:23RL30@queensu.ca) |
