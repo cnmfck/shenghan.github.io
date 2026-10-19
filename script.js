@@ -517,7 +517,8 @@ const translations = {
     "edu_subject_international_business": "International Business",
     "edu_subject_english": "English",
     "edu_subject_physics": "Physics",
-    "edu_subject_calculus": "Calculus & Vectors"
+    "edu_subject_calculus": "Calculus & Vectors",
+    "timeline_date_2026_oct": "2026 Oct"
   },
   "zh": {
     "brand_role": "机械与材料工程",
@@ -1037,7 +1038,8 @@ const translations = {
     "edu_subject_international_business": "国际商务",
     "edu_subject_english": "英语",
     "edu_subject_physics": "物理",
-    "edu_subject_calculus": "微积分与向量"
+    "edu_subject_calculus": "微积分与向量",
+    "timeline_date_2026_oct": "2026 年 10 月"
   }
 };
 
